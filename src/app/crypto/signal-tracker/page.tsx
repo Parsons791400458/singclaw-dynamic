@@ -20,85 +20,101 @@ interface DayData {
 // ─── Signal Data ─────────────────────────────────────────────────────────────
 const SIGNAL_DAYS: DayData[] = [
   {
-    "label": "今天 · 2026-04-30",
+    "label": "今天 · 2026-05-01",
     "data": [
       {
-            "coin": "APE",
+            "coin": "USTC",
             "score": 100,
-            "price": "0.16030",
-            "change_24h": "+9.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "UB",
-            "score": 100,
-            "price": "0.06939",
-            "change_24h": "+8.9%",
+            "price": "0.006659",
+            "change_24h": "+10.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "FLOW",
             "score": 100,
-            "price": "0.04392",
-            "change_24h": "+8.2%",
+            "price": "0.04456",
+            "change_24h": "+9.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "API3",
+            "score": 100,
+            "price": "0.39060",
+            "change_24h": "+9.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "REZ",
+            "score": 100,
+            "price": "0.004539",
+            "change_24h": "+8.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LUNA2",
             "score": 100,
-            "price": "0.06904",
-            "change_24h": "+8.0%",
+            "price": "0.06849",
+            "change_24h": "+6.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "D",
             "score": 100,
-            "price": "0.01266",
-            "change_24h": "+7.1%",
+            "price": "0.01256",
+            "change_24h": "+5.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ACH",
+            "coin": "SOMI",
             "score": 100,
-            "price": "0.007398",
-            "change_24h": "+6.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "1000LUNC",
-            "score": 100,
-            "price": "0.07335",
+            "price": "0.18630",
             "change_24h": "+5.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "1000CHEEMS",
+            "coin": "ACU",
             "score": 100,
-            "price": "0.000618",
+            "price": "0.09302",
             "change_24h": "+5.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BOME",
-            "score": 100,
-            "price": "0.000522",
-            "change_24h": "+4.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "GUN",
             "score": 100,
-            "price": "0.01480",
+            "price": "0.01495",
+            "change_24h": "+4.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ARIA",
+            "score": 100,
+            "price": "0.06270",
+            "change_24h": "+4.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AXL",
+            "score": 100,
+            "price": "0.06253",
             "change_24h": "+4.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ACH",
+            "score": 100,
+            "price": "0.007288",
+            "change_24h": "+3.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -106,102 +122,86 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "BB",
             "score": 100,
             "price": "0.02896",
-            "change_24h": "+4.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "KAITO",
-            "score": 100,
-            "price": "0.45290",
-            "change_24h": "+4.1%",
+            "change_24h": "+3.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CGPT",
             "score": 100,
-            "price": "0.02803",
-            "change_24h": "+4.1%",
+            "price": "0.02770",
+            "change_24h": "+3.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SOMI",
+            "coin": "AWE",
             "score": 100,
-            "price": "0.18500",
-            "change_24h": "+4.0%",
+            "price": "0.06055",
+            "change_24h": "+3.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "HYPER",
+            "coin": "RAYSOL",
             "score": 100,
-            "price": "0.12132",
-            "change_24h": "+3.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AVA",
-            "score": 100,
-            "price": "0.25940",
-            "change_24h": "+3.6%",
+            "price": "0.80890",
+            "change_24h": "+3.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PENGU",
             "score": 100,
-            "price": "0.009987",
-            "change_24h": "+3.5%",
+            "price": "0.01001",
+            "change_24h": "+3.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "WIF",
+            "coin": "ELSA",
             "score": 100,
-            "price": "0.18340",
-            "change_24h": "+3.3%",
+            "price": "0.07228",
+            "change_24h": "+3.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "CYS",
+            "coin": "BOME",
             "score": 100,
-            "price": "0.51890",
-            "change_24h": "+3.2%",
+            "price": "0.000522",
+            "change_24h": "+2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "1000RATS",
+            "coin": "AVA",
             "score": 100,
-            "price": "0.03873",
-            "change_24h": "+3.0%",
+            "price": "0.25790",
+            "change_24h": "+2.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "AR",
+            "coin": "KAITO",
             "score": 100,
-            "price": "1.8950",
-            "change_24h": "+3.0%",
+            "price": "0.45220",
+            "change_24h": "+2.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "DOGE",
+            "coin": "SONIC",
             "score": 100,
-            "price": "0.10636",
-            "change_24h": "+2.7%",
+            "price": "0.03769",
+            "change_24h": "+2.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "POL",
+            "coin": "LAB",
             "score": 100,
-            "price": "0.09518",
+            "price": "0.69740",
             "change_24h": "+2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -209,64 +209,32 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MYX",
             "score": 100,
-            "price": "0.26090",
-            "change_24h": "+2.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "NEIRO",
-            "score": 100,
-            "price": "0.000089",
+            "price": "0.26110",
             "change_24h": "+2.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "AKE",
+            "coin": "SAFE",
             "score": 100,
-            "price": "0.000317",
+            "price": "0.14410",
+            "change_24h": "+2.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "XNY",
+            "score": 100,
+            "price": "0.005761",
+            "change_24h": "+2.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ENJ",
+            "score": 100,
+            "price": "0.05672",
             "change_24h": "+2.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ORDI",
-            "score": 100,
-            "price": "4.3730",
-            "change_24h": "+2.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "HIGH",
-            "score": 100,
-            "price": "0.21250",
-            "change_24h": "+2.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ZBT",
-            "score": 100,
-            "price": "0.18363",
-            "change_24h": "+2.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CRV",
-            "score": 100,
-            "price": "0.23380",
-            "change_24h": "+2.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "KGEN",
-            "score": 100,
-            "price": "0.17827",
-            "change_24h": "+2.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -274,47 +242,79 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "RED",
             "score": 100,
             "price": "0.13440",
-            "change_24h": "+2.0%",
+            "change_24h": "+2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "PUMP",
+            "coin": "ICNT",
             "score": 100,
-            "price": "0.001766",
-            "change_24h": "+1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "VANA",
-            "score": 100,
-            "price": "1.4590",
-            "change_24h": "+1.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CFX",
-            "score": 100,
-            "price": "0.05879",
-            "change_24h": "+1.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TIA",
-            "score": 100,
-            "price": "0.34960",
-            "change_24h": "+1.5%",
+            "price": "0.37190",
+            "change_24h": "+2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "MORPHO",
             "score": 100,
-            "price": "1.9885",
+            "price": "2.0150",
+            "change_24h": "+2.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ORDI",
+            "score": 100,
+            "price": "4.3800",
+            "change_24h": "+2.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "JELLYJELLY",
+            "score": 100,
+            "price": "0.05335",
+            "change_24h": "+2.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "WIF",
+            "score": 100,
+            "price": "0.18370",
+            "change_24h": "+2.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CYS",
+            "score": 100,
+            "price": "0.51540",
+            "change_24h": "+1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CRV",
+            "score": 100,
+            "price": "0.23520",
             "change_24h": "+1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "HIGH",
+            "score": 100,
+            "price": "0.21110",
+            "change_24h": "+1.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MON",
+            "score": 100,
+            "price": "0.02735",
+            "change_24h": "+1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -322,31 +322,15 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "BROCCOLI714",
             "score": 100,
             "price": "0.01807",
-            "change_24h": "+1.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "1000SHIB",
-            "score": 100,
-            "price": "0.006227",
-            "change_24h": "+1.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "H",
-            "score": 100,
-            "price": "0.17919",
-            "change_24h": "+1.1%",
+            "change_24h": "+0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "NIGHT",
             "score": 100,
-            "price": "0.03270",
-            "change_24h": "+1.0%",
+            "price": "0.03268",
+            "change_24h": "+0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -354,319 +338,215 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "LINEA",
             "score": 100,
             "price": "0.003541",
-            "change_24h": "+1.0%",
+            "change_24h": "+0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "FIL",
+            "coin": "CFX",
             "score": 100,
-            "price": "0.92000",
-            "change_24h": "+1.0%",
+            "price": "0.05895",
+            "change_24h": "+0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "1000PEPE",
+            "coin": "APT",
             "score": 100,
-            "price": "0.003875",
-            "change_24h": "+1.0%",
+            "price": "1.0021",
+            "change_24h": "+0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "OP",
+            "coin": "POL",
             "score": 100,
-            "price": "0.12030",
-            "change_24h": "+0.8%",
+            "price": "0.09457",
+            "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SOON",
+            "coin": "VANA",
             "score": 100,
-            "price": "0.16470",
-            "change_24h": "+0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "API3",
-            "score": 100,
-            "price": "0.36790",
-            "change_24h": "+0.7%",
+            "price": "1.4450",
+            "change_24h": "+0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PNUT",
             "score": 100,
-            "price": "0.05305",
-            "change_24h": "+0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ACT",
-            "score": 100,
-            "price": "0.01376",
-            "change_24h": "+0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "FARTCOIN",
-            "score": 100,
-            "price": "0.19750",
-            "change_24h": "+0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SAND",
-            "score": 100,
-            "price": "0.07226",
-            "change_24h": "+0.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BANANAS31",
-            "score": 100,
-            "price": "0.009685",
-            "change_24h": "+0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MOODENG",
-            "score": 100,
-            "price": "0.05936",
-            "change_24h": "+0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AIO",
-            "score": 100,
-            "price": "0.11029",
-            "change_24h": "+0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "1000BONK",
-            "score": 100,
-            "price": "0.006161",
-            "change_24h": "+0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ETC",
-            "score": 100,
-            "price": "8.3320",
+            "price": "0.05308",
             "change_24h": "+0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "G",
+            "coin": "TIA",
             "score": 100,
-            "price": "0.003584",
+            "price": "0.34920",
+            "change_24h": "+0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "OP",
+            "score": 100,
+            "price": "0.12060",
+            "change_24h": "+0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1000SHIB",
+            "score": 100,
+            "price": "0.006235",
+            "change_24h": "+0.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "NEIRO",
+            "score": 100,
+            "price": "0.000089",
+            "change_24h": "+0.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1000PEPE",
+            "score": 100,
+            "price": "0.003886",
             "change_24h": "-0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ALGO",
+            "coin": "FIL",
             "score": 100,
-            "price": "0.11010",
-            "change_24h": "-0.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ICP",
-            "score": 100,
-            "price": "2.3730",
-            "change_24h": "-0.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "1000FLOKI",
-            "score": 100,
-            "price": "0.03210",
+            "price": "0.92200",
             "change_24h": "-0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "VIRTUAL",
-            "score": 100,
-            "price": "0.68530",
-            "change_24h": "-0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "STRK",
-            "score": 100,
-            "price": "0.03833",
-            "change_24h": "-0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ONDO",
-            "score": 100,
-            "price": "0.26200",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "GALA",
-            "score": 100,
-            "price": "0.003192",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CHIP",
-            "score": 100,
-            "price": "0.06364",
-            "change_24h": "-0.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "COMP",
-            "score": 100,
-            "price": "23.7000",
-            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ONT",
             "score": 100,
-            "price": "0.07050",
-            "change_24h": "-0.4%",
+            "price": "0.07010",
+            "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "STO",
+            "coin": "COMP",
             "score": 100,
-            "price": "0.08933",
+            "price": "23.6200",
+            "change_24h": "-0.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FARTCOIN",
+            "score": 100,
+            "price": "0.19850",
             "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "KITE",
+            "coin": "ICP",
             "score": 100,
-            "price": "0.14302",
+            "price": "2.3810",
             "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "DOT",
+            "coin": "BANANAS31",
             "score": 100,
-            "price": "1.2020",
-            "change_24h": "-0.6%",
+            "price": "0.009809",
+            "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "JUP",
+            "coin": "PUMP",
             "score": 100,
-            "price": "0.17930",
-            "change_24h": "-0.6%",
+            "price": "0.001777",
+            "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "HYPE",
+            "coin": "SAND",
             "score": 100,
-            "price": "39.6520",
-            "change_24h": "-0.6%",
+            "price": "0.07231",
+            "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SPK",
             "score": 100,
-            "price": "0.03559",
-            "change_24h": "-0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AXL",
-            "score": 100,
-            "price": "0.06107",
-            "change_24h": "-0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SEI",
-            "score": 100,
-            "price": "0.05716",
+            "price": "0.03533",
             "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ARB",
+            "coin": "GALA",
             "score": 100,
-            "price": "0.12370",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CFG",
-            "score": 100,
-            "price": "0.20140",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MON",
-            "score": 100,
-            "price": "0.02701",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ASTER",
-            "score": 100,
-            "price": "0.65300",
+            "price": "0.003203",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SIREN",
+            "coin": "ZBT",
             "score": 100,
-            "price": "0.68490",
-            "change_24h": "-1.0%",
+            "price": "0.17502",
+            "change_24h": "-1.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "FET",
+            "coin": "VIRTUAL",
             "score": 100,
-            "price": "0.19520",
-            "change_24h": "-1.0%",
+            "price": "0.68930",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "STRK",
+            "score": 100,
+            "price": "0.03829",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ONDO",
+            "score": 100,
+            "price": "0.26270",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DOT",
+            "score": 100,
+            "price": "1.2040",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1000BONK",
+            "score": 100,
+            "price": "0.006169",
+            "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -674,14 +554,6 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "PLUME",
             "score": 100,
             "price": "0.01162",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ENA",
-            "score": 100,
-            "price": "0.10235",
             "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -689,295 +561,343 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "INJ",
             "score": 100,
-            "price": "3.4160",
+            "price": "3.4360",
             "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "HBAR",
+            "coin": "1000FLOKI",
             "score": 100,
-            "price": "0.08733",
+            "price": "0.03215",
             "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "FF",
+            "coin": "KITE",
             "score": 100,
-            "price": "0.06274",
-            "change_24h": "-1.4%",
+            "price": "0.14244",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BCH",
+            "coin": "ALGO",
             "score": 100,
-            "price": "441.4400",
-            "change_24h": "-1.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "OPEN",
-            "score": 100,
-            "price": "0.27040",
-            "change_24h": "-1.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "WLD",
-            "score": 100,
-            "price": "0.24290",
-            "change_24h": "-1.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "EIGEN",
-            "score": 100,
-            "price": "0.18050",
-            "change_24h": "-1.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CTSI",
-            "score": 100,
-            "price": "0.03087",
-            "change_24h": "-2.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "KAT",
-            "score": 100,
-            "price": "0.01071",
-            "change_24h": "-2.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "RENDER",
-            "score": 100,
-            "price": "1.6720",
-            "change_24h": "-2.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "DYDX",
-            "score": 100,
-            "price": "0.15080",
-            "change_24h": "-2.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "NEAR",
-            "score": 100,
-            "price": "1.2930",
-            "change_24h": "-2.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TAO",
-            "score": 100,
-            "price": "248.5400",
-            "change_24h": "-2.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "VVV",
-            "score": 100,
-            "price": "8.5220",
-            "change_24h": "-2.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AXS",
-            "score": 100,
-            "price": "1.3560",
-            "change_24h": "-2.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CHZ",
-            "score": 100,
-            "price": "0.04129",
-            "change_24h": "-2.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SKY",
-            "score": 100,
-            "price": "0.07949",
-            "change_24h": "-2.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "XPL",
-            "score": 100,
-            "price": "0.09070",
-            "change_24h": "-2.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "币安人生",
-            "score": 100,
-            "price": "0.34684",
-            "change_24h": "-2.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "LDO",
-            "score": 100,
-            "price": "0.36410",
-            "change_24h": "-2.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ZRO",
-            "score": 100,
-            "price": "1.4214",
-            "change_24h": "-2.9%",
+            "price": "0.10980",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "UAI",
             "score": 100,
-            "price": "0.34530",
-            "change_24h": "-3.0%",
+            "price": "0.34970",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SEI",
+            "score": 100,
+            "price": "0.05724",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FF",
+            "score": 100,
+            "price": "0.06286",
+            "change_24h": "-1.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ASTER",
+            "score": 100,
+            "price": "0.65270",
+            "change_24h": "-1.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ENA",
+            "score": 100,
+            "price": "0.10290",
+            "change_24h": "-1.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "HBAR",
+            "score": 100,
+            "price": "0.08757",
+            "change_24h": "-1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BCH",
+            "score": 100,
+            "price": "441.0500",
+            "change_24h": "-1.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "WLD",
+            "score": 100,
+            "price": "0.24370",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "VVV",
+            "score": 100,
+            "price": "8.5530",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "XPL",
+            "score": 100,
+            "price": "0.09180",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "OPEN",
+            "score": 100,
+            "price": "0.27360",
+            "change_24h": "-1.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CHZ",
+            "score": 100,
+            "price": "0.04156",
+            "change_24h": "-2.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "LDO",
+            "score": 100,
+            "price": "0.36720",
+            "change_24h": "-2.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "JUP",
+            "score": 100,
+            "price": "0.18000",
+            "change_24h": "-2.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "RENDER",
+            "score": 100,
+            "price": "1.6730",
+            "change_24h": "-2.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CFG",
+            "score": 100,
+            "price": "0.19920",
+            "change_24h": "-2.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MOODENG",
+            "score": 100,
+            "price": "0.05976",
+            "change_24h": "-2.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AXS",
+            "score": 100,
+            "price": "1.3670",
+            "change_24h": "-2.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SKY",
+            "score": 100,
+            "price": "0.07948",
+            "change_24h": "-2.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SIREN",
+            "score": 100,
+            "price": "0.67590",
+            "change_24h": "-2.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ZRO",
+            "score": 100,
+            "price": "1.4321",
+            "change_24h": "-2.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ATOM",
+            "score": 100,
+            "price": "1.8780",
+            "change_24h": "-2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ALT",
             "score": 100,
-            "price": "0.007453",
-            "change_24h": "-3.1%",
+            "price": "0.007443",
+            "change_24h": "-2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "MANTRA",
+            "coin": "ARB",
             "score": 100,
-            "price": "0.009850",
+            "price": "0.12400",
+            "change_24h": "-3.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "EIGEN",
+            "score": 100,
+            "price": "0.17980",
             "change_24h": "-3.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BLUR",
-            "score": 100,
-            "price": "0.02648",
-            "change_24h": "-3.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "EDGE",
             "score": 100,
-            "price": "1.1427",
-            "change_24h": "-3.4%",
+            "price": "1.1552",
+            "change_24h": "-3.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "DUSK",
+            "coin": "CHIP",
             "score": 100,
-            "price": "0.12109",
-            "change_24h": "-3.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "WLFI",
-            "score": 100,
-            "price": "0.06060",
-            "change_24h": "-3.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "0G",
-            "score": 100,
-            "price": "0.53030",
-            "change_24h": "-3.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "S",
-            "score": 100,
-            "price": "0.04301",
-            "change_24h": "-4.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "GIGGLE",
-            "score": 100,
-            "price": "30.7800",
-            "change_24h": "-4.4%",
+            "price": "0.06307",
+            "change_24h": "-3.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SPX",
             "score": 100,
-            "price": "0.35820",
-            "change_24h": "-4.5%",
+            "price": "0.36350",
+            "change_24h": "-3.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ENJ",
-            "score": 97,
-            "price": "0.05656",
-            "change_24h": "+0.6%",
+            "coin": "STO",
+            "score": 100,
+            "price": "0.08743",
+            "change_24h": "-3.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "TON",
-            "score": 97,
-            "price": "1.3241",
-            "change_24h": "+0.5%",
+            "coin": "币安人生",
+            "score": 100,
+            "price": "0.34131",
+            "change_24h": "-3.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "RAYSOL",
-            "score": 97,
-            "price": "0.79700",
-            "change_24h": "+0.1%",
+            "coin": "KAT",
+            "score": 100,
+            "price": "0.01036",
+            "change_24h": "-4.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "RUNE",
-            "score": 97,
-            "price": "0.49730",
-            "change_24h": "+0.1%",
+            "coin": "DYDX",
+            "score": 100,
+            "price": "0.15110",
+            "change_24h": "-4.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "MOVR",
+            "coin": "AERO",
+            "score": 100,
+            "price": "0.44860",
+            "change_24h": "-4.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "WLFI",
+            "score": 100,
+            "price": "0.06040",
+            "change_24h": "-4.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "OPG",
+            "score": 100,
+            "price": "0.23530",
+            "change_24h": "-9.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AR",
             "score": 97,
-            "price": "2.4450",
+            "price": "1.9200",
+            "change_24h": "+3.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "JST",
+            "score": 97,
+            "price": "0.08859",
+            "change_24h": "+3.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SOON",
+            "score": 97,
+            "price": "0.16790",
+            "change_24h": "+2.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ADA",
+            "score": 97,
+            "price": "0.24620",
             "change_24h": "+0.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -985,256 +905,232 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "UNI",
             "score": 97,
-            "price": "3.1790",
-            "change_24h": "-0.2%",
+            "price": "3.1950",
+            "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TRUMP",
             "score": 97,
-            "price": "2.3770",
-            "change_24h": "-0.5%",
+            "price": "2.3890",
+            "change_24h": "-0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ENSO",
-            "score": 95,
-            "price": "1.0011",
-            "change_24h": "+14.7%",
+            "coin": "LTC",
+            "score": 97,
+            "price": "55.1800",
+            "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "USTC",
+            "coin": "GWEI",
             "score": 95,
-            "price": "0.006675",
-            "change_24h": "+11.1%",
+            "price": "0.10842",
+            "change_24h": "+13.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "CHR",
+            "coin": "TRIA",
             "score": 95,
-            "price": "0.02411",
+            "price": "0.03758",
             "change_24h": "+9.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FORM",
+            "score": 95,
+            "price": "0.26820",
+            "change_24h": "+9.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "UB",
+            "score": 95,
+            "price": "0.07138",
+            "change_24h": "+8.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AKE",
+            "score": 95,
+            "price": "0.000320",
+            "change_24h": "+6.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "HYPER",
+            "score": 95,
+            "price": "0.12379",
+            "change_24h": "+6.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TRB",
             "score": 95,
-            "price": "19.3720",
-            "change_24h": "+6.3%",
+            "price": "19.3670",
+            "change_24h": "+5.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ZETA",
+            "coin": "1000CHEEMS",
             "score": 95,
-            "price": "0.05818",
-            "change_24h": "+5.8%",
+            "price": "0.000624",
+            "change_24h": "+4.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SKR",
+            "score": 95,
+            "price": "0.01657",
+            "change_24h": "+4.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "PLAY",
+            "score": 95,
+            "price": "0.10288",
+            "change_24h": "+4.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SWARMS",
+            "score": 95,
+            "price": "0.02673",
+            "change_24h": "+3.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "C",
             "score": 95,
-            "price": "0.07775",
-            "change_24h": "+3.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "DOGS",
-            "score": 95,
-            "price": "0.000031",
-            "change_24h": "+3.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ICNT",
-            "score": 95,
-            "price": "0.37610",
-            "change_24h": "+3.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SAFE",
-            "score": 95,
-            "price": "0.14480",
+            "price": "0.07707",
             "change_24h": "+2.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SONIC",
+            "coin": "ESPORTS",
             "score": 95,
-            "price": "0.03778",
+            "price": "0.38640",
+            "change_24h": "+2.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1000RATS",
+            "score": 95,
+            "price": "0.03876",
+            "change_24h": "+2.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MOVR",
+            "score": 95,
+            "price": "2.4660",
             "change_24h": "+2.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BLESS",
-            "score": 95,
-            "price": "0.005917",
-            "change_24h": "+2.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "NIL",
-            "score": 95,
-            "price": "0.03853",
-            "change_24h": "+2.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "XNY",
-            "score": 95,
-            "price": "0.005687",
-            "change_24h": "+2.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BULLA",
             "score": 95,
-            "price": "0.007214",
+            "price": "0.007253",
             "change_24h": "+1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "JELLYJELLY",
+            "coin": "AIO",
             "score": 95,
-            "price": "0.05326",
-            "change_24h": "+1.9%",
+            "price": "0.11128",
+            "change_24h": "+0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "LAB",
+            "coin": "NIL",
             "score": 95,
-            "price": "0.70180",
-            "change_24h": "+1.4%",
+            "price": "0.03839",
+            "change_24h": "+0.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "KGEN",
+            "score": 95,
+            "price": "0.17654",
+            "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ID",
             "score": 95,
-            "price": "0.03039",
-            "change_24h": "+1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "APT",
-            "score": 95,
-            "price": "0.99320",
-            "change_24h": "+0.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SHELL",
-            "score": 95,
-            "price": "0.03405",
-            "change_24h": "+0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "FOLKS",
-            "score": 95,
-            "price": "1.4520",
-            "change_24h": "+0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "PEOPLE",
-            "score": 95,
-            "price": "0.007460",
-            "change_24h": "+0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "HEMI",
-            "score": 95,
-            "price": "0.007616",
-            "change_24h": "+0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BRETT",
-            "score": 95,
-            "price": "0.007136",
-            "change_24h": "+0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SAPIEN",
-            "score": 95,
-            "price": "0.08929",
-            "change_24h": "+0.1%",
+            "price": "0.03034",
+            "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BAN",
             "score": 95,
-            "price": "0.07244",
+            "price": "0.07260",
+            "change_24h": "+0.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FOLKS",
+            "score": 95,
+            "price": "1.4530",
             "change_24h": "+0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "VET",
+            "coin": "HEMI",
             "score": 95,
-            "price": "0.006978",
-            "change_24h": "+0.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ZORA",
-            "score": 95,
-            "price": "0.01252",
-            "change_24h": "+0.0%",
+            "price": "0.007635",
+            "change_24h": "-0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "2Z",
             "score": 95,
-            "price": "0.08189",
-            "change_24h": "-0.0%",
+            "price": "0.08164",
+            "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SPORTFUN",
+            "coin": "VET",
             "score": 95,
-            "price": "0.04583",
-            "change_24h": "-0.2%",
+            "price": "0.007006",
+            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "AVAX",
+            "coin": "DOLO",
             "score": 95,
-            "price": "9.0840",
-            "change_24h": "-0.2%",
+            "price": "0.03062",
+            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1242,87 +1138,103 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "BERA",
             "score": 95,
             "price": "0.35910",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "STX",
-            "score": 95,
-            "price": "0.22020",
-            "change_24h": "-0.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ILV",
-            "score": 95,
-            "price": "4.6090",
-            "change_24h": "-0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "1INCH",
-            "score": 95,
-            "price": "0.09240",
-            "change_24h": "-0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "OGN",
-            "score": 95,
-            "price": "0.02306",
-            "change_24h": "-0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "W",
-            "score": 95,
-            "price": "0.01236",
-            "change_24h": "-0.8%",
+            "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BAT",
             "score": 95,
-            "price": "0.09650",
+            "price": "0.09680",
+            "change_24h": "-1.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "STX",
+            "score": 95,
+            "price": "0.22090",
+            "change_24h": "-1.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1INCH",
+            "score": 95,
+            "price": "0.09250",
             "change_24h": "-1.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BARD",
+            "coin": "BIRB",
             "score": 95,
-            "price": "0.27480",
+            "price": "0.13158",
             "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "AKT",
+            "coin": "BRETT",
             "score": 95,
-            "price": "0.50710",
+            "price": "0.007182",
+            "change_24h": "-1.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "W",
+            "score": 95,
+            "price": "0.01235",
+            "change_24h": "-1.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ZRX",
+            "score": 95,
+            "price": "0.10990",
+            "change_24h": "-1.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "XLM",
+            "score": 95,
+            "price": "0.15832",
             "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "GPS",
+            "score": 95,
+            "price": "0.007500",
+            "change_24h": "-1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "QTUM",
             "score": 95,
-            "price": "0.86000",
-            "change_24h": "-1.4%",
+            "price": "0.86100",
+            "change_24h": "-1.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BANANA",
+            "coin": "JASMY",
             "score": 95,
-            "price": "3.7510",
-            "change_24h": "-1.4%",
+            "price": "0.005649",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "TURTLE",
+            "score": 95,
+            "price": "0.04743",
+            "change_24h": "-1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1330,710 +1242,510 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "SPELL",
             "score": 95,
             "price": "0.000166",
-            "change_24h": "-1.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BICO",
-            "score": 95,
-            "price": "0.02501",
-            "change_24h": "-1.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "JASMY",
-            "score": 95,
-            "price": "0.005627",
-            "change_24h": "-1.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MOVE",
-            "score": 95,
-            "price": "0.01702",
-            "change_24h": "-1.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ATOM",
-            "score": 95,
-            "price": "1.8880",
-            "change_24h": "-1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "GPS",
-            "score": 95,
-            "price": "0.007528",
-            "change_24h": "-1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "FIDA",
-            "score": 95,
-            "price": "0.01636",
             "change_24h": "-2.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "PTB",
+            "coin": "FET",
             "score": 95,
-            "price": "0.000766",
-            "change_24h": "-2.0%",
+            "price": "0.19550",
+            "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CAKE",
             "score": 95,
-            "price": "1.4446",
+            "price": "1.4506",
             "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "YFI",
+            "coin": "AEVO",
             "score": 95,
-            "price": "2629.00",
-            "change_24h": "-2.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "PIPPIN",
-            "score": 95,
-            "price": "0.02542",
+            "price": "0.02712",
             "change_24h": "-2.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "VELVET",
+            "score": 95,
+            "price": "0.11450",
+            "change_24h": "-2.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "NEAR",
+            "score": 95,
+            "price": "1.2980",
+            "change_24h": "-2.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SNX",
             "score": 95,
-            "price": "0.30030",
-            "change_24h": "-2.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "KERNEL",
-            "score": 95,
-            "price": "0.06255",
-            "change_24h": "-2.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "WAL",
-            "score": 95,
-            "price": "0.06898",
-            "change_24h": "-2.9%",
+            "price": "0.30240",
+            "change_24h": "-2.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "OPN",
             "score": 95,
-            "price": "0.15770",
-            "change_24h": "-3.0%",
+            "price": "0.15920",
+            "change_24h": "-2.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "KERNEL",
+            "score": 95,
+            "price": "0.06205",
+            "change_24h": "-3.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "COLLECT",
+            "score": 95,
+            "price": "0.02887",
+            "change_24h": "-3.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "B",
             "score": 95,
-            "price": "0.13050",
-            "change_24h": "-3.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "GRASS",
-            "score": 95,
-            "price": "0.32550",
-            "change_24h": "-4.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ON",
-            "score": 95,
-            "price": "0.11388",
+            "price": "0.13000",
             "change_24h": "-4.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BEAT",
+            "coin": "TRADOOR",
             "score": 95,
-            "price": "0.54470",
-            "change_24h": "-4.7%",
+            "price": "0.70160",
+            "change_24h": "-4.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "AERO",
+            "coin": "BLUR",
             "score": 95,
-            "price": "0.44510",
-            "change_24h": "-5.9%",
+            "price": "0.02634",
+            "change_24h": "-5.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MANTRA",
+            "score": 95,
+            "price": "0.009690",
+            "change_24h": "-5.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ZEREBRO",
+            "score": 95,
+            "price": "0.02641",
+            "change_24h": "-6.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "GIGGLE",
+            "score": 95,
+            "price": "30.6600",
+            "change_24h": "-6.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "DEXE",
             "score": 95,
-            "price": "11.2980",
-            "change_24h": "-8.6%",
+            "price": "11.3230",
+            "change_24h": "-6.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PRL",
             "score": 95,
-            "price": "0.28260",
-            "change_24h": "-9.2%",
+            "price": "0.27370",
+            "change_24h": "-9.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "OPG",
-            "score": 95,
-            "price": "0.23180",
-            "change_24h": "-13.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "REZ",
+            "coin": "1000LUNC",
             "score": 92,
-            "price": "0.004621",
-            "change_24h": "+9.3%",
+            "price": "0.07540",
+            "change_24h": "+7.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "EDU",
+            "coin": "PAXG",
             "score": 92,
-            "price": "0.04831",
-            "change_24h": "+4.0%",
+            "price": "4610.68",
+            "change_24h": "+1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ADA",
+            "coin": "XAUT",
             "score": 92,
-            "price": "0.24600",
-            "change_24h": "+0.9%",
+            "price": "4606.83",
+            "change_24h": "+1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PIXEL",
             "score": 92,
-            "price": "0.008149",
-            "change_24h": "+0.6%",
+            "price": "0.008175",
+            "change_24h": "+1.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DOGE",
+            "score": 92,
+            "price": "0.10717",
+            "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "IP",
             "score": 92,
-            "price": "0.49160",
-            "change_24h": "+0.4%",
+            "price": "0.49210",
+            "change_24h": "-0.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "HYPE",
+            "score": 92,
+            "price": "40.1100",
+            "change_24h": "-0.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ETC",
+            "score": 92,
+            "price": "8.3640",
+            "change_24h": "-0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ETH",
             "score": 92,
-            "price": "2255.89",
-            "change_24h": "+0.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "XRP",
-            "score": 92,
-            "price": "1.3662",
-            "change_24h": "-0.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "LTC",
-            "score": 92,
-            "price": "55.1400",
-            "change_24h": "-0.2%",
+            "price": "2260.84",
+            "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BNB",
             "score": 92,
-            "price": "615.6500",
-            "change_24h": "-0.3%",
+            "price": "616.4600",
+            "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AAVE",
             "score": 92,
-            "price": "92.6300",
-            "change_24h": "-0.7%",
+            "price": "92.9000",
+            "change_24h": "-0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ETHFI",
             "score": 92,
-            "price": "0.40890",
+            "price": "0.41090",
+            "change_24h": "-0.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "XRP",
+            "score": 92,
+            "price": "1.3667",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "FORM",
-            "score": 90,
-            "price": "0.26920",
-            "change_24h": "+11.4%",
+            "coin": "TAO",
+            "score": 92,
+            "price": "250.3600",
+            "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BAS",
+            "coin": "DRIFT",
             "score": 90,
-            "price": "0.01506",
-            "change_24h": "+9.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "GUA",
-            "score": 90,
-            "price": "0.87080",
-            "change_24h": "+8.6%",
+            "price": "0.03945",
+            "change_24h": "+11.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AIOT",
             "score": 90,
-            "price": "0.12862",
-            "change_24h": "+7.3%",
+            "price": "0.12924",
+            "change_24h": "+9.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CHR",
+            "score": 90,
+            "price": "0.02421",
+            "change_24h": "+9.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ZEC",
             "score": 90,
-            "price": "349.2500",
-            "change_24h": "+7.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ARIA",
-            "score": 90,
-            "price": "0.06300",
-            "change_24h": "+6.2%",
+            "price": "349.0700",
+            "change_24h": "+6.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TA",
             "score": 90,
-            "price": "0.05090",
-            "change_24h": "+2.6%",
+            "price": "0.05104",
+            "change_24h": "+2.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "JST",
+            "coin": "DOGS",
             "score": 90,
-            "price": "0.08859",
-            "change_24h": "+2.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ELSA",
-            "score": 90,
-            "price": "0.07067",
-            "change_24h": "+1.8%",
+            "price": "0.000031",
+            "change_24h": "+1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ALCH",
             "score": 90,
-            "price": "0.07939",
+            "price": "0.07926",
             "change_24h": "+1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MET",
-            "score": 90,
-            "price": "0.15450",
-            "change_24h": "+1.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CATI",
-            "score": 90,
-            "price": "0.05064",
-            "change_24h": "+1.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "1MBABYDOGE",
-            "score": 90,
-            "price": "0.000414",
-            "change_24h": "+1.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BIGTIME",
-            "score": 90,
-            "price": "0.01319",
-            "change_24h": "+0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CETUS",
             "score": 90,
-            "price": "0.02778",
-            "change_24h": "+0.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "COOKIE",
-            "score": 90,
-            "price": "0.01615",
+            "price": "0.02782",
             "change_24h": "+0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "PROM",
-            "score": 90,
-            "price": "2.0500",
-            "change_24h": "+0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ATH",
-            "score": 90,
-            "price": "0.005800",
-            "change_24h": "+0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "我踏马来了",
-            "score": 90,
-            "price": "0.009231",
-            "change_24h": "+0.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CHILLGUY",
-            "score": 90,
-            "price": "0.01132",
-            "change_24h": "+0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "XAI",
-            "score": 90,
-            "price": "0.01040",
-            "change_24h": "+0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "RIF",
-            "score": 90,
-            "price": "0.05438",
-            "change_24h": "+0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "1000CAT",
-            "score": 90,
-            "price": "0.001884",
-            "change_24h": "+0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "IN",
-            "score": 90,
-            "price": "0.06629",
-            "change_24h": "+0.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SYRUP",
-            "score": 90,
-            "price": "0.23788",
-            "change_24h": "+0.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MEW",
-            "score": 90,
-            "price": "0.000577",
-            "change_24h": "+0.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ESP",
-            "score": 90,
-            "price": "0.06779",
-            "change_24h": "+0.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AVNT",
-            "score": 90,
-            "price": "0.14680",
-            "change_24h": "+0.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "IMX",
-            "score": 90,
-            "price": "0.16330",
-            "change_24h": "-0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "YGG",
-            "score": 90,
-            "price": "0.04002",
-            "change_24h": "-0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "DOOD",
-            "score": 90,
-            "price": "0.003168",
-            "change_24h": "-0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "VELVET",
-            "score": 90,
-            "price": "0.11678",
-            "change_24h": "-0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AT",
-            "score": 90,
-            "price": "0.16542",
-            "change_24h": "-0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "LA",
-            "score": 90,
-            "price": "0.15620",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "IRYS",
-            "score": 90,
-            "price": "0.03514",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ROBO",
-            "score": 90,
-            "price": "0.01821",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ALICE",
-            "score": 90,
-            "price": "0.14480",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ARC",
-            "score": 90,
-            "price": "0.07505",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TURBO",
-            "score": 90,
-            "price": "0.001133",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ANIME",
-            "score": 90,
-            "price": "0.004660",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "UMA",
-            "score": 90,
-            "price": "0.44910",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "DOLO",
-            "score": 90,
-            "price": "0.03057",
-            "change_24h": "-0.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "PARTI",
-            "score": 90,
-            "price": "0.04075",
-            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "INIT",
             "score": 90,
-            "price": "0.09066",
-            "change_24h": "-0.4%",
+            "price": "0.09149",
+            "change_24h": "+0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "PYTH",
+            "coin": "SAPIEN",
             "score": 90,
-            "price": "0.04636",
-            "change_24h": "-0.4%",
+            "price": "0.08996",
+            "change_24h": "+0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ENS",
+            "coin": "ACT",
             "score": 90,
-            "price": "5.9830",
-            "change_24h": "-0.4%",
+            "price": "0.01383",
+            "change_24h": "+0.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ARC",
+            "score": 90,
+            "price": "0.07555",
+            "change_24h": "+0.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "COOKIE",
+            "score": 90,
+            "price": "0.01613",
+            "change_24h": "+0.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "我踏马来了",
+            "score": 90,
+            "price": "0.009224",
+            "change_24h": "+0.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BIGTIME",
+            "score": 90,
+            "price": "0.01318",
+            "change_24h": "+0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "NXPC",
+            "score": 90,
+            "price": "0.29650",
+            "change_24h": "+0.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BLESS",
+            "score": 90,
+            "price": "0.005926",
+            "change_24h": "-0.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "RARE",
+            "score": 90,
+            "price": "0.01723",
+            "change_24h": "-0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CHILLGUY",
+            "score": 90,
+            "price": "0.01133",
+            "change_24h": "-0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ESP",
+            "score": 90,
+            "price": "0.06780",
+            "change_24h": "-0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "XAI",
+            "score": 90,
+            "price": "0.01044",
+            "change_24h": "-0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AVNT",
+            "score": 90,
+            "price": "0.14620",
+            "change_24h": "-0.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SPACE",
+            "score": 90,
+            "price": "0.006674",
+            "change_24h": "-0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PHA",
             "score": 90,
-            "price": "0.03091",
+            "price": "0.03108",
+            "change_24h": "-0.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1000CAT",
+            "score": 90,
+            "price": "0.001888",
             "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "MEME",
+            "coin": "PROM",
             "score": 90,
-            "price": "0.000562",
+            "price": "2.0650",
             "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "IO",
+            "coin": "CATI",
             "score": 90,
-            "price": "0.11580",
+            "price": "0.05036",
             "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ZIL",
+            "coin": "HOLO",
             "score": 90,
-            "price": "0.003930",
+            "price": "0.06193",
             "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "LYN",
+            "coin": "SYRUP",
             "score": 90,
-            "price": "0.06955",
+            "price": "0.23789",
             "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SENT",
+            "coin": "H",
             "score": 90,
-            "price": "0.01713",
+            "price": "0.18046",
             "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SAHARA",
+            "coin": "ROBO",
             "score": 90,
-            "price": "0.02191",
-            "change_24h": "-0.6%",
+            "price": "0.01844",
+            "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "NOT",
+            "coin": "ATH",
             "score": 90,
-            "price": "0.000381",
-            "change_24h": "-0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SIGN",
-            "score": 90,
-            "price": "0.01563",
+            "price": "0.005789",
             "change_24h": "-0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2041,47 +1753,39 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "CC",
             "score": 90,
-            "price": "0.15017",
+            "price": "0.15062",
+            "change_24h": "-0.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ALICE",
+            "score": 90,
+            "price": "0.14550",
+            "change_24h": "-0.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SUN",
+            "score": 90,
+            "price": "0.01851",
+            "change_24h": "-0.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ZORA",
+            "score": 90,
+            "price": "0.01248",
             "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "HOLO",
+            "coin": "SENT",
             "score": 90,
-            "price": "0.06173",
-            "change_24h": "-0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SUSHI",
-            "score": 90,
-            "price": "0.20540",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "GRT",
-            "score": 90,
-            "price": "0.02406",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CYBER",
-            "score": 90,
-            "price": "0.51880",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MMT",
-            "score": 90,
-            "price": "0.13060",
+            "price": "0.01718",
             "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2089,199 +1793,279 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ZK",
             "score": 90,
-            "price": "0.01521",
+            "price": "0.01527",
             "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "KAIA",
+            "coin": "YGG",
             "score": 90,
-            "price": "0.04534",
+            "price": "0.04011",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "QNT",
+            "coin": "ILV",
             "score": 90,
-            "price": "68.6800",
+            "price": "4.6160",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SUN",
+            "coin": "SAHARA",
             "score": 90,
-            "price": "0.01844",
+            "price": "0.02192",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "IOTA",
+            "coin": "AKT",
             "score": 90,
-            "price": "0.05440",
+            "price": "0.51180",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "KNC",
+            "coin": "LYN",
             "score": 90,
-            "price": "0.13720",
-            "change_24h": "-0.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MERL",
-            "score": 90,
-            "price": "0.03258",
+            "price": "0.06938",
             "change_24h": "-1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ME",
+            "coin": "SHELL",
             "score": 90,
-            "price": "0.10390",
+            "price": "0.03398",
             "change_24h": "-1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "USELESS",
+            "coin": "IO",
             "score": 90,
-            "price": "0.03760",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TST",
-            "score": 90,
-            "price": "0.01058",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ZKC",
-            "score": 90,
-            "price": "0.07327",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MASK",
-            "score": 90,
-            "price": "0.49800",
-            "change_24h": "-1.2%",
+            "price": "0.11590",
+            "change_24h": "-1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "GMT",
             "score": 90,
-            "price": "0.01086",
+            "price": "0.01092",
             "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "RARE",
-            "score": 90,
-            "price": "0.01704",
-            "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "1000000MOG",
-            "score": 90,
-            "price": "0.14690",
-            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TNSR",
             "score": 90,
-            "price": "0.03918",
+            "price": "0.03933",
+            "change_24h": "-1.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ZKC",
+            "score": 90,
+            "price": "0.07332",
             "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "FOGO",
+            "coin": "ZIL",
             "score": 90,
-            "price": "0.01737",
+            "price": "0.003930",
             "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "4",
+            "coin": "QNT",
             "score": 90,
-            "price": "0.009716",
-            "change_24h": "-1.4%",
+            "price": "68.9200",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BANK",
+            "coin": "MEW",
             "score": 90,
-            "price": "0.03399",
-            "change_24h": "-1.4%",
+            "price": "0.000579",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SKL",
+            "coin": "PIPPIN",
             "score": 90,
-            "price": "0.006600",
-            "change_24h": "-1.5%",
+            "price": "0.02567",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SAGA",
+            "coin": "BANANA",
             "score": 90,
-            "price": "0.01703",
-            "change_24h": "-1.5%",
+            "price": "3.7660",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ANKR",
             "score": 90,
-            "price": "0.004708",
-            "change_24h": "-1.5%",
+            "price": "0.004735",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "TREE",
+            "coin": "PYTH",
             "score": 90,
-            "price": "0.06704",
-            "change_24h": "-1.6%",
+            "price": "0.04645",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ZAMA",
+            "coin": "FIDA",
             "score": 90,
-            "price": "0.02618",
-            "change_24h": "-1.6%",
+            "price": "0.01643",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CVX",
             "score": 90,
-            "price": "1.6760",
+            "price": "1.6830",
+            "change_24h": "-1.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "KAIA",
+            "score": 90,
+            "price": "0.04531",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1000000MOG",
+            "score": 90,
+            "price": "0.14780",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "KNC",
+            "score": 90,
+            "price": "0.13690",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "IN",
+            "score": 90,
+            "price": "0.06570",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AT",
+            "score": 90,
+            "price": "0.16521",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "NOT",
+            "score": 90,
+            "price": "0.000381",
+            "change_24h": "-1.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "IRYS",
+            "score": 90,
+            "price": "0.03515",
+            "change_24h": "-1.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SUSHI",
+            "score": 90,
+            "price": "0.20630",
+            "change_24h": "-1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MEME",
+            "score": 90,
+            "price": "0.000562",
+            "change_24h": "-1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MMT",
+            "score": 90,
+            "price": "0.13060",
+            "change_24h": "-1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "TURBO",
+            "score": 90,
+            "price": "0.001136",
+            "change_24h": "-1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DOOD",
+            "score": 90,
+            "price": "0.003174",
+            "change_24h": "-1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "OGN",
+            "score": 90,
+            "price": "0.02305",
+            "change_24h": "-1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "USELESS",
+            "score": 90,
+            "price": "0.03797",
+            "change_24h": "-1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ONG",
+            "score": 90,
+            "price": "0.07150",
             "change_24h": "-1.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2289,152 +2073,192 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TWT",
             "score": 90,
-            "price": "0.42160",
-            "change_24h": "-1.7%",
+            "price": "0.42290",
+            "change_24h": "-1.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BIRB",
+            "coin": "TST",
             "score": 90,
-            "price": "0.13239",
-            "change_24h": "-1.7%",
+            "price": "0.01064",
+            "change_24h": "-1.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BICO",
+            "score": 90,
+            "price": "0.02507",
+            "change_24h": "-2.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FOGO",
+            "score": 90,
+            "price": "0.01734",
+            "change_24h": "-2.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CTSI",
+            "score": 90,
+            "price": "0.03128",
+            "change_24h": "-2.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SSV",
+            "score": 90,
+            "price": "2.6960",
+            "change_24h": "-2.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SAGA",
+            "score": 90,
+            "price": "0.01705",
+            "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "XTZ",
             "score": 90,
-            "price": "0.36370",
-            "change_24h": "-1.7%",
+            "price": "0.36410",
+            "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "TOWNS",
+            "coin": "ME",
             "score": 90,
-            "price": "0.003146",
-            "change_24h": "-1.7%",
+            "price": "0.10380",
+            "change_24h": "-2.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "DYM",
+            "coin": "SIGN",
             "score": 90,
-            "price": "0.01800",
-            "change_24h": "-1.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "C98",
-            "score": 90,
-            "price": "0.02003",
-            "change_24h": "-1.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SPACE",
-            "score": 90,
-            "price": "0.006605",
-            "change_24h": "-1.9%",
+            "price": "0.01560",
+            "change_24h": "-2.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "COAI",
             "score": 90,
-            "price": "0.32910",
-            "change_24h": "-1.9%",
+            "price": "0.33080",
+            "change_24h": "-2.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "TREE",
+            "score": 90,
+            "price": "0.06673",
+            "change_24h": "-2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "MUBARAK",
             "score": 90,
-            "price": "0.01334",
-            "change_24h": "-1.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TURTLE",
-            "score": 90,
-            "price": "0.04718",
-            "change_24h": "-2.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "RESOLV",
-            "score": 90,
-            "price": "0.02911",
-            "change_24h": "-2.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "PORTAL",
-            "score": 90,
-            "price": "0.01115",
+            "price": "0.01338",
             "change_24h": "-2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "HFT",
+            "coin": "ANIME",
             "score": 90,
-            "price": "0.01410",
+            "price": "0.004664",
+            "change_24h": "-2.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DYM",
+            "score": 90,
+            "price": "0.01804",
+            "change_24h": "-2.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BANK",
+            "score": 90,
+            "price": "0.03384",
+            "change_24h": "-2.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "YFI",
+            "score": 90,
+            "price": "2633.00",
             "change_24h": "-2.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "MIRA",
+            "coin": "TOWNS",
             "score": 90,
-            "price": "0.08061",
+            "price": "0.003138",
+            "change_24h": "-2.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ZAMA",
+            "score": 90,
+            "price": "0.02639",
             "change_24h": "-2.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TOSHI",
-            "score": 90,
-            "price": "0.000182",
-            "change_24h": "-2.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "THETA",
-            "score": 90,
-            "price": "0.19470",
-            "change_24h": "-2.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ONE",
-            "score": 90,
-            "price": "0.002254",
-            "change_24h": "-2.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "GOAT",
-            "score": 90,
-            "price": "0.01642",
-            "change_24h": "-2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AERGO",
             "score": 90,
-            "price": "0.05597",
-            "change_24h": "-2.7%",
+            "price": "0.05602",
+            "change_24h": "-2.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FIGHT",
+            "score": 90,
+            "price": "0.003905",
+            "change_24h": "-2.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "PTB",
+            "score": 90,
+            "price": "0.000761",
+            "change_24h": "-2.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SKL",
+            "score": 90,
+            "price": "0.006590",
+            "change_24h": "-2.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "WAL",
+            "score": 90,
+            "price": "0.06920",
+            "change_24h": "-2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2442,7 +2266,71 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "KAVA",
             "score": 90,
             "price": "0.05630",
-            "change_24h": "-2.8%",
+            "change_24h": "-2.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MERL",
+            "score": 90,
+            "price": "0.03214",
+            "change_24h": "-3.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SPORTFUN",
+            "score": 90,
+            "price": "0.04563",
+            "change_24h": "-3.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MIRA",
+            "score": 90,
+            "price": "0.07997",
+            "change_24h": "-3.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MITO",
+            "score": 90,
+            "price": "0.04471",
+            "change_24h": "-3.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "GOAT",
+            "score": 90,
+            "price": "0.01652",
+            "change_24h": "-3.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "STG",
+            "score": 90,
+            "price": "0.21360",
+            "change_24h": "-3.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ERA",
+            "score": 90,
+            "price": "0.13620",
+            "change_24h": "-3.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "VANRY",
+            "score": 90,
+            "price": "0.005066",
+            "change_24h": "-3.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2450,167 +2338,239 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "HMSTR",
             "score": 90,
             "price": "0.000152",
-            "change_24h": "-2.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "VANRY",
-            "score": 90,
-            "price": "0.005046",
-            "change_24h": "-3.1%",
+            "change_24h": "-3.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "METIS",
             "score": 90,
-            "price": "3.3370",
-            "change_24h": "-3.3%",
+            "price": "3.3400",
+            "change_24h": "-3.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ERA",
+            "coin": "TOSHI",
             "score": 90,
-            "price": "0.13640",
-            "change_24h": "-3.7%",
+            "price": "0.000181",
+            "change_24h": "-3.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "MITO",
+            "coin": "4",
             "score": 90,
-            "price": "0.04467",
-            "change_24h": "-3.8%",
+            "price": "0.009657",
+            "change_24h": "-3.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "LISTA",
+            "coin": "BEAT",
             "score": 90,
-            "price": "0.08164",
-            "change_24h": "-4.1%",
+            "price": "0.55090",
+            "change_24h": "-4.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "WCT",
+            "coin": "KOMA",
             "score": 90,
-            "price": "0.06088",
-            "change_24h": "-4.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BTR",
-            "score": 90,
-            "price": "0.02610",
-            "change_24h": "-4.4%",
+            "price": "0.006640",
+            "change_24h": "-4.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BREV",
             "score": 90,
-            "price": "0.11430",
-            "change_24h": "-4.4%",
+            "price": "0.11510",
+            "change_24h": "-4.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "MANTA",
             "score": 90,
-            "price": "0.06558",
+            "price": "0.06599",
+            "change_24h": "-4.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "PORTAL",
+            "score": 90,
+            "price": "0.01108",
+            "change_24h": "-4.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CROSS",
+            "score": 90,
+            "price": "0.10144",
+            "change_24h": "-4.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "WCT",
+            "score": 90,
+            "price": "0.06100",
+            "change_24h": "-4.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "LISTA",
+            "score": 90,
+            "price": "0.08190",
+            "change_24h": "-4.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "RESOLV",
+            "score": 90,
+            "price": "0.02891",
             "change_24h": "-4.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "POPCAT",
+            "coin": "PHB",
             "score": 90,
-            "price": "0.05565",
-            "change_24h": "-4.9%",
+            "price": "0.10830",
+            "change_24h": "-4.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "FIGHT",
+            "coin": "0G",
             "score": 90,
-            "price": "0.003866",
-            "change_24h": "-4.9%",
+            "price": "0.52200",
+            "change_24h": "-5.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "S",
+            "score": 90,
+            "price": "0.04299",
+            "change_24h": "-5.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "G",
+            "score": 90,
+            "price": "0.003566",
+            "change_24h": "-5.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RIVER",
             "score": 90,
-            "price": "6.2680",
-            "change_24h": "-5.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "LIT",
-            "score": 90,
-            "price": "0.88530",
-            "change_24h": "-6.4%",
+            "price": "6.2950",
+            "change_24h": "-6.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ZKP",
             "score": 90,
-            "price": "0.08032",
+            "price": "0.08052",
+            "change_24h": "-6.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "LIT",
+            "score": 90,
+            "price": "0.88500",
+            "change_24h": "-7.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "PIEVERSE",
+            "score": 90,
+            "price": "0.66320",
             "change_24h": "-9.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BASED",
+            "score": 90,
+            "price": "0.11329",
+            "change_24h": "-12.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "NOM",
             "score": 90,
-            "price": "0.002598",
-            "change_24h": "-14.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "NFP",
-            "score": 90,
-            "price": "0.01255",
-            "change_24h": "-17.9%",
+            "price": "0.002626",
+            "change_24h": "-13.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "VIC",
             "score": 90,
-            "price": "0.04341",
-            "change_24h": "-20.1%",
+            "price": "0.04425",
+            "change_24h": "-18.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "HUMA",
-            "score": 87,
-            "price": "0.02208",
-            "change_24h": "+8.1%",
+            "coin": "NFP",
+            "score": 90,
+            "price": "0.01241",
+            "change_24h": "-19.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "AWE",
+            "coin": "AIXBT",
             "score": 87,
-            "price": "0.06097",
-            "change_24h": "+5.5%",
+            "price": "0.03196",
+            "change_24h": "+13.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ESPORTS",
+            "coin": "APE",
             "score": 87,
-            "price": "0.38980",
-            "change_24h": "+2.8%",
+            "price": "0.16350",
+            "change_24h": "+11.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ZETA",
+            "score": 87,
+            "price": "0.05995",
+            "change_24h": "+8.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "JTO",
+            "score": 87,
+            "price": "0.35460",
+            "change_24h": "+4.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FLUID",
+            "score": 87,
+            "price": "1.5710",
+            "change_24h": "+2.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2618,239 +2578,239 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "1000SATS",
             "score": 87,
             "price": "0.000014",
-            "change_24h": "+2.7%",
+            "change_24h": "+2.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "GLM",
+            "score": 87,
+            "price": "0.14143",
+            "change_24h": "+2.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "EUL",
             "score": 87,
-            "price": "1.3334",
-            "change_24h": "+2.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "KMNO",
-            "score": 87,
-            "price": "0.02067",
-            "change_24h": "+2.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "WET",
-            "score": 87,
-            "price": "0.09605",
+            "price": "1.3294",
             "change_24h": "+2.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DASH",
+            "score": 87,
+            "price": "35.2100",
+            "change_24h": "+1.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ZEN",
             "score": 87,
-            "price": "5.7970",
-            "change_24h": "+1.5%",
+            "price": "5.8020",
+            "change_24h": "+0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "KSM",
+            "coin": "XMR",
             "score": 87,
-            "price": "4.7410",
+            "price": "380.5000",
             "change_24h": "+0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "RUNE",
+            "score": 87,
+            "price": "0.49940",
+            "change_24h": "-0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LPT",
             "score": 87,
-            "price": "2.0860",
-            "change_24h": "+0.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SUI",
-            "score": 87,
-            "price": "0.90700",
-            "change_24h": "+0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "RONIN",
-            "score": 87,
-            "price": "0.09480",
-            "change_24h": "+0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SOL",
-            "score": 87,
-            "price": "83.0100",
-            "change_24h": "+0.0%",
+            "price": "2.0830",
+            "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LINK",
             "score": 87,
-            "price": "9.1070",
-            "change_24h": "-0.0%",
+            "price": "9.1100",
+            "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "XLM",
+            "coin": "SUI",
             "score": 87,
-            "price": "0.15860",
+            "price": "0.90850",
+            "change_24h": "-0.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "RONIN",
+            "score": 87,
+            "price": "0.09470",
+            "change_24h": "-0.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SOL",
+            "score": 87,
+            "price": "83.2100",
             "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AVAX",
+            "score": 87,
+            "price": "9.1090",
+            "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "POLYX",
             "score": 87,
-            "price": "0.04706",
+            "price": "0.04702",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "TAC",
-            "score": 85,
-            "price": "0.01846",
-            "change_24h": "+14.7%",
+            "coin": "BARD",
+            "score": 87,
+            "price": "0.27630",
+            "change_24h": "-1.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ACU",
+            "coin": "GUA",
             "score": 85,
-            "price": "0.09453",
-            "change_24h": "+6.3%",
+            "price": "0.89060",
+            "change_24h": "+11.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SWARMS",
+            "coin": "BAS",
             "score": 85,
-            "price": "0.02669",
-            "change_24h": "+5.5%",
+            "price": "0.01520",
+            "change_24h": "+10.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "龙虾",
+            "coin": "B2",
             "score": 85,
-            "price": "0.007233",
-            "change_24h": "+3.3%",
+            "price": "0.55180",
+            "change_24h": "+9.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "TRUTH",
+            "coin": "POWER",
             "score": 85,
-            "price": "0.009774",
-            "change_24h": "+2.5%",
+            "price": "0.09139",
+            "change_24h": "+4.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "DASH",
+            "coin": "TON",
             "score": 85,
-            "price": "35.3000",
-            "change_24h": "+2.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "PAXG",
-            "score": 85,
-            "price": "4621.06",
-            "change_24h": "+1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "XAUT",
-            "score": 85,
-            "price": "4617.25",
-            "change_24h": "+1.5%",
+            "price": "1.3497",
+            "change_24h": "+1.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TRX",
             "score": 85,
-            "price": "0.32626",
-            "change_24h": "+0.9%",
+            "price": "0.32708",
+            "change_24h": "+1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BTC",
             "score": 85,
-            "price": "76305.40",
-            "change_24h": "+0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "COTI",
-            "score": 85,
-            "price": "0.01361",
-            "change_24h": "+0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ARKM",
-            "score": 85,
-            "price": "0.11050",
+            "price": "76423.20",
             "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "GTC",
+            "coin": "龙虾",
             "score": 85,
-            "price": "0.09362",
+            "price": "0.007168",
             "change_24h": "+0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "LQTY",
-            "score": 85,
-            "price": "0.30270",
-            "change_24h": "+0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "EDEN",
             "score": 85,
-            "price": "0.03449",
-            "change_24h": "-0.1%",
+            "price": "0.03457",
+            "change_24h": "+0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "AIN",
+            "coin": "FLOCK",
             "score": 85,
-            "price": "0.09375",
-            "change_24h": "-0.2%",
+            "price": "0.05845",
+            "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "HOME",
+            "coin": "GRT",
             "score": 85,
-            "price": "0.01483",
-            "change_24h": "-0.5%",
+            "price": "0.02411",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "LQTY",
+            "score": 85,
+            "price": "0.30050",
+            "change_24h": "-1.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ARKM",
+            "score": 85,
+            "price": "0.10960",
+            "change_24h": "-1.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DEEP",
+            "score": 85,
+            "price": "0.02819",
+            "change_24h": "-1.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "IOTA",
+            "score": 85,
+            "price": "0.05440",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2858,143 +2818,111 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "MANA",
             "score": 85,
             "price": "0.08930",
-            "change_24h": "-0.7%",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ZRX",
+            "coin": "PEOPLE",
             "score": 85,
-            "price": "0.10990",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "DEEP",
-            "score": 85,
-            "price": "0.02806",
-            "change_24h": "-1.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "LSK",
-            "score": 85,
-            "price": "0.12400",
-            "change_24h": "-1.0%",
+            "price": "0.007440",
+            "change_24h": "-1.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "NEO",
             "score": 85,
-            "price": "2.7130",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "FRAX",
-            "score": 85,
-            "price": "0.45960",
-            "change_24h": "-1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "LAYER",
-            "score": 85,
-            "price": "0.08112",
-            "change_24h": "-1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "STG",
-            "score": 85,
-            "price": "0.21560",
-            "change_24h": "-1.3%",
+            "price": "2.7170",
+            "change_24h": "-1.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "IOST",
             "score": 85,
-            "price": "0.001047",
-            "change_24h": "-1.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "WOO",
-            "score": 85,
-            "price": "0.01846",
-            "change_24h": "-1.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SSV",
-            "score": 85,
-            "price": "2.6930",
-            "change_24h": "-1.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CELR",
-            "score": 85,
-            "price": "0.002772",
-            "change_24h": "-1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "STEEM",
-            "score": 85,
-            "price": "0.05593",
-            "change_24h": "-1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "XVG",
-            "score": 85,
-            "price": "0.003063",
-            "change_24h": "-2.1%",
+            "price": "0.001050",
+            "change_24h": "-2.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AGLD",
             "score": 85,
-            "price": "0.24850",
+            "price": "0.24890",
             "change_24h": "-2.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "MAV",
+            "coin": "FRAX",
             "score": 85,
-            "price": "0.01499",
-            "change_24h": "-2.5%",
+            "price": "0.46020",
+            "change_24h": "-2.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "KOMA",
+            "coin": "ONE",
             "score": 85,
-            "price": "0.006717",
-            "change_24h": "-2.9%",
+            "price": "0.002270",
+            "change_24h": "-2.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "WOO",
+            "score": 85,
+            "price": "0.01847",
+            "change_24h": "-2.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MAVIA",
+            "score": 85,
+            "price": "0.03605",
+            "change_24h": "-2.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "C98",
+            "score": 85,
+            "price": "0.02008",
+            "change_24h": "-2.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "HFT",
+            "score": 85,
+            "price": "0.01413",
+            "change_24h": "-2.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "XVG",
+            "score": 85,
+            "price": "0.003051",
+            "change_24h": "-3.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BAND",
             "score": 85,
-            "price": "0.21220",
-            "change_24h": "-3.0%",
+            "price": "0.21310",
+            "change_24h": "-3.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "THETA",
+            "score": 85,
+            "price": "0.19440",
+            "change_24h": "-3.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3002,214 +2930,222 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "COS",
             "score": 85,
             "price": "0.001124",
-            "change_24h": "-3.2%",
+            "change_24h": "-3.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RSR",
             "score": 85,
-            "price": "0.001640",
-            "change_24h": "-3.3%",
+            "price": "0.001644",
+            "change_24h": "-3.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ACE",
+            "coin": "CELR",
             "score": 85,
-            "price": "0.11680",
-            "change_24h": "-4.6%",
+            "price": "0.002747",
+            "change_24h": "-4.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SANTOS",
             "score": 85,
-            "price": "1.1380",
-            "change_24h": "-5.8%",
+            "price": "1.1400",
+            "change_24h": "-5.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "MEGA",
+            "coin": "M",
             "score": 85,
-            "price": "0.17019",
+            "price": "3.1826",
             "change_24h": "-6.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ZEREBRO",
-            "score": 85,
-            "price": "0.02484",
-            "change_24h": "-10.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "GRIFFAIN",
             "score": 85,
-            "price": "0.01802",
-            "change_24h": "-10.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "PIEVERSE",
-            "score": 85,
-            "price": "0.68030",
-            "change_24h": "-11.0%",
+            "price": "0.01807",
+            "change_24h": "-10.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SOLV",
             "score": 85,
-            "price": "0.004595",
-            "change_24h": "-11.7%",
+            "price": "0.004525",
+            "change_24h": "-10.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AGT",
             "score": 85,
-            "price": "0.01778",
-            "change_24h": "-12.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BASED",
-            "score": 85,
-            "price": "0.11229",
-            "change_24h": "-13.6%",
+            "price": "0.01788",
+            "change_24h": "-11.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PUMPBTC",
             "score": 85,
-            "price": "0.01563",
-            "change_24h": "-13.6%",
+            "price": "0.01577",
+            "change_24h": "-13.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LUMIA",
             "score": 85,
-            "price": "0.14454",
-            "change_24h": "-15.7%",
+            "price": "0.14381",
+            "change_24h": "-16.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AVAAI",
             "score": 85,
-            "price": "0.007067",
-            "change_24h": "-19.7%",
+            "price": "0.007094",
+            "change_24h": "-22.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AIGENSYN",
             "score": 85,
-            "price": "0.03982",
-            "change_24h": "-29.5%",
+            "price": "0.04019",
+            "change_24h": "-24.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "PLAY",
+            "coin": "PENDLE",
             "score": 82,
-            "price": "0.10385",
-            "change_24h": "+5.8%",
+            "price": "1.4426",
+            "change_24h": "+9.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "JOE",
+            "coin": "EDU",
             "score": 82,
-            "price": "0.04726",
-            "change_24h": "+5.4%",
+            "price": "0.04847",
+            "change_24h": "+5.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "TRADOOR",
+            "coin": "MET",
             "score": 82,
-            "price": "0.73760",
-            "change_24h": "+1.9%",
+            "price": "0.15590",
+            "change_24h": "+2.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "USUAL",
+            "score": 82,
+            "price": "0.01385",
+            "change_24h": "+1.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SOPH",
             "score": 82,
-            "price": "0.008614",
-            "change_24h": "+0.8%",
+            "price": "0.008641",
+            "change_24h": "+0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SUPER",
             "score": 82,
-            "price": "0.11990",
-            "change_24h": "+0.3%",
+            "price": "0.12070",
+            "change_24h": "+0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "GMX",
+            "coin": "LA",
             "score": 82,
-            "price": "7.3480",
-            "change_24h": "+0.3%",
+            "price": "0.15700",
+            "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "MINA",
+            "coin": "KSM",
             "score": 82,
-            "price": "0.05907",
+            "price": "4.7370",
+            "change_24h": "+0.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1MBABYDOGE",
+            "score": 82,
+            "price": "0.000416",
             "change_24h": "-0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "UMA",
+            "score": 82,
+            "price": "0.45210",
+            "change_24h": "-0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "EGLD",
+            "score": 82,
+            "price": "4.0980",
+            "change_24h": "-0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CYBER",
+            "score": 82,
+            "price": "0.52330",
+            "change_24h": "-0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "KAS",
             "score": 82,
-            "price": "0.03246",
-            "change_24h": "-0.1%",
+            "price": "0.03250",
+            "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "FLUID",
+            "coin": "IMX",
             "score": 82,
-            "price": "1.5480",
-            "change_24h": "-0.2%",
+            "price": "0.16380",
+            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "THE",
             "score": 82,
-            "price": "0.09860",
-            "change_24h": "-0.5%",
+            "price": "0.09880",
+            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ONG",
+            "coin": "MOVE",
             "score": 82,
-            "price": "0.07182",
-            "change_24h": "-0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "NMR",
-            "score": 82,
-            "price": "8.8200",
+            "price": "0.01707",
             "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3217,119 +3153,135 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ARK",
             "score": 82,
-            "price": "0.17350",
+            "price": "0.17370",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "NMR",
+            "score": 82,
+            "price": "8.8220",
+            "change_24h": "-0.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MASK",
+            "score": 82,
+            "price": "0.50270",
             "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "PARTI",
+            "score": 82,
+            "price": "0.04104",
+            "change_24h": "-1.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ORCA",
+            "score": 80,
+            "price": "1.9850",
+            "change_24h": "+23.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BIO",
             "score": 80,
-            "price": "0.04192",
-            "change_24h": "+23.4%",
+            "price": "0.04014",
+            "change_24h": "+20.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "GWEI",
+            "coin": "MAGMA",
             "score": 80,
-            "price": "0.10773",
-            "change_24h": "+15.6%",
+            "price": "0.23300",
+            "change_24h": "+14.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "B2",
+            "coin": "HUMA",
             "score": 80,
-            "price": "0.54250",
-            "change_24h": "+11.4%",
+            "price": "0.02234",
+            "change_24h": "+8.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "GENIUS",
+            "coin": "RIF",
             "score": 80,
-            "price": "0.51290",
-            "change_24h": "+11.2%",
+            "price": "0.05574",
+            "change_24h": "+4.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SKR",
+            "coin": "WET",
             "score": 80,
-            "price": "0.01655",
-            "change_24h": "+4.7%",
+            "price": "0.09760",
+            "change_24h": "+3.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "JTO",
+            "coin": "KMNO",
             "score": 80,
-            "price": "0.35350",
-            "change_24h": "+4.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "GLM",
-            "score": 80,
-            "price": "0.14175",
-            "change_24h": "+3.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "XMR",
-            "score": 80,
-            "price": "380.6300",
-            "change_24h": "+1.1%",
+            "price": "0.02079",
+            "change_24h": "+2.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "STABLE",
             "score": 80,
-            "price": "0.03313",
-            "change_24h": "+1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AZTEC",
-            "score": 80,
-            "price": "0.01939",
-            "change_24h": "+0.6%",
+            "price": "0.03341",
+            "change_24h": "+1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CLO",
             "score": 80,
-            "price": "0.12179",
-            "change_24h": "+0.4%",
+            "price": "0.12117",
+            "change_24h": "+0.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AZTEC",
+            "score": 80,
+            "price": "0.01963",
+            "change_24h": "-0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "GTC",
+            "score": 80,
+            "price": "0.09374",
+            "change_24h": "-0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LIGHT",
             "score": 80,
-            "price": "0.15160",
-            "change_24h": "+0.3%",
+            "price": "0.15190",
+            "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ACX",
+            "coin": "PROMPT",
             "score": 80,
-            "price": "0.04289",
-            "change_24h": "+0.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SXT",
-            "score": 80,
-            "price": "0.01660",
+            "price": "0.03496",
             "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3337,215 +3289,167 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ALPINE",
             "score": 80,
-            "price": "0.44480",
-            "change_24h": "-0.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ASTR",
-            "score": 80,
-            "price": "0.008045",
+            "price": "0.44500",
             "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "RPL",
+            "coin": "CTK",
             "score": 80,
-            "price": "1.8100",
+            "price": "0.17740",
             "change_24h": "-0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SLP",
-            "score": 80,
-            "price": "0.000686",
-            "change_24h": "-0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "PROMPT",
-            "score": 80,
-            "price": "0.03469",
-            "change_24h": "-0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "OG",
-            "score": 80,
-            "price": "2.9070",
-            "change_24h": "-0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "T",
-            "score": 80,
-            "price": "0.005802",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "FLOCK",
-            "score": 80,
-            "price": "0.05884",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ORDER",
-            "score": 80,
-            "price": "0.05388",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "WAXP",
-            "score": 80,
-            "price": "0.006560",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "POWR",
-            "score": 80,
-            "price": "0.06168",
-            "change_24h": "-0.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "F",
-            "score": 80,
-            "price": "0.005355",
-            "change_24h": "-0.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "HIVE",
-            "score": 80,
-            "price": "0.05889",
-            "change_24h": "-1.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TUT",
-            "score": 80,
-            "price": "0.01061",
-            "change_24h": "-1.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TLM",
-            "score": 80,
-            "price": "0.001810",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "STBL",
-            "score": 80,
-            "price": "0.03292",
-            "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "COW",
-            "score": 80,
-            "price": "0.18420",
-            "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "Q",
-            "score": 80,
-            "price": "0.01021",
-            "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "VELODROME",
-            "score": 80,
-            "price": "0.01740",
-            "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MAGIC",
-            "score": 80,
-            "price": "0.06322",
-            "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "DODOX",
-            "score": 80,
-            "price": "0.01841",
-            "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "STORJ",
-            "score": 80,
-            "price": "0.09550",
-            "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BABY",
-            "score": 80,
-            "price": "0.01457",
-            "change_24h": "-1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SYN",
-            "score": 80,
-            "price": "0.05194",
-            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "MOCA",
             "score": 80,
-            "price": "0.01348",
+            "price": "0.01353",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "VELODROME",
+            "score": 80,
+            "price": "0.01750",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DODOX",
+            "score": 80,
+            "price": "0.01854",
+            "change_24h": "-0.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AIN",
+            "score": 80,
+            "price": "0.09282",
+            "change_24h": "-0.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "RPL",
+            "score": 80,
+            "price": "1.8140",
+            "change_24h": "-0.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SYN",
+            "score": 80,
+            "price": "0.05213",
+            "change_24h": "-0.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ORDER",
+            "score": 80,
+            "price": "0.05391",
+            "change_24h": "-1.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "STBL",
+            "score": 80,
+            "price": "0.03296",
+            "change_24h": "-1.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "TAIKO",
+            "score": 80,
+            "price": "0.11410",
+            "change_24h": "-1.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "LAYER",
+            "score": 80,
+            "price": "0.08152",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "HIVE",
+            "score": 80,
+            "price": "0.05893",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CARV",
+            "score": 80,
+            "price": "0.05565",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SQD",
+            "score": 80,
+            "price": "0.03023",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "COW",
+            "score": 80,
+            "price": "0.18510",
+            "change_24h": "-1.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "LSK",
+            "score": 80,
+            "price": "0.12420",
             "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "IOTX",
+            "coin": "MAGIC",
             "score": 80,
-            "price": "0.004490",
+            "price": "0.06356",
             "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "VTHO",
+            "coin": "SLP",
             "score": 80,
-            "price": "0.000561",
+            "price": "0.000688",
+            "change_24h": "-1.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SXT",
+            "score": 80,
+            "price": "0.01660",
+            "change_24h": "-1.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "F",
+            "score": 80,
+            "price": "0.005343",
             "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3553,64 +3457,56 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ICX",
             "score": 80,
-            "price": "0.03572",
-            "change_24h": "-1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TAIKO",
-            "score": 80,
-            "price": "0.11380",
+            "price": "0.03586",
             "change_24h": "-1.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SQD",
+            "coin": "TUT",
             "score": 80,
-            "price": "0.03002",
+            "price": "0.01064",
             "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "HOME",
+            "score": 80,
+            "price": "0.01478",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "STORJ",
+            "score": 80,
+            "price": "0.09570",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "OG",
+            "score": 80,
+            "price": "2.8970",
+            "change_24h": "-1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "MLN",
             "score": 80,
-            "price": "2.9920",
+            "price": "3.0120",
             "change_24h": "-1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "CKB",
+            "coin": "IDOL",
             "score": 80,
-            "price": "0.001468",
-            "change_24h": "-1.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MAVIA",
-            "score": 80,
-            "price": "0.03619",
-            "change_24h": "-1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "PUNDIX",
-            "score": 80,
-            "price": "0.14460",
-            "change_24h": "-1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CARV",
-            "score": 80,
-            "price": "0.05554",
-            "change_24h": "-1.7%",
+            "price": "0.02266",
+            "change_24h": "-1.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3618,62 +3514,86 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "BMT",
             "score": 80,
             "price": "0.01500",
+            "change_24h": "-1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "VTHO",
+            "score": 80,
+            "price": "0.000561",
+            "change_24h": "-1.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BABY",
+            "score": 80,
+            "price": "0.01459",
             "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "PUNDIX",
+            "score": 80,
+            "price": "0.14450",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "TLM",
+            "score": 80,
+            "price": "0.001810",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "STEEM",
+            "score": 80,
+            "price": "0.05587",
+            "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TRUST",
             "score": 80,
-            "price": "0.06718",
-            "change_24h": "-1.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ASR",
-            "score": 80,
-            "price": "1.2310",
-            "change_24h": "-2.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SCR",
-            "score": 80,
-            "price": "0.04342",
-            "change_24h": "-2.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "NEWT",
-            "score": 80,
-            "price": "0.07318",
-            "change_24h": "-2.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "HEI",
-            "score": 80,
-            "price": "0.07938",
-            "change_24h": "-2.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "IDOL",
-            "score": 80,
-            "price": "0.02255",
-            "change_24h": "-2.5%",
+            "price": "0.06741",
+            "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "DIA",
             "score": 80,
-            "price": "0.18020",
+            "price": "0.18100",
+            "change_24h": "-2.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ASR",
+            "score": 80,
+            "price": "1.2340",
+            "change_24h": "-2.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "NEWT",
+            "score": 80,
+            "price": "0.07295",
+            "change_24h": "-2.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SCR",
+            "score": 80,
+            "price": "0.04354",
             "change_24h": "-2.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3681,80 +3601,88 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "HAEDAL",
             "score": 80,
-            "price": "0.02998",
-            "change_24h": "-2.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "FLUX",
-            "score": 80,
-            "price": "0.06349",
-            "change_24h": "-3.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MELANIA",
-            "score": 80,
-            "price": "0.10290",
-            "change_24h": "-3.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SCRT",
-            "score": 80,
-            "price": "0.09710",
-            "change_24h": "-3.5%",
+            "price": "0.03010",
+            "change_24h": "-3.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "XAN",
             "score": 80,
-            "price": "0.008198",
-            "change_24h": "-3.7%",
+            "price": "0.008204",
+            "change_24h": "-3.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SCRT",
+            "score": 80,
+            "price": "0.09734",
+            "change_24h": "-3.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ETHW",
             "score": 80,
-            "price": "0.30610",
-            "change_24h": "-3.8%",
+            "price": "0.30710",
+            "change_24h": "-3.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FLUX",
+            "score": 80,
+            "price": "0.06351",
+            "change_24h": "-3.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MELANIA",
+            "score": 80,
+            "price": "0.10250",
+            "change_24h": "-4.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "HEI",
+            "score": 80,
+            "price": "0.07907",
+            "change_24h": "-4.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SYS",
             "score": 80,
-            "price": "0.008590",
-            "change_24h": "-4.7%",
+            "price": "0.008610",
+            "change_24h": "-4.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "AEVO",
+            "coin": "GRASS",
             "score": 80,
-            "price": "0.02693",
-            "change_24h": "-5.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CROSS",
-            "score": 80,
-            "price": "0.10142",
+            "price": "0.32380",
             "change_24h": "-5.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "XPIN",
+            "coin": "BTR",
             "score": 80,
-            "price": "0.001206",
-            "change_24h": "-5.3%",
+            "price": "0.02606",
+            "change_24h": "-5.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ON",
+            "score": 80,
+            "price": "0.11301",
+            "change_24h": "-5.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3762,86 +3690,94 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "MBOX",
             "score": 80,
             "price": "0.01182",
-            "change_24h": "-5.4%",
+            "change_24h": "-6.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "A",
+            "coin": "POPCAT",
             "score": 80,
-            "price": "0.08854",
-            "change_24h": "-5.6%",
+            "price": "0.05579",
+            "change_24h": "-6.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "XPIN",
+            "score": 80,
+            "price": "0.001222",
+            "change_24h": "-6.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AIA",
             "score": 80,
-            "price": "0.04984",
-            "change_24h": "-5.8%",
+            "price": "0.04969",
+            "change_24h": "-6.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "M",
+            "coin": "DUSK",
             "score": 80,
-            "price": "3.1904",
-            "change_24h": "-6.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "FHE",
-            "score": 80,
-            "price": "0.01749",
-            "change_24h": "-6.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "COLLECT",
-            "score": 80,
-            "price": "0.02865",
-            "change_24h": "-6.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "EPIC",
-            "score": 80,
-            "price": "0.30200",
-            "change_24h": "-7.1%",
+            "price": "0.11958",
+            "change_24h": "-6.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RECALL",
             "score": 80,
-            "price": "0.04697",
-            "change_24h": "-7.2%",
+            "price": "0.04684",
+            "change_24h": "-6.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "INX",
             "score": 80,
-            "price": "0.009907",
-            "change_24h": "-7.7%",
+            "price": "0.009902",
+            "change_24h": "-6.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "JCT",
             "score": 80,
-            "price": "0.002858",
-            "change_24h": "-8.3%",
+            "price": "0.002853",
+            "change_24h": "-7.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "TAKE",
+            "coin": "EPIC",
             "score": 80,
-            "price": "0.02680",
+            "price": "0.30370",
+            "change_24h": "-7.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "RAVE",
+            "score": 80,
+            "price": "0.71540",
+            "change_24h": "-7.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "A",
+            "score": 80,
+            "price": "0.08825",
+            "change_24h": "-8.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FHE",
+            "score": 80,
+            "price": "0.01756",
             "change_24h": "-8.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3849,88 +3785,104 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "YB",
             "score": 80,
-            "price": "0.11310",
-            "change_24h": "-8.9%",
+            "price": "0.11220",
+            "change_24h": "-9.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "RAVE",
+            "coin": "MEGA",
             "score": 80,
-            "price": "0.71230",
-            "change_24h": "-9.0%",
+            "price": "0.16516",
+            "change_24h": "-11.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ROSE",
+            "score": 77,
+            "price": "0.009960",
+            "change_24h": "+1.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "COTI",
+            "score": 77,
+            "price": "0.01370",
+            "change_24h": "+0.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "GMX",
+            "score": 77,
+            "price": "7.3750",
+            "change_24h": "-0.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ALL",
             "score": 77,
-            "price": "0.54450",
-            "change_24h": "-0.1%",
+            "price": "0.54590",
+            "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "GAS",
             "score": 77,
-            "price": "1.6060",
-            "change_24h": "-0.6%",
+            "price": "1.6120",
+            "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "EGLD",
+            "coin": "ENS",
             "score": 77,
-            "price": "4.0700",
-            "change_24h": "-1.1%",
+            "price": "6.0060",
+            "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ORCA",
+            "coin": "ENSO",
             "score": 75,
-            "price": "1.9810",
-            "change_24h": "+21.2%",
+            "price": "1.0721",
+            "change_24h": "+23.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "NAORIS",
             "score": 75,
-            "price": "0.13616",
-            "change_24h": "+18.9%",
+            "price": "0.13689",
+            "change_24h": "+17.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "POWER",
+            "coin": "TAC",
             "score": 75,
-            "price": "0.09169",
-            "change_24h": "+5.5%",
+            "price": "0.01847",
+            "change_24h": "+16.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "PENDLE",
+            "coin": "JOE",
             "score": 75,
-            "price": "1.3861",
-            "change_24h": "+5.1%",
+            "price": "0.04769",
+            "change_24h": "+5.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ROSE",
+            "coin": "MINA",
             "score": 75,
-            "price": "0.009970",
-            "change_24h": "+2.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "USUAL",
-            "score": 75,
-            "price": "0.01383",
-            "change_24h": "+1.8%",
+            "price": "0.05934",
+            "change_24h": "+0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3943,113 +3895,145 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "XVS",
+            "coin": "ASTR",
             "score": 75,
-            "price": "2.5060",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CELO",
-            "score": 75,
-            "price": "0.08554",
-            "change_24h": "-1.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "HOT",
-            "score": 75,
-            "price": "0.000426",
-            "change_24h": "-1.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BEL",
-            "score": 75,
-            "price": "0.10420",
-            "change_24h": "-1.7%",
+            "price": "0.008055",
+            "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RLC",
             "score": 75,
-            "price": "0.42560",
-            "change_24h": "-2.0%",
+            "price": "0.42900",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "IOTX",
+            "score": 75,
+            "price": "0.004490",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CELO",
+            "score": 75,
+            "price": "0.08567",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BEL",
+            "score": 75,
+            "price": "0.10480",
+            "change_24h": "-1.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "HOT",
+            "score": 75,
+            "price": "0.000427",
+            "change_24h": "-2.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CKB",
+            "score": 75,
+            "price": "0.001464",
+            "change_24h": "-2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ARPA",
             "score": 75,
-            "price": "0.009810",
-            "change_24h": "-2.4%",
+            "price": "0.009850",
+            "change_24h": "-2.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MAV",
+            "score": 75,
+            "price": "0.01504",
+            "change_24h": "-2.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ATA",
+            "score": 75,
+            "price": "0.009480",
+            "change_24h": "-3.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SFP",
             "score": 75,
-            "price": "0.31800",
-            "change_24h": "-3.4%",
+            "price": "0.31940",
+            "change_24h": "-3.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "PHB",
+            "coin": "APR",
             "score": 75,
-            "price": "0.10790",
-            "change_24h": "-5.1%",
+            "price": "0.16320",
+            "change_24h": "-8.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "MAGMA",
+            "coin": "TAKE",
+            "score": 75,
+            "price": "0.02664",
+            "change_24h": "-10.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "GENIUS",
             "score": 72,
-            "price": "0.23266",
-            "change_24h": "+13.8%",
+            "price": "0.53250",
+            "change_24h": "+15.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "TRUTH",
+            "score": 72,
+            "price": "0.009891",
+            "change_24h": "+3.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PROVE",
             "score": 72,
-            "price": "0.24600",
+            "price": "0.24590",
+            "change_24h": "+0.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ACX",
+            "score": 72,
+            "price": "0.04307",
             "change_24h": "+0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CTK",
-            "score": 72,
-            "price": "0.17840",
-            "change_24h": "+0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "RVN",
-            "score": 72,
-            "price": "0.005810",
-            "change_24h": "+0.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BEAMX",
             "score": 72,
-            "price": "0.001902",
-            "change_24h": "-0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MTL",
-            "score": 72,
-            "price": "0.29460",
+            "price": "0.001908",
             "change_24h": "-0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4057,95 +4041,103 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "AUCTION",
             "score": 72,
-            "price": "4.7450",
-            "change_24h": "-0.3%",
+            "price": "4.7630",
+            "change_24h": "-0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CVC",
             "score": 72,
-            "price": "0.03054",
-            "change_24h": "-0.4%",
+            "price": "0.03058",
+            "change_24h": "-0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "NXPC",
+            "coin": "Q",
             "score": 72,
-            "price": "0.29480",
-            "change_24h": "-0.4%",
+            "price": "0.01031",
+            "change_24h": "-0.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "T",
+            "score": 72,
+            "price": "0.005836",
+            "change_24h": "-0.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "WAXP",
+            "score": 72,
+            "price": "0.006595",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "RVN",
+            "score": 72,
+            "price": "0.005810",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "POWR",
+            "score": 72,
+            "price": "0.06206",
+            "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BSV",
             "score": 72,
-            "price": "15.7700",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AIXBT",
-            "score": 70,
-            "price": "0.03199",
-            "change_24h": "+15.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TRIA",
-            "score": 70,
-            "price": "0.03842",
-            "change_24h": "+10.0%",
+            "price": "15.7600",
+            "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BTCDOM",
             "score": 70,
-            "price": "5468.90",
-            "change_24h": "+0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CLANKER",
-            "score": 70,
-            "price": "23.5600",
-            "change_24h": "-0.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BROCCOLIF3B",
-            "score": 70,
-            "price": "0.004058",
-            "change_24h": "-1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ATA",
-            "score": 70,
-            "price": "0.009540",
-            "change_24h": "-1.9%",
+            "price": "5470.30",
+            "change_24h": "+0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "HANA",
             "score": 70,
-            "price": "0.03841",
-            "change_24h": "-3.0%",
+            "price": "0.03851",
+            "change_24h": "-2.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BROCCOLIF3B",
+            "score": 70,
+            "price": "0.004024",
+            "change_24h": "-3.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ACE",
+            "score": 70,
+            "price": "0.11660",
+            "change_24h": "-5.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "1000000BOB",
             "score": 70,
-            "price": "0.01234",
+            "price": "0.01236",
             "change_24h": "-5.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4153,96 +4145,104 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "EVAA",
             "score": 70,
-            "price": "0.57770",
-            "change_24h": "-7.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "APR",
-            "score": 70,
-            "price": "0.16376",
-            "change_24h": "-8.2%",
+            "price": "0.57810",
+            "change_24h": "-6.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BNT",
             "score": 67,
-            "price": "0.30640",
-            "change_24h": "-0.0%",
+            "price": "0.30630",
+            "change_24h": "-0.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "XVS",
+            "score": 67,
+            "price": "2.5200",
+            "change_24h": "-0.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MTL",
+            "score": 67,
+            "price": "0.29530",
+            "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "1000XEC",
             "score": 67,
-            "price": "0.006930",
+            "price": "0.006960",
             "change_24h": "-0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TAG",
-            "score": 65,
-            "price": "0.000657",
-            "change_24h": "+22.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ALLO",
             "score": 65,
-            "price": "0.12145",
-            "change_24h": "+11.2%",
+            "price": "0.12306",
+            "change_24h": "+12.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "DRIFT",
+            "coin": "CLANKER",
             "score": 62,
-            "price": "0.04272",
-            "change_24h": "+20.6%",
+            "price": "23.6900",
+            "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BLUAI",
-            "score": 62,
-            "price": "0.01389",
-            "change_24h": "+18.0%",
+            "coin": "TAG",
+            "score": 60,
+            "price": "0.000688",
+            "change_24h": "+25.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "US",
             "score": 60,
-            "price": "0.004287",
-            "change_24h": "-5.3%",
+            "price": "0.004288",
+            "change_24h": "-5.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BLUAI",
+            "score": 55,
+            "price": "0.01396",
+            "change_24h": "+19.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BR",
             "score": 50,
-            "price": "0.16709",
-            "change_24h": "+90.8%",
+            "price": "0.16397",
+            "change_24h": "+84.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BSB",
             "score": 50,
-            "price": "0.61240",
-            "change_24h": "+36.0%",
+            "price": "0.61994",
+            "change_24h": "+36.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SKYAI",
             "score": 50,
-            "price": "0.35431",
-            "change_24h": "+32.3%",
+            "price": "0.36050",
+            "change_24h": "+31.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       }
