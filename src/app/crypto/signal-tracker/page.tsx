@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface SignalEntry {
@@ -10,6 +10,7 @@ interface SignalEntry {
   change_24h: string;
   change_4h: string;
   change_8h: string;
+  change_15m?: string;
 }
 
 interface DayData {
@@ -17,414 +18,17 @@ interface DayData {
   data: SignalEntry[];
 }
 
-// ─── Signal Data ─────────────────────────────────────────────────────────────
-const SIGNAL_DAYS: DayData[] = [
-  {
-    "label": "今天 · 2026-05-01",
-    "data": [
-      {
-        "coin": "DRIFT",
-        "score": 100,
-        "price": "0.04025",
-        "change_24h": "+12.2%",
-        "change_4h": "+5.6%",
-        "change_8h": "+11.3%"
-      },
-      {
-        "coin": "ZEC",
-        "score": 100,
-        "price": "345.32",
-        "change_24h": "+5.2%",
-        "change_4h": "+0.7%",
-        "change_8h": "+1.4%"
-      },
-      {
-        "coin": "NATGAS",
-        "score": 100,
-        "price": "2.776",
-        "change_24h": "+5.4%",
-        "change_4h": "+1.5%",
-        "change_8h": "+3.1%"
-      },
-      {
-        "coin": "REZ",
-        "score": 100,
-        "price": "0.004557",
-        "change_24h": "+6.6%",
-        "change_4h": "+1.8%",
-        "change_8h": "+3.5%"
-      },
-      {
-        "coin": "APE",
-        "score": 100,
-        "price": "0.1618",
-        "change_24h": "+8.2%",
-        "change_4h": "+1.6%",
-        "change_8h": "+3.2%"
-      },
-      {
-        "coin": "GUA",
-        "score": 100,
-        "price": "0.8753",
-        "change_24h": "+7.5%",
-        "change_4h": "+0.2%",
-        "change_8h": "+0.3%"
-      },
-      {
-        "coin": "AIXBT",
-        "score": 100,
-        "price": "0.03148",
-        "change_24h": "+9.2%",
-        "change_4h": "+2.4%",
-        "change_8h": "+4.7%"
-      },
-      {
-        "coin": "HUMA",
-        "score": 100,
-        "price": "0.022489",
-        "change_24h": "+9.5%",
-        "change_4h": "+1.9%",
-        "change_8h": "+3.8%"
-      },
-      {
-        "coin": "USTC",
-        "score": 100,
-        "price": "0.006823",
-        "change_24h": "+12.4%",
-        "change_4h": "+2.5%",
-        "change_8h": "+5.0%"
-      },
-      {
-        "coin": "1000LUNC",
-        "score": 100,
-        "price": "0.07414",
-        "change_24h": "+6.2%",
-        "change_4h": "+1.0%",
-        "change_8h": "+2.1%"
-      },
-      {
-        "coin": "CHR",
-        "score": 100,
-        "price": "0.02433",
-        "change_24h": "+8.9%",
-        "change_4h": "+2.4%",
-        "change_8h": "+4.7%"
-      },
-      {
-        "coin": "FLOW",
-        "score": 100,
-        "price": "0.04454",
-        "change_24h": "+7.7%",
-        "change_4h": "+0.8%",
-        "change_8h": "+1.7%"
-      },
-      {
-        "coin": "FORM",
-        "score": 100,
-        "price": "0.2648",
-        "change_24h": "+8.0%",
-        "change_4h": "+1.3%",
-        "change_8h": "+2.6%"
-      },
-      {
-        "coin": "PENDLE",
-        "score": 100,
-        "price": "1.3963",
-        "change_24h": "+7.5%",
-        "change_4h": "+1.6%",
-        "change_8h": "+3.3%"
-      },
-      {
-        "coin": "AKE",
-        "score": 100,
-        "price": "0.0003284",
-        "change_24h": "+6.5%",
-        "change_4h": "-3.2%",
-        "change_8h": "-6.4%"
-      },
-      {
-        "coin": "UB",
-        "score": 100,
-        "price": "0.07434",
-        "change_24h": "+11.8%",
-        "change_4h": "+6.3%",
-        "change_8h": "+12.6%"
-      },
-      {
-        "coin": "API3",
-        "score": 100,
-        "price": "0.3828",
-        "change_24h": "+5.7%",
-        "change_4h": "+0.3%",
-        "change_8h": "+0.6%"
-      },
-      {
-        "coin": "ARIA",
-        "score": 100,
-        "price": "0.063",
-        "change_24h": "+5.7%",
-        "change_4h": "+0.8%",
-        "change_8h": "+1.5%"
-      },
-      {
-        "coin": "BAS",
-        "score": 100,
-        "price": "0.015271",
-        "change_24h": "+11.8%",
-        "change_4h": "+2.3%",
-        "change_8h": "+4.6%"
-      },
-      {
-        "coin": "LUNA2",
-        "score": 100,
-        "price": "0.06879",
-        "change_24h": "+7.4%",
-        "change_4h": "+1.2%",
-        "change_8h": "+2.4%"
-      },
-      {
-        "coin": "SKR",
-        "score": 95,
-        "price": "0.016767",
-        "change_24h": "+5.8%",
-        "change_4h": "+1.5%",
-        "change_8h": "+2.9%"
-      },
-      {
-        "coin": "TRB",
-        "score": 95,
-        "price": "19.776",
-        "change_24h": "+7.0%",
-        "change_4h": "+2.0%",
-        "change_8h": "+4.1%"
-      },
-      {
-        "coin": "PAYP",
-        "score": 95,
-        "price": "21.93",
-        "change_24h": "+8.3%",
-        "change_4h": "+1.9%",
-        "change_8h": "+3.8%"
-      },
-      {
-        "coin": "B2",
-        "score": 95,
-        "price": "0.5474",
-        "change_24h": "+9.2%",
-        "change_4h": "+1.8%",
-        "change_8h": "+3.6%"
-      },
-      {
-        "coin": "GUN",
-        "score": 95,
-        "price": "0.01511",
-        "change_24h": "+6.0%",
-        "change_4h": "+1.5%",
-        "change_8h": "+3.1%"
-      },
-      {
-        "coin": "ALLO",
-        "score": 95,
-        "price": "0.12407",
-        "change_24h": "+13.3%",
-        "change_4h": "+3.1%",
-        "change_8h": "+6.2%"
-      },
-      {
-        "coin": "TRIA",
-        "score": 95,
-        "price": "0.03764",
-        "change_24h": "+5.3%",
-        "change_4h": "+1.5%",
-        "change_8h": "+2.9%"
-      },
-      {
-        "coin": "ACU",
-        "score": 95,
-        "price": "0.0944",
-        "change_24h": "+6.5%",
-        "change_4h": "+1.8%",
-        "change_8h": "+3.6%"
-      },
-      {
-        "coin": "POWER",
-        "score": 90,
-        "price": "0.09171",
-        "change_24h": "+6.0%",
-        "change_4h": "+1.3%",
-        "change_8h": "+2.6%"
-      },
-      {
-        "coin": "AIOT",
-        "score": 85,
-        "price": "0.12388",
-        "change_24h": "+24.5%",
-        "change_4h": "+1.0%",
-        "change_8h": "+2.0%"
-      },
-      {
-        "coin": "BIO",
-        "score": 85,
-        "price": "0.04214",
-        "change_24h": "+16.1%",
-        "change_4h": "+1.3%",
-        "change_8h": "+2.6%"
-      },
-      {
-        "coin": "ORCA",
-        "score": 85,
-        "price": "1.968",
-        "change_24h": "+20.6%",
-        "change_4h": "+2.7%",
-        "change_8h": "+5.4%"
-      },
-      {
-        "coin": "GWEI",
-        "score": 80,
-        "price": "0.1091",
-        "change_24h": "+16.2%",
-        "change_4h": "+1.6%",
-        "change_8h": "+3.1%"
-      },
-      {
-        "coin": "ENSO",
-        "score": 80,
-        "price": "1.0617",
-        "change_24h": "+19.1%",
-        "change_4h": "+3.6%",
-        "change_8h": "+7.2%"
-      },
-      {
-        "coin": "TAC",
-        "score": 75,
-        "price": "0.018437",
-        "change_24h": "+17.0%",
-        "change_4h": "-3.6%",
-        "change_8h": "-7.1%"
-      },
-      {
-        "coin": "GENIUS",
-        "score": 75,
-        "price": "0.5346",
-        "change_24h": "+17.8%",
-        "change_4h": "+6.7%",
-        "change_8h": "+13.4%"
-      },
-      {
-        "coin": "TAG",
-        "score": 75,
-        "price": "0.0007005",
-        "change_24h": "+28.8%",
-        "change_4h": "+7.3%",
-        "change_8h": "+14.6%"
-      },
-      {
-        "coin": "SKYAI",
-        "score": 70,
-        "price": "0.37757",
-        "change_24h": "+31.0%",
-        "change_4h": "+6.6%",
-        "change_8h": "+13.3%"
-      },
-      {
-        "coin": "BLUAI",
-        "score": 70,
-        "price": "0.014069",
-        "change_24h": "+20.5%",
-        "change_4h": "+4.2%",
-        "change_8h": "+8.4%"
-      },
-      {
-        "coin": "BSB",
-        "score": 70,
-        "price": "0.61535",
-        "change_24h": "+42.1%",
-        "change_4h": "+8.7%",
-        "change_8h": "+17.4%"
-      },
-      {
-        "coin": "MAGMA",
-        "score": 65,
-        "price": "0.23794",
-        "change_24h": "+17.8%",
-        "change_4h": "+3.8%",
-        "change_8h": "+7.6%"
-      },
-      {
-        "coin": "SWARMS",
-        "score": 60,
-        "price": "0.026585",
-        "change_24h": "+2.1%",
-        "change_4h": "+1.8%",
-        "change_8h": "+3.6%"
-      },
-      {
-        "coin": "PENGU",
-        "score": 55,
-        "price": "0.010088",
-        "change_24h": "+1.7%",
-        "change_4h": "+1.5%",
-        "change_8h": "+3.1%"
-      },
-      {
-        "coin": "BZ",
-        "score": 55,
-        "price": "111.34",
-        "change_24h": "+0.3%",
-        "change_4h": "+0.2%",
-        "change_8h": "+0.5%"
-      },
-      {
-        "coin": "NAORIS",
-        "score": 55,
-        "price": "0.13101",
-        "change_24h": "-4.5%",
-        "change_4h": "+1.2%",
-        "change_8h": "+2.4%"
-      },
-      {
-        "coin": "XAU",
-        "score": 50,
-        "price": "4622.69",
-        "change_24h": "+0.9%",
-        "change_4h": "+0.3%",
-        "change_8h": "+0.6%"
-      },
-      {
-        "coin": "XAG",
-        "score": 50,
-        "price": "74.25",
-        "change_24h": "+1.8%",
-        "change_4h": "+0.8%",
-        "change_8h": "+1.5%"
-      },
-      {
-        "coin": "HYPE",
-        "score": 50,
-        "price": "40.352",
-        "change_24h": "+0.5%",
-        "change_4h": "+1.0%",
-        "change_8h": "+2.0%"
-      },
-      {
-        "coin": "MEGA",
-        "score": 50,
-        "price": "0.16819",
-        "change_24h": "-12.7%",
-        "change_4h": "-2.8%",
-        "change_8h": "-5.6%"
-      },
-      {
-        "coin": "PAXG",
-        "score": 50,
-        "price": "4609.31",
-        "change_24h": "+0.9%",
-        "change_4h": "+0.3%",
-        "change_8h": "+0.5%"
-      }
-    ]
-  }
-];
+interface SignalApiResponse {
+  timestamp: string;
+  total_pairs: number;
+  score_version: string;
+  star: number;
+  eye: number;
+  warn: number;
+  exclude: number;
+  days: DayData[];
+}
+
 // ─── Helper ──────────────────────────────────────────────────────────────────
 const scoreClass = (score: number) => score >= 70 ? 'text-[var(--sc-accent)]' : 'text-amber-400';
 const changeClass = (v: string) => {
@@ -436,7 +40,40 @@ const changeClass = (v: string) => {
 // ─── Component ───────────────────────────────────────────────────────────────
 export default function SignalTrackerPage() {
   const [selectedDay, setSelectedDay] = useState(0);
-  const day = SIGNAL_DAYS[selectedDay];
+  const [signalDays, setSignalDays] = useState<DayData[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [apiTimestamp, setApiTimestamp] = useState<string>('');
+
+  useEffect(() => {
+    // 从 singclaw.xyz 的静态 JSON API 拉取最新数据
+    fetch('https://singclaw.xyz/crypto/signal-latest.json', { cache: 'no-store' })
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
+      .then((data: SignalApiResponse) => {
+        setSignalDays(data.days);
+        setApiTimestamp(data.timestamp);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Failed to load signal data:', err);
+        setLoading(false);
+      });
+  }, []);
+
+  const day = signalDays[selectedDay];
+
+  if (loading || !day) {
+    return (
+      <div className="min-h-screen bg-[var(--sc-bg)] text-[var(--sc-text)] flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-2xl mb-4">📡 正在加载最新信号数据...</div>
+          <div className="text-[var(--sc-muted)]">首次加载可能需要几秒钟</div>
+        </div>
+      </div>
+    );
+  }
 
   const perfectCount = day.data.filter(d => d.score === 100).length;
   const focusCount = day.data.filter(d => d.score >= 70 && d.score < 100).length;
@@ -464,9 +101,14 @@ export default function SignalTrackerPage() {
         <h1 className="text-4xl md:text-5xl font-black mb-4">
           Crypto <span className="bg-gradient-to-r from-[var(--sc-accent)] to-[var(--sc-accent2)] bg-clip-text text-transparent">信号追踪</span>
         </h1>
-        <p className="text-[var(--sc-dim)] text-lg max-w-2xl mb-8">
-          基于Score v2（追高扣分版）每日扫描Binance USDT永续合约，筛选高分信号并追踪4h/8h表现。
+        <p className="text-[var(--sc-dim)] text-lg max-w-2xl mb-2">
+          基于Score v3（15m动量优先版）每15分钟扫描Binance USDT永续合约
         </p>
+        {apiTimestamp && (
+          <div className="text-sm text-[var(--sc-muted)] mb-6">
+            📅 最后更新: {new Date(apiTimestamp).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })} CST
+          </div>
+        )}
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
@@ -487,8 +129,8 @@ export default function SignalTrackerPage() {
             <div className="text-xs text-[var(--sc-dim)] uppercase tracking-wider mt-1">⚠️ 谨慎</div>
           </div>
           <div className="p-4 rounded-xl bg-[var(--sc-card)] border border-[var(--sc-border)] text-center">
-            <div className="text-3xl font-black text-[var(--sc-purple,#a855f7)]">528</div>
-            <div className="text-xs text-[var(--sc-dim)] uppercase tracking-wider mt-1">📊 合约</div>
+            <div className="text-3xl font-black text-[var(--sc-purple,#a855f7)]">{day.data.length}</div>
+            <div className="text-xs text-[var(--sc-dim)] uppercase tracking-wider mt-1">📊 信号</div>
           </div>
         </div>
 
@@ -505,9 +147,10 @@ export default function SignalTrackerPage() {
                   <th className="text-left px-4 py-3 text-[var(--sc-muted)] text-xs uppercase font-semibold">币种</th>
                   <th className="text-left px-4 py-3 text-[var(--sc-muted)] text-xs uppercase font-semibold">Score</th>
                   <th className="text-left px-4 py-3 text-[var(--sc-muted)] text-xs uppercase font-semibold">价格</th>
+                  <th className="text-left px-4 py-3 text-[var(--sc-muted)] text-xs uppercase font-semibold">15m</th>
                   <th className="text-left px-4 py-3 text-[var(--sc-muted)] text-xs uppercase font-semibold">24h涨跌</th>
-                  <th className="text-left px-4 py-3 text-[var(--sc-muted)] text-xs uppercase font-semibold">4h后</th>
-                  <th className="text-left px-4 py-3 text-[var(--sc-muted)] text-xs uppercase font-semibold">8h后</th>
+                  <th className="text-left px-4 py-3 text-[var(--sc-muted)] text-xs uppercase font-semibold">4h</th>
+                  <th className="text-left px-4 py-3 text-[var(--sc-muted)] text-xs uppercase font-semibold">8h</th>
                 </tr>
               </thead>
               <tbody>
@@ -515,11 +158,12 @@ export default function SignalTrackerPage() {
                   <tr key={entry.coin} className="border-b border-[var(--sc-border)] hover:bg-white/[0.02] transition">
                     <td className="px-4 py-3 text-[var(--sc-muted)]">{i + 1}</td>
                     <td className="px-4 py-3 font-bold">{entry.coin}</td>
-                    <td className="px-4 py-3 font-bold {scoreClass(entry.score)}">{entry.score}</td>
+                    <td className={`px-4 py-3 font-bold ${scoreClass(entry.score)}`}>{entry.score}</td>
                     <td className="px-4 py-3 font-mono">{entry.price}</td>
+                    <td className={`px-4 py-3 font-bold ${changeClass(entry.change_15m || '—')}`}>{entry.change_15m || '—'}</td>
                     <td className={`px-4 py-3 font-bold ${changeClass(entry.change_24h)}`}>{entry.change_24h}</td>
-                    <td className="px-4 py-3 text-[var(--sc-muted)] italic">{entry.change_4h}</td>
-                    <td className="px-4 py-3 text-[var(--sc-muted)] italic">{entry.change_8h}</td>
+                    <td className={`px-4 py-3 ${changeClass(entry.change_4h || '—')}`}>{entry.change_4h || '—'}</td>
+                    <td className={`px-4 py-3 ${changeClass(entry.change_8h || '—')}`}>{entry.change_8h || '—'}</td>
                   </tr>
                 ))}
               </tbody>
@@ -529,7 +173,7 @@ export default function SignalTrackerPage() {
       </main>
 
       <footer className="border-t border-[var(--sc-border)] mt-16 py-8 text-center text-[var(--sc-muted)] text-sm">
-        <p>SingClaw Crypto Alpha · Score v2 · 数据仅供参考，不构成投资建议</p>
+        <p>SingClaw Crypto Alpha · Score v3 · 数据每15分钟自动更新 · 仅供参考，不构成投资建议</p>
       </footer>
     </div>
   );
