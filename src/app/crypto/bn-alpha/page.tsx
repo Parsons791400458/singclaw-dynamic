@@ -63,8 +63,7 @@ interface DailyEntry {
   chg: string;
 }
 
-const dailyData: Record<string, { alphaRatio: string; entries: DailyEntry[] }> = {
-];
+const dailyData: Record<string, { alphaRatio: string; entries: DailyEntry[] }> = {};
 
 const strategies = [
   { icon: '1️⃣', title: '首日暴涨次日追', desc: 'Alpha币首次进入Top10且涨幅>50%，次日回调5-10%时追入，持有1-2天。' },
