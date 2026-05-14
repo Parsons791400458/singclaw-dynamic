@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SingClaw Dynamic
 
-## Getting Started
+Next.js app for `app.singclaw.xyz`.
 
-First, run the development server:
+The product direction is a consumer daily trading learning desk: users sign in, read market context, inspect signals, practice paper trades, and keep a personal review loop.
+
+## Local Setup
 
 ```bash
+npm install
+cp .env.local.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Do not paste secrets into chat or commit them to git. Put them in `.env.local` for local development and in server/Vercel environment variables for production.
 
-## Learn More
+Required for login:
 
-To learn more about Next.js, take a look at the following resources:
+- `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
+- `CLERK_SECRET_KEY`
+- `CLERK_SIGN_IN_URL=/login`
+- `CLERK_SIGN_UP_URL=/register`
+- `CLERK_SIGN_IN_FORCE_REDIRECT_URL=/dashboard`
+- `CLERK_SIGN_UP_FORCE_REDIRECT_URL=/dashboard`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Required for durable data:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY`
 
-## Deploy on Vercel
+Recommended for cron writes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `CRON_OUTPUT_TOKEN`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If Supabase is not configured, cron reports fall back to `.data/reports` for local development only.
+
+### Local demo mode
+
+If either Clerk key is missing, the app runs in demo mode:
+
+- `/dashboard` shows the local mission desk with profile sync fallback.
+- Auth pages show a local setup notice.
+- `/api/trading-plans` saves and reads from local storage fallback.
+
+## Supabase
+
+Apply the SQL files in `supabase/migrations` to create:
+
+- `public.app_users`
+- `public.cron_reports`
+- `public.trade_plans`
+
+The app writes to Supabase from server-side code with `SUPABASE_SERVICE_ROLE_KEY`.
+If Supabase service credentials are absent, trading plans fall back to `.data/trading-plans`
+on the server so logged-in users do not lose drafts during the first free version.
+
+## PM2 Production
+
+The PM2 config no longer stores secrets. Export env values on the server, build the app, then start:
+
+```bash
+npm run build
+pm2 start ecosystem.config.js
+```

@@ -1,33 +1,51 @@
-export default function DashboardPage() {
-  return (
-    <div className="min-h-screen bg-gray-950 text-white py-24 px-4">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-black mb-4">🎯 我的仪表板</h1>
-        <p className="text-gray-400 mb-8">用户系统即将上线，敬请期待</p>
+import { auth, currentUser } from '@clerk/nextjs/server'
+import { redirect } from 'next/navigation'
+import TradingMissionDesk from '@/components/TradingMissionDesk'
+import { dailyTradingDesk } from '@/lib/trading-desk'
+import { syncUserProfile } from '@/lib/users'
+import { isClerkFullyConfigured } from '@/lib/clerk-config'
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 bg-gray-900 rounded-2xl border border-gray-800">
-            <h3 className="text-lg font-semibold mb-3">📊 Crypto 历史</h3>
-            <p className="text-gray-400 text-sm">历史快照、信号记录、交易历史</p>
-            <p className="text-yellow-400 text-sm mt-2">🔧 建设中...</p>
-          </div>
-          <div className="p-6 bg-gray-900 rounded-2xl border border-gray-800">
-            <h3 className="text-lg font-semibold mb-3">📝 我的笔记</h3>
-            <p className="text-gray-400 text-sm">Get 笔记同步与个人知识库</p>
-            <p className="text-yellow-400 text-sm mt-2">🔧 建设中...</p>
-          </div>
-          <div className="p-6 bg-gray-900 rounded-2xl border border-gray-800">
-            <h3 className="text-lg font-semibold mb-3">⭐ 明星匹配历史</h3>
-            <p className="text-gray-400 text-sm">查看你的品牌需求历史记录</p>
-            <p className="text-yellow-400 text-sm mt-2">🔧 建设中...</p>
-          </div>
-          <div className="p-6 bg-gray-900 rounded-2xl border border-gray-800">
-            <h3 className="text-lg font-semibold mb-3">⚙️ 设置</h3>
-            <p className="text-gray-400 text-sm">通知偏好、推送渠道管理</p>
-            <p className="text-yellow-400 text-sm mt-2">🔧 建设中...</p>
-          </div>
-        </div>
-      </div>
-    </div>
+export const dynamic = 'force-dynamic'
+
+const clerkConfigured = isClerkFullyConfigured()
+
+export default async function DashboardPage() {
+  if (!clerkConfigured) {
+    return (
+      <TradingMissionDesk
+        desk={dailyTradingDesk}
+        displayName="demo trader"
+        profileSync={{
+          ok: false,
+          storage: 'disabled',
+          message: '本地演示模式：配置 Clerk 和 Supabase 后会启用真实账号记录。',
+        }}
+      />
+    )
+  }
+
+  const { userId } = await auth()
+
+  if (!userId) {
+    redirect('/login')
+  }
+
+  const user = await currentUser()
+  const profileSync = user
+    ? await syncUserProfile(userId, user)
+    : { ok: false, storage: 'disabled' as const, message: 'Clerk user profile was not available.' }
+
+  const displayName =
+    user?.firstName ||
+    user?.username ||
+    user?.emailAddresses.find(email => email.id === user.primaryEmailAddressId)?.emailAddress ||
+    'trader'
+
+  return (
+    <TradingMissionDesk
+      desk={dailyTradingDesk}
+      displayName={displayName}
+      profileSync={profileSync}
+    />
   )
 }
