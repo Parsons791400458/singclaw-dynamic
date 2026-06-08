@@ -108,7 +108,7 @@ export default async function NfrPage() {
           <div className="bg-gradient-to-br from-emerald-400/5 to-blue-400/5 rounded-xl p-5 border border-emerald-400/20">
             <div className="text-lg font-bold text-emerald-400">🏠 HOMEUSDT (实时验证)</div>
             <div className="text-sm text-gray-400 mt-2 space-y-1">
-              <p>06-07 → 06-08: 急跌-98%</p>
+              <p>06-07 → 06-08: 急跌-63%（$0.077→$0.029）</p>
               <p>费率 -0.91%/8h · 低点 $0.02851</p>
               <p>MA得分: 0/5 → <span className="text-emerald-400">5/5 ✅</span></p>
               <p>对标 COAI 2025-10 形态</p>
