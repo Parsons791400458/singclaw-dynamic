@@ -1,0 +1,4 @@
+scan_time_bj,total_scanned,candidates_found,a_count,b_count,c_count,symbol,level,total_score,price,change_24h_pct,drop_pct,recovery_pct,funding_rate,ma_status,ma_score,vol_ratio,condition_1,condition_2,condition_3,condition_4
+2026-06-07 16:40:00,531,3,2,1,0,EDENUSDT,A,15,0.0533,35.5,30.0,40.0,-0.00973,15m>MA5+15m_MA5>MA10+15m_MA10>MA30+1h>MA5+1h_MA5>MA10,5,2.5,1,1,1,1
+2026-06-07 16:40:00,531,3,2,1,0,FIDAUSDT,A,14,0.02897,58.6,44.0,64.0,-0.00302,15m>MA5+15m_MA5>MA10+15m_MA10>MA30+1h>MA5+1h_MA5>MA10,5,2.9,1,1,1,1
+2026-06-07 16:40:00,531,3,2,1,0,HOMEUSDT,B,11,0.05372,8.8,30.0,37.0,-0.00434,15m_MA5>MA10+15m_MA10>MA30+1h>MA5+1h_MA5>MA10,4,0.9,1,1,1,0
