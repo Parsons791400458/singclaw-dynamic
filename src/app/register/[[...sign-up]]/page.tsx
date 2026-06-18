@@ -17,7 +17,7 @@ export default function RegisterPage() {
     <AuthPageShell
       eyebrow="Create account"
       title="注册 SingClaw"
-      subtitle="第一版免费，用一个账号保存你的每日计划和复盘记录。"
+      subtitle="推荐使用邮箱注册。第一版免费，用一个账号保存你的每日计划和复盘记录。"
     >
       <SignUp
         appearance={registerAppearance}

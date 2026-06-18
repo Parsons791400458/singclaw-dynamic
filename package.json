@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "import:openclaw-tasks": "node scripts/import-openclaw-singclaw-tasks.mjs",
+    "check:clerk-auth": "node scripts/check-clerk-auth-config.mjs",
     "start": "next start",
     "lint": "next lint"
   },
