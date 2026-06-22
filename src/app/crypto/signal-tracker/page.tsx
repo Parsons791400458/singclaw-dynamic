@@ -25,7 +25,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "2Z",
             "score": 100,
-            "price": "0.07675",
+            "price": "0.07676",
             "change_24h": "+10.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -33,16 +33,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "RESOLV",
             "score": 100,
-            "price": "0.02126",
-            "change_24h": "+8.5%",
+            "price": "0.02120",
+            "change_24h": "+8.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "DYM",
             "score": 100,
-            "price": "0.01918",
-            "change_24h": "+8.2%",
+            "price": "0.01912",
+            "change_24h": "+7.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -57,8 +57,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TRUMP",
             "score": 100,
-            "price": "1.9470",
-            "change_24h": "+7.3%",
+            "price": "1.9460",
+            "change_24h": "+7.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -73,7 +73,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "VVV",
             "score": 100,
-            "price": "15.3610",
+            "price": "15.3680",
             "change_24h": "+5.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -81,7 +81,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "AIXBT",
             "score": 100,
-            "price": "0.02376",
+            "price": "0.02375",
             "change_24h": "+5.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -89,7 +89,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "BANANAS31",
             "score": 100,
-            "price": "0.009652",
+            "price": "0.009658",
             "change_24h": "+5.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -97,24 +97,24 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "DYDX",
             "score": 100,
-            "price": "0.12510",
-            "change_24h": "+4.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TAIKO",
-            "score": 100,
-            "price": "0.08800",
-            "change_24h": "+4.5%",
+            "price": "0.12540",
+            "change_24h": "+4.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BTR",
             "score": 100,
-            "price": "0.02171",
-            "change_24h": "+4.5%",
+            "price": "0.02170",
+            "change_24h": "+4.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "TAIKO",
+            "score": 100,
+            "price": "0.08780",
+            "change_24h": "+4.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -127,18 +127,26 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "BASED",
+            "coin": "SOON",
             "score": 100,
-            "price": "0.09592",
+            "price": "0.17130",
             "change_24h": "+4.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SOON",
+            "coin": "BASED",
             "score": 100,
-            "price": "0.17130",
+            "price": "0.09586",
             "change_24h": "+4.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "WLFI",
+            "score": 100,
+            "price": "0.06035",
+            "change_24h": "+3.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -153,8 +161,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ENA",
             "score": 100,
-            "price": "0.09206",
-            "change_24h": "+3.3%",
+            "price": "0.09216",
+            "change_24h": "+3.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -169,7 +177,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "FIL",
             "score": 100,
-            "price": "0.81200",
+            "price": "0.81400",
+            "change_24h": "+3.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "UNI",
+            "score": 100,
+            "price": "3.0710",
             "change_24h": "+2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -177,16 +193,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "BEAT",
             "score": 100,
-            "price": "1.7970",
-            "change_24h": "+2.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "UNI",
-            "score": 100,
-            "price": "3.0690",
-            "change_24h": "+2.8%",
+            "price": "1.7940",
+            "change_24h": "+2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -207,18 +215,18 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "ZRO",
+            "coin": "EDU",
             "score": 100,
-            "price": "0.91860",
-            "change_24h": "+1.8%",
+            "price": "0.02992",
+            "change_24h": "+2.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "GENIUS",
+            "coin": "ZRO",
             "score": 100,
-            "price": "0.42020",
-            "change_24h": "+1.7%",
+            "price": "0.91920",
+            "change_24h": "+1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -231,9 +239,17 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "GENIUS",
+            "score": 100,
+            "price": "0.41980",
+            "change_24h": "+1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "BERA",
             "score": 100,
-            "price": "0.23460",
+            "price": "0.23470",
             "change_24h": "+1.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -241,7 +257,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "IP",
             "score": 100,
-            "price": "0.32110",
+            "price": "0.32120",
             "change_24h": "+1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -265,7 +281,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "POL",
             "score": 100,
-            "price": "0.08056",
+            "price": "0.08055",
             "change_24h": "+1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -273,7 +289,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TAO",
             "score": 100,
-            "price": "232.5200",
+            "price": "232.5700",
             "change_24h": "+1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -281,7 +297,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MORPHO",
             "score": 100,
-            "price": "1.8256",
+            "price": "1.8258",
             "change_24h": "+0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -289,15 +305,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "PENDLE",
             "score": 100,
-            "price": "1.4393",
-            "change_24h": "+0.7%",
+            "price": "1.4405",
+            "change_24h": "+0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "EVAA",
             "score": 100,
-            "price": "0.81900",
+            "price": "0.81950",
             "change_24h": "+0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -305,7 +321,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TIA",
             "score": 100,
-            "price": "0.37350",
+            "price": "0.37370",
             "change_24h": "+0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -313,16 +329,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MANTRA",
             "score": 100,
-            "price": "0.007474",
+            "price": "0.007475",
             "change_24h": "+0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "JUP",
-            "score": 100,
-            "price": "0.21610",
-            "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -335,9 +343,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "AVAX",
+            "coin": "JUP",
             "score": 100,
-            "price": "6.2720",
+            "price": "0.21590",
             "change_24h": "+0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -345,7 +353,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "PENGU",
             "score": 100,
-            "price": "0.006773",
+            "price": "0.006772",
+            "change_24h": "+0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ETHFI",
+            "score": 100,
+            "price": "0.34540",
             "change_24h": "+0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -359,26 +375,26 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "ETHFI",
-            "score": 100,
-            "price": "0.34490",
-            "change_24h": "-0.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "RAVE",
             "score": 100,
-            "price": "0.27040",
-            "change_24h": "-0.2%",
+            "price": "0.27070",
+            "change_24h": "-0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "EDEN",
             "score": 100,
-            "price": "0.04626",
+            "price": "0.04625",
             "change_24h": "-0.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "XAI",
+            "score": 100,
+            "price": "0.008291",
+            "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -399,17 +415,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "XAI",
-            "score": 100,
-            "price": "0.008282",
-            "change_24h": "-0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "VIRTUAL",
             "score": 100,
-            "price": "0.60480",
+            "price": "0.60520",
             "change_24h": "-0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -423,6 +431,14 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "RENDER",
+            "score": 100,
+            "price": "1.6790",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "BABY",
             "score": 100,
             "price": "0.01417",
@@ -431,10 +447,10 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "RENDER",
+            "coin": "INJ",
             "score": 100,
-            "price": "1.6780",
-            "change_24h": "-0.7%",
+            "price": "4.9940",
+            "change_24h": "-1.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -447,10 +463,10 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "INJ",
+            "coin": "FET",
             "score": 100,
-            "price": "4.9880",
-            "change_24h": "-1.2%",
+            "price": "0.18460",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -463,18 +479,10 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "FET",
-            "score": 100,
-            "price": "0.18450",
-            "change_24h": "-1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "SPX",
             "score": 100,
-            "price": "0.37550",
-            "change_24h": "-1.4%",
+            "price": "0.37560",
+            "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -489,7 +497,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "币安人生",
             "score": 100,
-            "price": "0.70514",
+            "price": "0.70520",
             "change_24h": "-1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -497,8 +505,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "HBAR",
             "score": 100,
-            "price": "0.07924",
-            "change_24h": "-1.7%",
+            "price": "0.07927",
+            "change_24h": "-1.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -511,49 +519,49 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "NEAR",
+            "coin": "ALLO",
             "score": 100,
-            "price": "2.1610",
-            "change_24h": "-2.0%",
+            "price": "0.38314",
+            "change_24h": "-1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ALLO",
+            "coin": "NEAR",
             "score": 100,
-            "price": "0.38252",
-            "change_24h": "-2.0%",
+            "price": "2.1620",
+            "change_24h": "-1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "S",
             "score": 100,
-            "price": "0.02761",
-            "change_24h": "-2.3%",
+            "price": "0.02763",
+            "change_24h": "-2.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CHIP",
             "score": 100,
-            "price": "0.03501",
-            "change_24h": "-2.6%",
+            "price": "0.03505",
+            "change_24h": "-2.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ORCA",
             "score": 100,
-            "price": "1.2150",
-            "change_24h": "-2.6%",
+            "price": "1.2160",
+            "change_24h": "-2.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CRV",
             "score": 100,
-            "price": "0.20960",
+            "price": "0.20970",
             "change_24h": "-2.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -561,8 +569,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "JTO",
             "score": 100,
-            "price": "0.67080",
-            "change_24h": "-2.8%",
+            "price": "0.67090",
+            "change_24h": "-2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -577,23 +585,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "XPL",
             "score": 100,
-            "price": "0.09146",
-            "change_24h": "-3.3%",
+            "price": "0.09160",
+            "change_24h": "-3.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "HOLO",
             "score": 100,
-            "price": "0.06685",
-            "change_24h": "-3.5%",
+            "price": "0.06693",
+            "change_24h": "-3.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RONIN",
             "score": 100,
-            "price": "0.06181",
+            "price": "0.06183",
             "change_24h": "-3.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -601,7 +609,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "HYPE",
             "score": 100,
-            "price": "68.3100",
+            "price": "68.2810",
             "change_24h": "-3.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -609,7 +617,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "AERO",
             "score": 100,
-            "price": "0.52690",
+            "price": "0.52730",
+            "change_24h": "-3.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ALGO",
+            "score": 100,
+            "price": "0.09050",
             "change_24h": "-4.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -617,23 +633,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "BIO",
             "score": 100,
-            "price": "0.03156",
-            "change_24h": "-4.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BSB",
-            "score": 100,
-            "price": "0.33825",
-            "change_24h": "-4.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ALGO",
-            "score": 100,
-            "price": "0.09030",
+            "price": "0.03157",
             "change_24h": "-4.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -647,65 +647,73 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "BSB",
+            "score": 100,
+            "price": "0.33714",
+            "change_24h": "-4.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "RIF",
             "score": 100,
-            "price": "0.08917",
-            "change_24h": "-4.8%",
+            "price": "0.08922",
+            "change_24h": "-4.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "EPIC",
             "score": 100,
-            "price": "0.42870",
-            "change_24h": "-5.0%",
+            "price": "0.42910",
+            "change_24h": "-4.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "GALA",
+            "score": 100,
+            "price": "0.002618",
+            "change_24h": "-4.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ZEC",
             "score": 100,
-            "price": "446.8800",
-            "change_24h": "-5.0%",
+            "price": "446.3700",
+            "change_24h": "-5.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "H",
             "score": 100,
-            "price": "0.18558",
-            "change_24h": "-5.9%",
+            "price": "0.18581",
+            "change_24h": "-5.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RE",
             "score": 100,
-            "price": "0.91100",
-            "change_24h": "-10.0%",
+            "price": "0.91240",
+            "change_24h": "-9.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LIT",
             "score": 97,
-            "price": "1.6185",
-            "change_24h": "+4.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "WLFI",
-            "score": 97,
-            "price": "0.06046",
-            "change_24h": "+3.9%",
+            "price": "1.6132",
+            "change_24h": "+3.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "FARTCOIN",
             "score": 97,
-            "price": "0.12830",
+            "price": "0.12840",
             "change_24h": "+3.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -713,7 +721,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "OPN",
             "score": 97,
-            "price": "0.07604",
+            "price": "0.07607",
             "change_24h": "+3.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -721,8 +729,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "APT",
             "score": 97,
-            "price": "0.67190",
-            "change_24h": "+2.8%",
+            "price": "0.67200",
+            "change_24h": "+2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -730,22 +738,22 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "1000PEPE",
             "score": 97,
             "price": "0.002854",
-            "change_24h": "+0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BCH",
-            "score": 97,
-            "price": "199.8900",
-            "change_24h": "+0.1%",
+            "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "XLM",
             "score": 97,
-            "price": "0.21453",
+            "price": "0.21467",
+            "change_24h": "+0.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BCH",
+            "score": 97,
+            "price": "199.9000",
             "change_24h": "+0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -753,7 +761,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ICP",
             "score": 97,
-            "price": "2.2680",
+            "price": "2.2690",
             "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -767,14 +775,6 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "BEL",
-            "score": 95,
-            "price": "0.17529",
-            "change_24h": "+14.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "SAGA",
             "score": 95,
             "price": "0.01577",
@@ -783,10 +783,18 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "BEL",
+            "score": 95,
+            "price": "0.17483",
+            "change_24h": "+14.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "HOME",
             "score": 95,
-            "price": "0.02242",
-            "change_24h": "+12.7%",
+            "price": "0.02244",
+            "change_24h": "+12.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -801,16 +809,24 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "STO",
             "score": 95,
-            "price": "0.05291",
-            "change_24h": "+11.7%",
+            "price": "0.05297",
+            "change_24h": "+11.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "WLD",
             "score": 95,
-            "price": "0.63850",
-            "change_24h": "+5.6%",
+            "price": "0.64000",
+            "change_24h": "+5.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BOME",
+            "score": 95,
+            "price": "0.000457",
+            "change_24h": "+4.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -819,14 +835,6 @@ const SIGNAL_DAYS: DayData[] = [
             "score": 95,
             "price": "0.02006",
             "change_24h": "+4.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BOME",
-            "score": 95,
-            "price": "0.000456",
-            "change_24h": "+4.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -841,7 +849,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "GOAT",
             "score": 95,
-            "price": "0.01394",
+            "price": "0.01395",
             "change_24h": "+2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -865,23 +873,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "GRASS",
             "score": 95,
-            "price": "0.42050",
-            "change_24h": "+2.4%",
+            "price": "0.42040",
+            "change_24h": "+2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RAYSOL",
             "score": 95,
-            "price": "0.63470",
+            "price": "0.63520",
             "change_24h": "+2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "EDU",
+            "coin": "VELODROME",
             "score": 95,
-            "price": "0.02985",
+            "price": "0.02065",
             "change_24h": "+2.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -905,23 +913,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "APE",
             "score": 95,
-            "price": "0.13930",
-            "change_24h": "+1.4%",
+            "price": "0.13940",
+            "change_24h": "+1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "NOM",
             "score": 95,
-            "price": "0.001628",
-            "change_24h": "+1.1%",
+            "price": "0.001629",
+            "change_24h": "+1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ME",
             "score": 95,
-            "price": "0.06322",
+            "price": "0.06323",
             "change_24h": "+0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -929,23 +937,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "XAN",
             "score": 95,
-            "price": "0.009242",
-            "change_24h": "+0.7%",
+            "price": "0.009236",
+            "change_24h": "+0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TURBO",
             "score": 95,
-            "price": "0.000887",
-            "change_24h": "+0.4%",
+            "price": "0.000888",
+            "change_24h": "+0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PIPPIN",
             "score": 95,
-            "price": "0.01671",
+            "price": "0.01672",
             "change_24h": "-0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -961,7 +969,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MASK",
             "score": 95,
-            "price": "0.40020",
+            "price": "0.40030",
+            "change_24h": "-0.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SPORTFUN",
+            "score": 95,
+            "price": "0.02866",
+            "change_24h": "-0.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "COOKIE",
+            "score": 95,
+            "price": "0.009340",
             "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -975,25 +999,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "COOKIE",
-            "score": 95,
-            "price": "0.009330",
-            "change_24h": "-0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SPORTFUN",
-            "score": 95,
-            "price": "0.02860",
-            "change_24h": "-0.6%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "PLAY",
             "score": 95,
-            "price": "0.03564",
+            "price": "0.03566",
             "change_24h": "-0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1001,7 +1009,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "APR",
             "score": 95,
-            "price": "0.20020",
+            "price": "0.20030",
             "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1023,6 +1031,14 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "SPELL",
+            "score": 95,
+            "price": "0.000120",
+            "change_24h": "-1.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "CC",
             "score": 95,
             "price": "0.15177",
@@ -1031,9 +1047,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "SPELL",
+            "coin": "1000FLOKI",
             "score": 95,
-            "price": "0.000120",
+            "price": "0.02555",
             "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1047,17 +1063,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "1000FLOKI",
-            "score": 95,
-            "price": "0.02554",
-            "change_24h": "-1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "SIGN",
             "score": 95,
-            "price": "0.009323",
+            "price": "0.009321",
             "change_24h": "-1.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1065,7 +1073,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "EDGE",
             "score": 95,
-            "price": "0.40030",
+            "price": "0.40040",
             "change_24h": "-1.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1073,7 +1081,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "STRK",
             "score": 95,
-            "price": "0.03438",
+            "price": "0.03440",
+            "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "GUN",
+            "score": 95,
+            "price": "0.005831",
             "change_24h": "-1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1081,23 +1097,31 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TRIA",
             "score": 95,
-            "price": "0.02460",
+            "price": "0.02459",
             "change_24h": "-1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "GUN",
+            "coin": "TOWNS",
             "score": 95,
-            "price": "0.005830",
-            "change_24h": "-1.5%",
+            "price": "0.002182",
+            "change_24h": "-1.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SOLV",
             "score": 95,
-            "price": "0.003265",
+            "price": "0.003266",
+            "change_24h": "-1.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CELO",
+            "score": 95,
+            "price": "0.06449",
             "change_24h": "-1.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1111,41 +1135,25 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "CELO",
-            "score": 95,
-            "price": "0.06448",
-            "change_24h": "-1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "ESPORTS",
             "score": 95,
-            "price": "0.03189",
+            "price": "0.03190",
             "change_24h": "-1.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "TOWNS",
-            "score": 95,
-            "price": "0.002178",
-            "change_24h": "-1.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "VELVET",
-            "score": 95,
-            "price": "0.47700",
-            "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TST",
             "score": 95,
-            "price": "0.01131",
+            "price": "0.01133",
+            "change_24h": "-2.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "VELVET",
+            "score": 95,
+            "price": "0.47640",
             "change_24h": "-2.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1161,7 +1169,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "AERGO",
             "score": 95,
-            "price": "0.03023",
+            "price": "0.03024",
             "change_24h": "-2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1169,8 +1177,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "KAT",
             "score": 95,
-            "price": "0.005482",
-            "change_24h": "-2.4%",
+            "price": "0.005489",
+            "change_24h": "-2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1185,7 +1193,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "NXPC",
             "score": 95,
-            "price": "0.30140",
+            "price": "0.30120",
             "change_24h": "-2.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1201,7 +1209,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "KERNEL",
             "score": 95,
-            "price": "0.04833",
+            "price": "0.04834",
             "change_24h": "-2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1223,10 +1231,18 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "NEO",
+            "coin": "WET",
             "score": 95,
-            "price": "2.1620",
-            "change_24h": "-3.0%",
+            "price": "0.06187",
+            "change_24h": "-3.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SKL",
+            "score": 95,
+            "price": "0.004104",
+            "change_24h": "-3.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1239,34 +1255,26 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "SKL",
-            "score": 95,
-            "price": "0.004103",
-            "change_24h": "-3.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "WET",
-            "score": 95,
-            "price": "0.06183",
-            "change_24h": "-3.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "ARIA",
             "score": 95,
-            "price": "0.02764",
-            "change_24h": "-3.3%",
+            "price": "0.02767",
+            "change_24h": "-3.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "IMX",
             "score": 95,
-            "price": "0.14130",
+            "price": "0.14140",
             "change_24h": "-3.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BIGTIME",
+            "score": 95,
+            "price": "0.008600",
+            "change_24h": "-3.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1279,49 +1287,41 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "BIGTIME",
+            "coin": "US",
             "score": 95,
-            "price": "0.008590",
-            "change_24h": "-3.7%",
+            "price": "0.01463",
+            "change_24h": "-3.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ILV",
             "score": 95,
-            "price": "3.3780",
-            "change_24h": "-4.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "US",
-            "score": 95,
-            "price": "0.01461",
-            "change_24h": "-4.0%",
+            "price": "3.3790",
+            "change_24h": "-3.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BRETT",
             "score": 95,
-            "price": "0.005658",
-            "change_24h": "-4.1%",
+            "price": "0.005661",
+            "change_24h": "-4.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LIGHT",
             "score": 95,
-            "price": "0.11620",
-            "change_24h": "-4.2%",
+            "price": "0.11630",
+            "change_24h": "-4.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PIXEL",
             "score": 95,
-            "price": "0.005427",
+            "price": "0.005428",
             "change_24h": "-4.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1329,15 +1329,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "SENT",
             "score": 95,
-            "price": "0.01506",
-            "change_24h": "-4.4%",
+            "price": "0.01507",
+            "change_24h": "-4.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SLP",
             "score": 95,
-            "price": "0.000509",
+            "price": "0.000510",
             "change_24h": "-4.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1361,23 +1361,31 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "DASH",
             "score": 95,
-            "price": "35.2300",
-            "change_24h": "-4.8%",
+            "price": "35.1600",
+            "change_24h": "-4.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CLO",
+            "score": 95,
+            "price": "0.20950",
+            "change_24h": "-10.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SPACE",
             "score": 92,
-            "price": "0.006719",
-            "change_24h": "+2.7%",
+            "price": "0.006708",
+            "change_24h": "+2.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SOL",
             "score": 92,
-            "price": "74.2100",
+            "price": "74.2300",
             "change_24h": "+1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1385,39 +1393,47 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ETH",
             "score": 92,
-            "price": "1743.61",
+            "price": "1744.18",
             "change_24h": "+0.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AVAX",
+            "score": 92,
+            "price": "6.2770",
+            "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ARB",
             "score": 92,
-            "price": "0.08449",
-            "change_24h": "+0.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "DOGE",
-            "score": 92,
-            "price": "0.08364",
-            "change_24h": "+0.0%",
+            "price": "0.08453",
+            "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "1000BONK",
             "score": 92,
-            "price": "0.004601",
-            "change_24h": "-0.1%",
+            "price": "0.004607",
+            "change_24h": "+0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DOGE",
+            "score": 92,
+            "price": "0.08365",
+            "change_24h": "+0.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LINK",
             "score": 92,
-            "price": "7.9470",
+            "price": "7.9480",
             "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1425,15 +1441,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ONDO",
             "score": 92,
-            "price": "0.33910",
-            "change_24h": "-0.4%",
+            "price": "0.33930",
+            "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SUI",
             "score": 92,
-            "price": "0.70940",
+            "price": "0.70960",
             "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1441,7 +1457,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "XRP",
             "score": 92,
-            "price": "1.1431",
+            "price": "1.1427",
             "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1449,15 +1465,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ASTER",
             "score": 92,
-            "price": "0.64630",
-            "change_24h": "-0.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ATOM",
-            "score": 92,
-            "price": "1.7780",
+            "price": "0.64620",
             "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1466,6 +1474,14 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "1000SHIB",
             "score": 92,
             "price": "0.004697",
+            "change_24h": "-0.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ATOM",
+            "score": 92,
+            "price": "1.7770",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1481,7 +1497,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "LAB",
             "score": 90,
-            "price": "15.4790",
+            "price": "15.4770",
             "change_24h": "+17.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1489,15 +1505,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MMT",
             "score": 90,
-            "price": "0.17350",
-            "change_24h": "+14.5%",
+            "price": "0.17330",
+            "change_24h": "+14.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "1000000BOB",
             "score": 90,
-            "price": "0.01382",
+            "price": "0.01383",
             "change_24h": "+13.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1505,31 +1521,31 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TRUTH",
             "score": 90,
-            "price": "0.01555",
-            "change_24h": "+12.4%",
+            "price": "0.01557",
+            "change_24h": "+12.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BAN",
             "score": 90,
-            "price": "0.07207",
-            "change_24h": "+10.0%",
+            "price": "0.07211",
+            "change_24h": "+10.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BILL",
             "score": 90,
-            "price": "0.05935",
-            "change_24h": "+8.5%",
+            "price": "0.05937",
+            "change_24h": "+8.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PARTI",
             "score": 90,
-            "price": "0.05762",
+            "price": "0.05761",
             "change_24h": "+7.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1537,7 +1553,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "SIREN",
             "score": 90,
-            "price": "0.04101",
+            "price": "0.04099",
             "change_24h": "+6.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1545,88 +1561,72 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "Q",
             "score": 90,
-            "price": "0.01940",
-            "change_24h": "+6.4%",
+            "price": "0.01941",
+            "change_24h": "+6.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AT",
             "score": 90,
-            "price": "0.14650",
-            "change_24h": "+5.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MEGA",
-            "score": 90,
-            "price": "0.05808",
-            "change_24h": "+4.9%",
+            "price": "0.14640",
+            "change_24h": "+5.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ALCH",
             "score": 90,
-            "price": "0.07218",
+            "price": "0.07216",
             "change_24h": "+4.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "VELODROME",
-            "score": 90,
-            "price": "0.02064",
-            "change_24h": "+2.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PNUT",
             "score": 90,
-            "price": "0.04545",
-            "change_24h": "+1.9%",
+            "price": "0.04546",
+            "change_24h": "+2.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "龙虾",
             "score": 90,
-            "price": "0.009412",
+            "price": "0.009413",
             "change_24h": "+1.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ZKP",
-            "score": 90,
-            "price": "0.05858",
-            "change_24h": "+1.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MEME",
-            "score": 90,
-            "price": "0.000555",
-            "change_24h": "+1.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "WAL",
-            "score": 90,
-            "price": "0.03489",
-            "change_24h": "+1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "我踏马来了",
             "score": 90,
-            "price": "0.008289",
-            "change_24h": "+1.5%",
+            "price": "0.008323",
+            "change_24h": "+1.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "WAL",
+            "score": 90,
+            "price": "0.03491",
+            "change_24h": "+1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MEME",
+            "score": 90,
+            "price": "0.000556",
+            "change_24h": "+1.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "JELLYJELLY",
+            "score": 90,
+            "price": "0.06010",
+            "change_24h": "+1.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1641,7 +1641,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MOODENG",
             "score": 90,
-            "price": "0.04082",
+            "price": "0.04083",
             "change_24h": "+0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1649,15 +1649,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "KITE",
             "score": 90,
-            "price": "0.16733",
-            "change_24h": "+0.5%",
+            "price": "0.16714",
+            "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "XVG",
             "score": 90,
-            "price": "0.002576",
+            "price": "0.002575",
             "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1665,7 +1665,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TON",
             "score": 90,
-            "price": "1.6410",
+            "price": "1.6409",
             "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1681,15 +1681,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ZAMA",
             "score": 90,
-            "price": "0.03432",
-            "change_24h": "+0.1%",
+            "price": "0.03437",
+            "change_24h": "+0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ZORA",
             "score": 90,
-            "price": "0.007942",
+            "price": "0.007943",
             "change_24h": "+0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1705,7 +1705,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "CAKE",
             "score": 90,
-            "price": "1.3832",
+            "price": "1.3829",
             "change_24h": "-0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1713,8 +1713,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "LINEA",
             "score": 90,
-            "price": "0.002542",
-            "change_24h": "-0.3%",
+            "price": "0.002543",
+            "change_24h": "-0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1735,6 +1735,22 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "ARKM",
+            "score": 90,
+            "price": "0.13220",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "REZ",
+            "score": 90,
+            "price": "0.003270",
+            "change_24h": "-0.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "HYPER",
             "score": 90,
             "price": "0.07881",
@@ -1745,15 +1761,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ALT",
             "score": 90,
-            "price": "0.006476",
-            "change_24h": "-0.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "REZ",
-            "score": 90,
-            "price": "0.003268",
+            "price": "0.006478",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1761,7 +1769,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "GRT",
             "score": 90,
-            "price": "0.01984",
+            "price": "0.01985",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1769,8 +1777,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "METIS",
             "score": 90,
-            "price": "3.1890",
-            "change_24h": "-1.1%",
+            "price": "3.1940",
+            "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1783,25 +1791,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "ARKM",
-            "score": 90,
-            "price": "0.13160",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "DUSK",
-            "score": 90,
-            "price": "0.08480",
-            "change_24h": "-1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "NEWT",
             "score": 90,
-            "price": "0.05173",
+            "price": "0.05174",
             "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1809,16 +1801,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "STAR",
             "score": 90,
-            "price": "0.16550",
+            "price": "0.16553",
             "change_24h": "-1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "IRYS",
-            "score": 90,
-            "price": "0.01742",
-            "change_24h": "-1.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1831,17 +1815,17 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "XTZ",
+            "coin": "DUSK",
             "score": 90,
-            "price": "0.23450",
+            "price": "0.08464",
             "change_24h": "-1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "RVN",
+            "coin": "XTZ",
             "score": 90,
-            "price": "0.004173",
+            "price": "0.23450",
             "change_24h": "-1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1857,7 +1841,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "HIVE",
             "score": 90,
-            "price": "0.04979",
+            "price": "0.04980",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1000SATS",
+            "score": 90,
+            "price": "0.000010",
             "change_24h": "-1.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1866,14 +1858,6 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "SNX",
             "score": 90,
             "price": "0.24050",
-            "change_24h": "-1.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "1000SATS",
-            "score": 90,
-            "price": "0.000010",
             "change_24h": "-1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1895,6 +1879,14 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "VANRY",
+            "score": 90,
+            "price": "0.003437",
+            "change_24h": "-2.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "ANIME",
             "score": 90,
             "price": "0.002983",
@@ -1903,26 +1895,10 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "VANRY",
-            "score": 90,
-            "price": "0.003436",
-            "change_24h": "-2.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "THE",
             "score": 90,
-            "price": "0.06460",
-            "change_24h": "-2.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "KAVA",
-            "score": 90,
-            "price": "0.04822",
-            "change_24h": "-2.2%",
+            "price": "0.06464",
+            "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1931,6 +1907,22 @@ const SIGNAL_DAYS: DayData[] = [
             "score": 90,
             "price": "0.01956",
             "change_24h": "-2.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "KAVA",
+            "score": 90,
+            "price": "0.04821",
+            "change_24h": "-2.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "C",
+            "score": 90,
+            "price": "0.09149",
+            "change_24h": "-2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -1946,14 +1938,6 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "B",
             "score": 90,
             "price": "0.22240",
-            "change_24h": "-2.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "C",
-            "score": 90,
-            "price": "0.09142",
             "change_24h": "-2.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -1977,31 +1961,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "AXL",
             "score": 90,
-            "price": "0.04505",
-            "change_24h": "-2.7%",
+            "price": "0.04509",
+            "change_24h": "-2.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "API3",
             "score": 90,
-            "price": "0.25960",
-            "change_24h": "-2.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "MANTA",
-            "score": 90,
-            "price": "0.08046",
-            "change_24h": "-2.9%",
+            "price": "0.25970",
+            "change_24h": "-2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PROM",
             "score": 90,
-            "price": "1.1550",
+            "price": "1.1560",
             "change_24h": "-2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2009,7 +1985,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TAC",
             "score": 90,
-            "price": "0.01994",
+            "price": "0.01996",
+            "change_24h": "-2.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "NEO",
+            "score": 90,
+            "price": "2.1640",
+            "change_24h": "-2.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MANTA",
+            "score": 90,
+            "price": "0.08039",
             "change_24h": "-3.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2017,31 +2009,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "C98",
             "score": 90,
-            "price": "0.01421",
-            "change_24h": "-3.3%",
+            "price": "0.01423",
+            "change_24h": "-3.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "KNC",
             "score": 90,
-            "price": "0.11760",
-            "change_24h": "-3.8%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "FOLKS",
-            "score": 90,
-            "price": "2.1160",
-            "change_24h": "-4.4%",
+            "price": "0.11780",
+            "change_24h": "-3.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CHR",
             "score": 90,
-            "price": "0.01583",
+            "price": "0.01584",
             "change_24h": "-4.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2055,14 +2039,6 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "GALA",
-            "score": 90,
-            "price": "0.002616",
-            "change_24h": "-5.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "ENJ",
             "score": 90,
             "price": "0.03315",
@@ -2071,18 +2047,18 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "RARE",
+            "coin": "ZEREBRO",
             "score": 90,
-            "price": "0.01328",
-            "change_24h": "-9.0%",
+            "price": "0.04091",
+            "change_24h": "-8.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ZEREBRO",
+            "coin": "RARE",
             "score": 90,
-            "price": "0.04083",
-            "change_24h": "-9.0%",
+            "price": "0.01330",
+            "change_24h": "-8.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2097,24 +2073,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MYX",
             "score": 90,
-            "price": "0.10980",
+            "price": "0.10970",
             "change_24h": "-10.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CLO",
-            "score": 90,
-            "price": "0.20836",
-            "change_24h": "-10.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "HEI",
             "score": 90,
-            "price": "0.09289",
-            "change_24h": "-11.0%",
+            "price": "0.09304",
+            "change_24h": "-10.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2129,24 +2097,32 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ALICE",
             "score": 90,
-            "price": "0.13660",
-            "change_24h": "-29.8%",
+            "price": "0.13630",
+            "change_24h": "-29.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PUMP",
             "score": 87,
-            "price": "0.001523",
-            "change_24h": "+7.0%",
+            "price": "0.001522",
+            "change_24h": "+6.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "POPCAT",
             "score": 87,
-            "price": "0.04914",
-            "change_24h": "+6.2%",
+            "price": "0.04912",
+            "change_24h": "+6.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "KOMA",
+            "score": 87,
+            "price": "0.008989",
+            "change_24h": "+4.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2161,16 +2137,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "NIGHT",
             "score": 87,
-            "price": "0.03357",
-            "change_24h": "+4.1%",
+            "price": "0.03358",
+            "change_24h": "+4.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "B2",
             "score": 87,
-            "price": "0.55580",
-            "change_24h": "+4.0%",
+            "price": "0.55520",
+            "change_24h": "+3.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2178,22 +2154,22 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "NOT",
             "score": 87,
             "price": "0.000420",
-            "change_24h": "+3.8%",
+            "change_24h": "+3.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SKYAI",
             "score": 87,
-            "price": "0.37680",
-            "change_24h": "+3.6%",
+            "price": "0.37671",
+            "change_24h": "+3.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ZBT",
             "score": 87,
-            "price": "0.12077",
+            "price": "0.12072",
             "change_24h": "+3.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2201,8 +2177,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MITO",
             "score": 87,
-            "price": "0.02497",
-            "change_24h": "+2.8%",
+            "price": "0.02499",
+            "change_24h": "+2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2217,15 +2193,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "JST",
             "score": 87,
-            "price": "0.08380",
+            "price": "0.08384",
             "change_24h": "+2.2%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ASR",
+            "score": 87,
+            "price": "0.92800",
+            "change_24h": "+2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SKY",
             "score": 87,
-            "price": "0.05956",
+            "price": "0.05954",
             "change_24h": "+2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2233,24 +2217,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "XMR",
             "score": 87,
-            "price": "322.1500",
-            "change_24h": "+1.6%",
+            "price": "322.8300",
+            "change_24h": "+1.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "QNT",
             "score": 87,
-            "price": "71.3400",
-            "change_24h": "+1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BTC",
-            "score": 87,
-            "price": "64461.10",
-            "change_24h": "+0.3%",
+            "price": "71.2800",
+            "change_24h": "+1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2263,9 +2239,17 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "BTC",
+            "score": 87,
+            "price": "64446.50",
+            "change_24h": "+0.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "JASMY",
             "score": 87,
-            "price": "0.004704",
+            "price": "0.004706",
             "change_24h": "-0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2273,7 +2257,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ETC",
             "score": 87,
-            "price": "7.3690",
+            "price": "7.3680",
             "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2289,7 +2273,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "IOTA",
             "score": 87,
-            "price": "0.04473",
+            "price": "0.04474",
             "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2297,80 +2281,80 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "UAI",
             "score": 85,
-            "price": "0.33670",
-            "change_24h": "+19.6%",
+            "price": "0.33720",
+            "change_24h": "+19.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BLESS",
             "score": 85,
-            "price": "0.008363",
-            "change_24h": "+9.8%",
+            "price": "0.008375",
+            "change_24h": "+9.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "FORM",
             "score": 85,
-            "price": "0.25700",
-            "change_24h": "+9.4%",
+            "price": "0.25650",
+            "change_24h": "+9.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "MERL",
             "score": 85,
-            "price": "0.02220",
-            "change_24h": "+8.5%",
+            "price": "0.02226",
+            "change_24h": "+8.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RIVER",
             "score": 85,
-            "price": "4.9370",
-            "change_24h": "+8.3%",
+            "price": "4.9400",
+            "change_24h": "+8.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TRUST",
             "score": 85,
-            "price": "0.05529",
-            "change_24h": "+7.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "BR",
-            "score": 85,
-            "price": "0.14876",
-            "change_24h": "+6.8%",
+            "price": "0.05509",
+            "change_24h": "+7.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "DOOD",
             "score": 85,
-            "price": "0.001598",
-            "change_24h": "+6.8%",
+            "price": "0.001599",
+            "change_24h": "+6.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BR",
+            "score": 85,
+            "price": "0.14864",
+            "change_24h": "+6.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CROSS",
             "score": 85,
-            "price": "0.09492",
-            "change_24h": "+4.6%",
+            "price": "0.09491",
+            "change_24h": "+4.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BROCCOLIF3B",
             "score": 85,
-            "price": "0.004704",
-            "change_24h": "+2.5%",
+            "price": "0.004711",
+            "change_24h": "+2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2385,15 +2369,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "XAUT",
             "score": 85,
-            "price": "4190.35",
-            "change_24h": "+1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "JELLYJELLY",
-            "score": 85,
-            "price": "0.06010",
+            "price": "4188.90",
             "change_24h": "+1.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2401,7 +2377,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "PAXG",
             "score": 85,
-            "price": "4197.50",
+            "price": "4196.35",
             "change_24h": "+1.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2409,7 +2385,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "PEOPLE",
             "score": 85,
-            "price": "0.005622",
+            "price": "0.005623",
             "change_24h": "+0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2417,8 +2393,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "BNB",
             "score": 85,
-            "price": "594.3900",
-            "change_24h": "+0.8%",
+            "price": "593.6900",
+            "change_24h": "+0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2433,7 +2409,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TRX",
             "score": 85,
-            "price": "0.32800",
+            "price": "0.32802",
             "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2441,15 +2417,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "INX",
             "score": 85,
-            "price": "0.007983",
-            "change_24h": "-0.3%",
+            "price": "0.007981",
+            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BLUAI",
+            "coin": "TRADOOR",
             "score": 85,
-            "price": "0.01428",
+            "price": "0.43470",
             "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2457,15 +2433,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ACH",
             "score": 85,
-            "price": "0.005155",
+            "price": "0.005154",
             "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "TRADOOR",
+            "coin": "BLUAI",
             "score": 85,
-            "price": "0.43460",
+            "price": "0.01427",
             "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2473,7 +2449,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "GRIFFAIN",
             "score": 85,
-            "price": "0.009073",
+            "price": "0.009077",
             "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2489,8 +2465,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MTL",
             "score": 85,
-            "price": "0.24790",
-            "change_24h": "-1.5%",
+            "price": "0.24810",
+            "change_24h": "-1.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2503,17 +2479,25 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "STX",
+            "coin": "KSM",
             "score": 85,
-            "price": "0.18120",
+            "price": "3.4950",
+            "change_24h": "-1.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FLUX",
+            "score": 85,
+            "price": "0.05164",
             "change_24h": "-1.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "KSM",
+            "coin": "STX",
             "score": 85,
-            "price": "3.4910",
+            "price": "0.18120",
             "change_24h": "-1.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2527,9 +2511,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "FLUX",
+            "coin": "PIEVERSE",
             "score": 85,
-            "price": "0.05159",
+            "price": "0.69990",
             "change_24h": "-1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2559,14 +2543,6 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "CTR",
-            "score": 85,
-            "price": "0.01112",
-            "change_24h": "-2.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "MAV",
             "score": 85,
             "price": "0.01049",
@@ -2583,26 +2559,26 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "DIA",
+            "coin": "CTR",
             "score": 85,
-            "price": "0.11970",
-            "change_24h": "-3.0%",
+            "price": "0.01110",
+            "change_24h": "-2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SCRT",
             "score": 85,
-            "price": "0.05795",
-            "change_24h": "-3.0%",
+            "price": "0.05804",
+            "change_24h": "-2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "WAXP",
             "score": 85,
-            "price": "0.004323",
-            "change_24h": "-3.1%",
+            "price": "0.004327",
+            "change_24h": "-3.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2617,8 +2593,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "CARV",
             "score": 85,
-            "price": "0.04022",
-            "change_24h": "-3.3%",
+            "price": "0.04024",
+            "change_24h": "-3.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2641,56 +2617,56 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "CHILLGUY",
             "score": 85,
-            "price": "0.009065",
+            "price": "0.009064",
             "change_24h": "-3.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SAFE",
-            "score": 85,
-            "price": "0.08780",
-            "change_24h": "-4.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "XNY",
             "score": 85,
-            "price": "0.005385",
-            "change_24h": "-4.1%",
+            "price": "0.005379",
+            "change_24h": "-4.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AKE",
             "score": 85,
-            "price": "0.000415",
-            "change_24h": "-4.2%",
+            "price": "0.000414",
+            "change_24h": "-4.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "FOLKS",
+            "score": 85,
+            "price": "2.1180",
+            "change_24h": "-4.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AGT",
             "score": 85,
-            "price": "0.02486",
-            "change_24h": "-6.5%",
+            "price": "0.02503",
+            "change_24h": "-5.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "MANA",
             "score": 85,
-            "price": "0.07410",
-            "change_24h": "-7.7%",
+            "price": "0.07400",
+            "change_24h": "-7.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "DEXE",
             "score": 85,
-            "price": "13.7500",
-            "change_24h": "-10.2%",
+            "price": "13.7700",
+            "change_24h": "-10.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2705,7 +2681,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "AIO",
             "score": 85,
-            "price": "0.10920",
+            "price": "0.10919",
             "change_24h": "-15.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2713,7 +2689,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "IDOL",
             "score": 85,
-            "price": "0.01911",
+            "price": "0.01912",
             "change_24h": "-16.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2721,31 +2697,31 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ACE",
             "score": 85,
-            "price": "0.08164",
-            "change_24h": "-18.4%",
+            "price": "0.08152",
+            "change_24h": "-18.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RUNE",
             "score": 82,
-            "price": "0.42250",
+            "price": "0.42260",
             "change_24h": "+2.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "ASR",
+            "coin": "ZKP",
             "score": 82,
-            "price": "0.92600",
-            "change_24h": "+1.9%",
+            "price": "0.05863",
+            "change_24h": "+2.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "NMR",
             "score": 82,
-            "price": "9.1160",
+            "price": "9.1170",
             "change_24h": "+1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2753,8 +2729,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "WCT",
             "score": 82,
-            "price": "0.04769",
-            "change_24h": "+1.7%",
+            "price": "0.04760",
+            "change_24h": "+1.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ESP",
+            "score": 82,
+            "price": "0.06276",
+            "change_24h": "+1.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2767,65 +2751,57 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "ESP",
-            "score": 82,
-            "price": "0.06272",
-            "change_24h": "+1.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "CFG",
             "score": 82,
-            "price": "0.23360",
-            "change_24h": "+1.2%",
+            "price": "0.23380",
+            "change_24h": "+1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "PRL",
             "score": 82,
-            "price": "0.14500",
-            "change_24h": "+1.2%",
+            "price": "0.14510",
+            "change_24h": "+1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CFX",
             "score": 82,
-            "price": "0.04824",
-            "change_24h": "+1.1%",
+            "price": "0.04827",
+            "change_24h": "+1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LAYER",
             "score": 82,
-            "price": "0.06722",
-            "change_24h": "+0.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "EUL",
-            "score": 82,
-            "price": "1.0727",
-            "change_24h": "+0.8%",
+            "price": "0.06728",
+            "change_24h": "+1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CYBER",
             "score": 82,
-            "price": "0.37270",
-            "change_24h": "+0.6%",
+            "price": "0.37320",
+            "change_24h": "+0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "EUL",
+            "score": 82,
+            "price": "1.0723",
+            "change_24h": "+0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "COMP",
             "score": 82,
-            "price": "18.0600",
+            "price": "18.0500",
             "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2833,23 +2809,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ONT",
             "score": 82,
-            "price": "0.04653",
-            "change_24h": "+0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "A",
-            "score": 82,
-            "price": "0.06623",
-            "change_24h": "+0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AZTEC",
-            "score": 82,
-            "price": "0.01548",
+            "price": "0.04654",
             "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2857,7 +2817,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "BLUR",
             "score": 82,
-            "price": "0.01571",
+            "price": "0.01572",
             "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2865,16 +2825,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TRB",
             "score": 82,
-            "price": "13.8460",
-            "change_24h": "+0.2%",
+            "price": "13.8550",
+            "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "KAS",
+            "coin": "AZTEC",
             "score": 82,
-            "price": "0.02983",
-            "change_24h": "+0.0%",
+            "price": "0.01547",
+            "change_24h": "+0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2882,7 +2842,15 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "1MBABYDOGE",
             "score": 82,
             "price": "0.000330",
-            "change_24h": "+0.0%",
+            "change_24h": "+0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "KAS",
+            "score": 82,
+            "price": "0.02981",
+            "change_24h": "-0.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2895,17 +2863,25 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "MIRA",
+            "coin": "GIGGLE",
             "score": 82,
-            "price": "0.04921",
+            "price": "26.7300",
             "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "GIGGLE",
+            "coin": "AKT",
             "score": 82,
-            "price": "26.7100",
+            "price": "0.75480",
+            "change_24h": "-0.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "MIRA",
+            "score": 82,
+            "price": "0.04921",
             "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2921,24 +2897,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ENS",
             "score": 82,
-            "price": "4.7430",
-            "change_24h": "-0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "AKT",
-            "score": 82,
-            "price": "0.75340",
-            "change_24h": "-0.5%",
+            "price": "4.7470",
+            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "NIL",
             "score": 82,
-            "price": "0.03955",
-            "change_24h": "-0.6%",
+            "price": "0.03957",
+            "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2953,15 +2921,23 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ENSO",
             "score": 82,
-            "price": "0.62550",
-            "change_24h": "-0.8%",
+            "price": "0.62600",
+            "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ROSE",
             "score": 82,
-            "price": "0.006665",
+            "price": "0.006667",
+            "change_24h": "-1.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "IRYS",
+            "score": 82,
+            "price": "0.01748",
             "change_24h": "-1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -2969,16 +2945,24 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "RSR",
             "score": 82,
-            "price": "0.001308",
-            "change_24h": "-1.2%",
+            "price": "0.001309",
+            "change_24h": "-1.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "VET",
             "score": 82,
-            "price": "0.004936",
+            "price": "0.004938",
             "change_24h": "-1.4%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "RVN",
+            "score": 82,
+            "price": "0.004176",
+            "change_24h": "-1.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -2991,10 +2975,18 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "MEGA",
+            "score": 80,
+            "price": "0.05814",
+            "change_24h": "+5.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "HEMI",
             "score": 80,
-            "price": "0.005613",
-            "change_24h": "+2.9%",
+            "price": "0.005615",
+            "change_24h": "+3.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3007,18 +2999,26 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "OPEN",
+            "score": 80,
+            "price": "0.22730",
+            "change_24h": "+2.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "POWER",
             "score": 80,
-            "price": "0.07659",
-            "change_24h": "+0.6%",
+            "price": "0.07658",
+            "change_24h": "+0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ON",
             "score": 80,
-            "price": "0.08320",
-            "change_24h": "+0.2%",
+            "price": "0.08338",
+            "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3026,7 +3026,7 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "MEW",
             "score": 80,
             "price": "0.000377",
-            "change_24h": "-0.2%",
+            "change_24h": "-0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3041,24 +3041,24 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TA",
             "score": 80,
-            "price": "0.07170",
-            "change_24h": "-0.3%",
+            "price": "0.07162",
+            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TUT",
             "score": 80,
-            "price": "0.01049",
-            "change_24h": "-0.3%",
+            "price": "0.01048",
+            "change_24h": "-0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BB",
             "score": 80,
-            "price": "0.02256",
-            "change_24h": "-0.6%",
+            "price": "0.02255",
+            "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3071,17 +3071,25 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "COAI",
+            "score": 80,
+            "price": "0.35240",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "HANA",
             "score": 80,
-            "price": "0.03938",
+            "price": "0.03939",
             "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "COAI",
+            "coin": "XVS",
             "score": 80,
-            "price": "0.35140",
+            "price": "2.6900",
             "change_24h": "-1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3097,39 +3105,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "1000CHEEMS",
             "score": 80,
-            "price": "0.000528",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "XVS",
-            "score": 80,
-            "price": "2.6890",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SOMI",
-            "score": 80,
-            "price": "0.10900",
-            "change_24h": "-1.1%",
+            "price": "0.000527",
+            "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AIA",
             "score": 80,
-            "price": "0.05566",
-            "change_24h": "-1.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SANTOS",
-            "score": 80,
-            "price": "0.60750",
+            "price": "0.05562",
             "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3167,9 +3151,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "FLOCK",
+            "coin": "SANTOS",
             "score": 80,
-            "price": "0.03860",
+            "price": "0.60700",
             "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3183,9 +3167,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "OG",
+            "coin": "FLOCK",
             "score": 80,
-            "price": "2.6660",
+            "price": "0.03859",
             "change_24h": "-1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3193,8 +3177,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "SHELL",
             "score": 80,
-            "price": "0.02455",
-            "change_24h": "-1.5%",
+            "price": "0.02458",
+            "change_24h": "-1.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3231,17 +3215,17 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "SONIC",
+            "coin": "TURTLE",
             "score": 80,
-            "price": "0.02608",
-            "change_24h": "-1.6%",
+            "price": "0.03564",
+            "change_24h": "-1.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "TURTLE",
+            "coin": "SONIC",
             "score": 80,
-            "price": "0.03563",
+            "price": "0.02606",
             "change_24h": "-1.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3257,7 +3241,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TREE",
             "score": 80,
-            "price": "0.04589",
+            "price": "0.04588",
             "change_24h": "-1.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3287,17 +3271,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "PIEVERSE",
-            "score": 80,
-            "price": "0.69860",
-            "change_24h": "-1.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "PHAROS",
             "score": 80,
-            "price": "0.55490",
+            "price": "0.55520",
             "change_24h": "-2.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3305,7 +3281,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ETHW",
             "score": 80,
-            "price": "0.23790",
+            "price": "0.23800",
             "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3313,24 +3289,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ALPINE",
             "score": 80,
-            "price": "0.33620",
-            "change_24h": "-2.2%",
+            "price": "0.33590",
+            "change_24h": "-2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "HAEDAL",
             "score": 80,
-            "price": "0.01795",
-            "change_24h": "-2.4%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "IOST",
-            "score": 80,
-            "price": "0.000778",
-            "change_24h": "-2.5%",
+            "price": "0.01796",
+            "change_24h": "-2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3347,6 +3315,22 @@ const SIGNAL_DAYS: DayData[] = [
             "score": 80,
             "price": "0.01693",
             "change_24h": "-2.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "IOST",
+            "score": 80,
+            "price": "0.000777",
+            "change_24h": "-2.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DIA",
+            "score": 80,
+            "price": "0.11980",
+            "change_24h": "-2.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3377,7 +3361,15 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "AGLD",
             "score": 80,
-            "price": "0.15770",
+            "price": "0.15780",
+            "change_24h": "-4.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "SAFE",
+            "score": 80,
+            "price": "0.08770",
             "change_24h": "-4.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3385,16 +3377,32 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "KGEN",
             "score": 80,
-            "price": "0.17080",
-            "change_24h": "-4.4%",
+            "price": "0.17050",
+            "change_24h": "-4.5%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ACU",
+            "score": 80,
+            "price": "0.08361",
+            "change_24h": "-4.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AIGENSYN",
+            "score": 80,
+            "price": "0.02537",
+            "change_24h": "-5.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "THETA",
             "score": 80,
-            "price": "0.15560",
-            "change_24h": "-5.2%",
+            "price": "0.15570",
+            "change_24h": "-5.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3407,50 +3415,50 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "AIGENSYN",
+            "coin": "SQD",
             "score": 80,
-            "price": "0.02532",
-            "change_24h": "-5.2%",
+            "price": "0.04158",
+            "change_24h": "-6.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "COLLECT",
             "score": 80,
-            "price": "0.04873",
+            "price": "0.04875",
             "change_24h": "-6.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SQD",
-            "score": 80,
-            "price": "0.04150",
-            "change_24h": "-6.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "YB",
             "score": 80,
-            "price": "0.07980",
-            "change_24h": "-6.2%",
+            "price": "0.07990",
+            "change_24h": "-6.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "YGG",
             "score": 80,
-            "price": "0.02655",
-            "change_24h": "-6.6%",
+            "price": "0.02653",
+            "change_24h": "-6.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "TLM",
             "score": 80,
-            "price": "0.001019",
-            "change_24h": "-9.4%",
+            "price": "0.001020",
+            "change_24h": "-9.3%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "AIOT",
+            "score": 80,
+            "price": "0.05947",
+            "change_24h": "-9.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3463,17 +3471,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "AIOT",
-            "score": 80,
-            "price": "0.05943",
-            "change_24h": "-10.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "SLX",
             "score": 80,
-            "price": "0.20241",
+            "price": "0.20257",
             "change_24h": "-11.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3487,25 +3487,17 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "KOMA",
-            "score": 77,
-            "price": "0.009010",
-            "change_24h": "+5.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "TAG",
             "score": 77,
-            "price": "0.000981",
-            "change_24h": "+2.2%",
+            "price": "0.000982",
+            "change_24h": "+2.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ASTR",
             "score": 77,
-            "price": "0.005543",
+            "price": "0.005544",
             "change_24h": "+0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3521,7 +3513,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "SUSHI",
             "score": 77,
-            "price": "0.17780",
+            "price": "0.17790",
             "change_24h": "+0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3537,16 +3529,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "STEEM",
             "score": 77,
-            "price": "0.04318",
-            "change_24h": "-0.5%",
+            "price": "0.04317",
+            "change_24h": "-0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "AR",
             "score": 77,
-            "price": "2.0160",
-            "change_24h": "-0.7%",
+            "price": "2.0140",
+            "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3561,39 +3553,39 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "HOT",
             "score": 77,
-            "price": "0.000311",
-            "change_24h": "-0.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ZEN",
-            "score": 77,
-            "price": "4.6260",
-            "change_24h": "-1.1%",
+            "price": "0.000312",
+            "change_24h": "-0.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "LQTY",
             "score": 77,
-            "price": "0.20010",
-            "change_24h": "-1.1%",
+            "price": "0.20030",
+            "change_24h": "-1.0%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ZEN",
+            "score": 77,
+            "price": "4.6280",
+            "change_24h": "-1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "W",
             "score": 75,
-            "price": "0.01170",
-            "change_24h": "+12.9%",
+            "price": "0.01171",
+            "change_24h": "+13.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "4",
             "score": 75,
-            "price": "0.008998",
+            "price": "0.008997",
             "change_24h": "+5.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3601,16 +3593,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "PHA",
             "score": 75,
-            "price": "0.03980",
-            "change_24h": "+5.1%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "OPEN",
-            "score": 75,
-            "price": "0.22710",
-            "change_24h": "+2.0%",
+            "price": "0.03983",
+            "change_24h": "+5.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3625,8 +3609,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "KAITO",
             "score": 75,
-            "price": "0.48020",
-            "change_24h": "+1.3%",
+            "price": "0.48070",
+            "change_24h": "+1.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3635,6 +3619,14 @@ const SIGNAL_DAYS: DayData[] = [
             "score": 75,
             "price": "0.20980",
             "change_24h": "+0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "A",
+            "score": 75,
+            "price": "0.06630",
+            "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3649,47 +3641,47 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "JOE",
             "score": 75,
-            "price": "0.03210",
-            "change_24h": "-0.1%",
+            "price": "0.03213",
+            "change_24h": "+0.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CKB",
             "score": 75,
-            "price": "0.001056",
-            "change_24h": "-0.6%",
+            "price": "0.001057",
+            "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "IOTX",
             "score": 75,
-            "price": "0.003160",
-            "change_24h": "-0.6%",
+            "price": "0.003162",
+            "change_24h": "-0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "WOO",
             "score": 75,
-            "price": "0.01279",
-            "change_24h": "-1.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "CELR",
-            "score": 75,
-            "price": "0.002070",
-            "change_24h": "-1.8%",
+            "price": "0.01280",
+            "change_24h": "-1.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "SSV",
             "score": 75,
-            "price": "2.3530",
+            "price": "2.3550",
+            "change_24h": "-1.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "CELR",
+            "score": 75,
+            "price": "0.002069",
             "change_24h": "-1.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3697,16 +3689,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "ONE",
             "score": 75,
-            "price": "0.001423",
-            "change_24h": "-2.2%",
+            "price": "0.001425",
+            "change_24h": "-2.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "RLC",
             "score": 75,
-            "price": "0.33070",
-            "change_24h": "-2.3%",
+            "price": "0.33100",
+            "change_24h": "-2.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3729,7 +3721,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "CLANKER",
             "score": 75,
-            "price": "18.3600",
+            "price": "18.3500",
             "change_24h": "-10.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3737,39 +3729,31 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "DOLO",
             "score": 75,
-            "price": "0.02513",
-            "change_24h": "-11.8%",
+            "price": "0.02516",
+            "change_24h": "-11.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BTW",
             "score": 75,
-            "price": "0.08652",
-            "change_24h": "-30.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "LYN",
-            "score": 72,
-            "price": "0.03687",
-            "change_24h": "+1.3%",
+            "price": "0.08691",
+            "change_24h": "-29.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ATH",
             "score": 72,
-            "price": "0.004785",
+            "price": "0.004786",
             "change_24h": "+1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "CGPT",
+            "coin": "LYN",
             "score": 72,
-            "price": "0.02044",
+            "price": "0.03685",
             "change_24h": "+1.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3783,50 +3767,58 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "ARC",
+            "coin": "CGPT",
             "score": 72,
-            "price": "0.08170",
-            "change_24h": "+0.7%",
+            "price": "0.02042",
+            "change_24h": "+1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "DODOX",
             "score": 72,
-            "price": "0.01624",
+            "price": "0.01626",
+            "change_24h": "+0.8%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ARC",
+            "score": 72,
+            "price": "0.08174",
             "change_24h": "+0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ORDER",
-            "score": 72,
-            "price": "0.03900",
-            "change_24h": "+0.5%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "LUNA2",
-            "score": 72,
-            "price": "0.05241",
-            "change_24h": "+0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BSV",
             "score": 72,
-            "price": "11.8800",
-            "change_24h": "+0.4%",
+            "price": "11.9000",
+            "change_24h": "+0.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "LUNA2",
+            "score": 72,
+            "price": "0.05244",
+            "change_24h": "+0.6%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ORDER",
+            "score": 72,
+            "price": "0.03898",
+            "change_24h": "+0.5%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "CVX",
             "score": 72,
-            "price": "1.2590",
-            "change_24h": "+0.2%",
+            "price": "1.2610",
+            "change_24h": "+0.4%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3849,8 +3841,16 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "G",
             "score": 72,
-            "price": "0.002689",
-            "change_24h": "-0.2%",
+            "price": "0.002691",
+            "change_24h": "-0.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "1000CAT",
+            "score": 72,
+            "price": "0.001443",
+            "change_24h": "-0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3871,17 +3871,17 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "TWT",
+            "coin": "1000XEC",
             "score": 72,
-            "price": "0.38650",
+            "price": "0.005460",
             "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "1000XEC",
+            "coin": "TWT",
             "score": 72,
-            "price": "0.005459",
+            "price": "0.38650",
             "change_24h": "-0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3895,14 +3895,6 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "1000CAT",
-            "score": 72,
-            "price": "0.001440",
-            "change_24h": "-0.3%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "AUCTION",
             "score": 72,
             "price": "3.7340",
@@ -3911,17 +3903,17 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "PUNDIX",
+            "coin": "SOPH",
             "score": 72,
-            "price": "0.09750",
+            "price": "0.005380",
             "change_24h": "-0.6%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "SOPH",
+            "coin": "ACX",
             "score": 72,
-            "price": "0.005377",
+            "price": "0.04145",
             "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3935,17 +3927,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "BANANA",
+            "coin": "PUNDIX",
             "score": 72,
-            "price": "2.9200",
-            "change_24h": "-0.7%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ACX",
-            "score": 72,
-            "price": "0.04143",
+            "price": "0.09740",
             "change_24h": "-0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3953,8 +3937,24 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "SXT",
             "score": 72,
-            "price": "0.007895",
-            "change_24h": "-0.8%",
+            "price": "0.007896",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "BANANA",
+            "score": 72,
+            "price": "2.9190",
+            "change_24h": "-0.7%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "DEEP",
+            "score": 72,
+            "price": "0.01673",
+            "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -3962,6 +3962,22 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "TAKE",
             "score": 72,
             "price": "0.01768",
+            "change_24h": "-0.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ELSA",
+            "score": 72,
+            "price": "0.04341",
+            "change_24h": "-0.9%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
+            "coin": "ARK",
+            "score": 72,
+            "price": "0.11520",
             "change_24h": "-0.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -3975,25 +3991,17 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "DEEP",
+            "coin": "PROMPT",
             "score": 72,
-            "price": "0.01672",
-            "change_24h": "-0.9%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "ARK",
-            "score": 72,
-            "price": "0.11510",
+            "price": "0.02393",
             "change_24h": "-1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "PROMPT",
+            "coin": "SOMI",
             "score": 72,
-            "price": "0.02392",
+            "price": "0.10910",
             "change_24h": "-1.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4007,9 +4015,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "ELSA",
+            "coin": "F",
             "score": 72,
-            "price": "0.04334",
+            "price": "0.003817",
             "change_24h": "-1.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4023,17 +4031,17 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "F",
+            "coin": "BANK",
             "score": 72,
-            "price": "0.003816",
-            "change_24h": "-1.1%",
+            "price": "0.03821",
+            "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
-            "coin": "BANK",
+            "coin": "OG",
             "score": 72,
-            "price": "0.03821",
+            "price": "2.6680",
             "change_24h": "-1.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4057,31 +4065,31 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "TNSR",
             "score": 70,
-            "price": "0.04618",
-            "change_24h": "+48.2%",
+            "price": "0.04622",
+            "change_24h": "+48.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "MAGMA",
             "score": 70,
-            "price": "0.50871",
-            "change_24h": "+26.4%",
+            "price": "0.50813",
+            "change_24h": "+26.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "BULLA",
             "score": 70,
-            "price": "0.005625",
-            "change_24h": "+21.5%",
+            "price": "0.005615",
+            "change_24h": "+21.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "ZEST",
             "score": 70,
-            "price": "0.29970",
+            "price": "0.29949",
             "change_24h": "+18.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4089,7 +4097,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "IN",
             "score": 70,
-            "price": "0.07801",
+            "price": "0.07803",
             "change_24h": "+7.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4105,8 +4113,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "1000RATS",
             "score": 70,
-            "price": "0.02762",
-            "change_24h": "-2.3%",
+            "price": "0.02765",
+            "change_24h": "-2.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -4119,17 +4127,9 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
-            "coin": "ACU",
-            "score": 70,
-            "price": "0.08352",
-            "change_24h": "-5.0%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
             "coin": "HFT",
             "score": 70,
-            "price": "0.01018",
+            "price": "0.01019",
             "change_24h": "-11.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4137,7 +4137,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "CTSI",
             "score": 67,
-            "price": "0.02401",
+            "price": "0.02402",
             "change_24h": "+0.3%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4145,8 +4145,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "MINA",
             "score": 67,
-            "price": "0.04249",
-            "change_24h": "+0.0%",
+            "price": "0.04252",
+            "change_24h": "+0.1%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -4159,10 +4159,18 @@ const SIGNAL_DAYS: DayData[] = [
             "change_8h": "待追踪"
       },
       {
+            "coin": "SYN",
+            "score": 65,
+            "price": "0.20937",
+            "change_24h": "+57.1%",
+            "change_4h": "待追踪",
+            "change_8h": "待追踪"
+      },
+      {
             "coin": "EIGEN",
             "score": 65,
-            "price": "0.29630",
-            "change_24h": "+16.1%",
+            "price": "0.29830",
+            "change_24h": "+16.8%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -4177,7 +4185,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "FLOW",
             "score": 65,
-            "price": "0.02879",
+            "price": "0.02881",
             "change_24h": "+0.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4193,7 +4201,7 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "BTCDOM",
             "score": 65,
-            "price": "5602.30",
+            "price": "5601.90",
             "change_24h": "+0.2%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
@@ -4201,8 +4209,8 @@ const SIGNAL_DAYS: DayData[] = [
       {
             "coin": "DRIFT",
             "score": 62,
-            "price": "0.02235",
-            "change_24h": "+29.0%",
+            "price": "0.02233",
+            "change_24h": "+28.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
@@ -4218,31 +4226,23 @@ const SIGNAL_DAYS: DayData[] = [
             "coin": "HMSTR",
             "score": 55,
             "price": "0.000192",
-            "change_24h": "+21.2%",
-            "change_4h": "待追踪",
-            "change_8h": "待追踪"
-      },
-      {
-            "coin": "SYN",
-            "score": 50,
-            "price": "0.21311",
-            "change_24h": "+59.9%",
+            "change_24h": "+20.9%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "UB",
             "score": 50,
-            "price": "0.11563",
-            "change_24h": "+54.4%",
+            "price": "0.11463",
+            "change_24h": "+53.0%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       },
       {
             "coin": "NAORIS",
             "score": 50,
-            "price": "0.04085",
-            "change_24h": "+31.5%",
+            "price": "0.04093",
+            "change_24h": "+31.7%",
             "change_4h": "待追踪",
             "change_8h": "待追踪"
       }
