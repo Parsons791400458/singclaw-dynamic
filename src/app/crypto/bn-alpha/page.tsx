@@ -12,46 +12,46 @@ const stats = [
 ];
 
 const freqList = [
-  { rank: 1, name: 'AIN', chg: 41.9, pct: 100 },
-  { rank: 2, name: 'MAGMA', chg: 38.1, pct: 90 },
-  { rank: 3, name: 'BEAT', chg: 34.6, pct: 82 },
-  { rank: 4, name: 'ICNT', chg: 33.1, pct: 78 },
-  { rank: 5, name: 'TAC', chg: 20.8, pct: 49 },
-  { rank: 6, name: 'H', chg: 20.6, pct: 49 },
-  { rank: 7, name: 'SLX', chg: 20.6, pct: 49 },
+  { rank: 1, name: 'AIN', chg: 41.5, pct: 100 },
+  { rank: 2, name: 'MAGMA', chg: 37.9, pct: 91 },
+  { rank: 3, name: 'BEAT', chg: 34.4, pct: 82 },
+  { rank: 4, name: 'ICNT', chg: 32.8, pct: 79 },
+  { rank: 5, name: 'TAC', chg: 20.8, pct: 50 },
+  { rank: 6, name: 'H', chg: 20.7, pct: 49 },
+  { rank: 7, name: 'SLX', chg: 20.5, pct: 49 },
   { rank: 8, name: 'BULLA', chg: 19.8, pct: 47 },
   { rank: 9, name: 'IDOL', chg: 18.1, pct: 43 },
-  { rank: 10, name: 'CARV', chg: 13.7, pct: 32 },
-  { rank: 11, name: '1000RATS', chg: 12.1, pct: 28 },
-  { rank: 12, name: 'ARX', chg: 12.0, pct: 28 },
-  { rank: 13, name: 'SKYAI', chg: 12.0, pct: 28 },
-  { rank: 14, name: 'UB', chg: 11.9, pct: 28 },
-  { rank: 15, name: 'FOLKS', chg: 11.2, pct: 26 },
+  { rank: 10, name: 'CARV', chg: 13.8, pct: 33 },
+  { rank: 11, name: 'ARX', chg: 12.1, pct: 29 },
+  { rank: 12, name: '1000RATS', chg: 12.1, pct: 29 },
+  { rank: 13, name: 'UB', chg: 12.0, pct: 28 },
+  { rank: 14, name: 'SKYAI', chg: 11.9, pct: 28 },
+  { rank: 15, name: 'FOLKS', chg: 11.0, pct: 26 },
   { rank: 16, name: 'BBX', chg: 11.0, pct: 26 },
 ];
 
 const alphaTop10 = [
-  { rank: 1, coin: 'AIN', chg: '+41.93%', pos: true },
-  { rank: 2, coin: 'MAGMA', chg: '+38.10%', pos: true },
-  { rank: 3, coin: 'BEAT', chg: '+34.62%', pos: true },
-  { rank: 4, coin: 'ICNT', chg: '+33.08%', pos: true },
-  { rank: 5, coin: 'TAC', chg: '+20.75%', pos: true },
-  { rank: 6, coin: 'H', chg: '+20.65%', pos: true },
-  { rank: 7, coin: 'SLX', chg: '+20.60%', pos: true },
-  { rank: 8, coin: 'BULLA', chg: '+19.81%', pos: true },
-  { rank: 9, coin: 'IDOL', chg: '+18.10%', pos: true },
-  { rank: 10, coin: 'CARV', chg: '+13.73%', pos: true },
+  { rank: 1, coin: 'AIN', chg: '+41.46%', pos: true },
+  { rank: 2, coin: 'MAGMA', chg: '+37.93%', pos: true },
+  { rank: 3, coin: 'BEAT', chg: '+34.40%', pos: true },
+  { rank: 4, coin: 'ICNT', chg: '+32.84%', pos: true },
+  { rank: 5, coin: 'TAC', chg: '+20.76%', pos: true },
+  { rank: 6, coin: 'H', chg: '+20.71%', pos: true },
+  { rank: 7, coin: 'SLX', chg: '+20.47%', pos: true },
+  { rank: 8, coin: 'BULLA', chg: '+19.75%', pos: true },
+  { rank: 9, coin: 'IDOL', chg: '+18.05%', pos: true },
+  { rank: 10, coin: 'CARV', chg: '+13.79%', pos: true },
 ];
 
 const normalTop10 = [
-  { rank: 1, coin: 'G', chg: '+43.49%', pos: true },
-  { rank: 2, coin: 'HEI', chg: '+34.78%', pos: true },
-  { rank: 3, coin: 'TNSR', chg: '+18.88%', pos: true },
+  { rank: 1, coin: 'G', chg: '+43.43%', pos: true },
+  { rank: 2, coin: 'HEI', chg: '+34.99%', pos: true },
+  { rank: 3, coin: 'TNSR', chg: '+18.82%', pos: true },
   { rank: 4, coin: 'HMSTR', chg: '+18.32%', pos: true },
-  { rank: 5, coin: 'JTO', chg: '+15.97%', pos: true },
-  { rank: 6, coin: 'HUMA', chg: '+15.11%', pos: true },
-  { rank: 7, coin: 'XPL', chg: '+13.19%', pos: true },
-  { rank: 8, coin: 'APE', chg: '+12.67%', pos: true },
+  { rank: 5, coin: 'JTO', chg: '+15.74%', pos: true },
+  { rank: 6, coin: 'HUMA', chg: '+15.08%', pos: true },
+  { rank: 7, coin: 'XPL', chg: '+13.12%', pos: true },
+  { rank: 8, coin: 'APE', chg: '+12.59%', pos: true },
   { rank: 9, coin: 'AWE', chg: '+12.48%', pos: true },
   { rank: 10, coin: 'AT', chg: '+11.46%', pos: true },
 ];
@@ -366,7 +366,7 @@ export default function BNAlphaPage() {
                 <strong className="text-gray-200">Alpha超额（1.93x）</strong>：Alpha币在Top10中的占比8/10，高于其池子比例41%，Alpha溢出效应显著。
               </p>
               <p>
-                📈 Alpha组均涨-1.46% (71涨/166跌)，Normal组均涨-1.52% (75涨/258跌)。
+                📈 Alpha组均涨-1.48% (71涨/166跌)，Normal组均涨-1.53% (75涨/258跌)。
               </p>
               <p>
                 🏆 FNG=13 (Extreme Fear)，BTC处于回调阶段，Alpha币波动性加剧。
@@ -411,7 +411,7 @@ export default function BNAlphaPage() {
             <div className="rounded-2xl border border-gray-800 bg-gray-900/50 p-5">
               <div className="mb-1 text-lg font-extrabold">🔶 Alpha Top 10</div>
               <div className="mb-3 text-xs text-gray-500">
-                均涨 <span className="font-bold text-amber-400">-1.46%</span> · 71涨 / 166跌
+                均涨 <span className="font-bold text-amber-400">-1.48%</span> · 71涨 / 166跌
               </div>
               <ol className="space-y-1">
                 {alphaTop10.map((r) => (
@@ -426,7 +426,7 @@ export default function BNAlphaPage() {
             <div className="rounded-2xl border border-gray-800 bg-gray-900/50 p-5">
               <div className="mb-1 text-lg font-extrabold">🔵 Normal Top 10</div>
               <div className="mb-3 text-xs text-gray-500">
-                均涨 <span className="font-bold text-blue-400">-1.52%</span> · 75涨 / 258跌
+                均涨 <span className="font-bold text-blue-400">-1.53%</span> · 75涨 / 258跌
               </div>
               <ol className="space-y-1">
                 {normalTop10.map((r) => (
