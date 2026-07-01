@@ -23,404 +23,388 @@ const SIGNAL_DAYS: DayData[] = [
     "label": "今天 · 2026-07-01",
     "data": [
       {
-        "coin": "AIOT",
-        "score": 100,
-        "price": "0.05259",
-        "change_24h": "+8.4%",
-        "change_4h": "-1.4%",
-        "change_8h": "-2.7%"
-      },
-      {
-        "coin": "MRVL",
-        "score": 100,
-        "price": "294.22",
-        "change_24h": "+6.5%",
-        "change_4h": "+1.2%",
-        "change_8h": "+2.4%"
-      },
-      {
-        "coin": "CLO",
-        "score": 100,
-        "price": "0.1492",
-        "change_24h": "+12.2%",
-        "change_4h": "-0.2%",
-        "change_8h": "-0.4%"
-      },
-      {
-        "coin": "XLM",
-        "score": 100,
-        "price": "0.19541",
-        "change_24h": "+11.7%",
-        "change_4h": "+2.9%",
-        "change_8h": "+5.7%"
-      },
-      {
-        "coin": "MVLL",
-        "score": 100,
-        "price": "55.65",
-        "change_24h": "+12.5%",
-        "change_4h": "+2.0%",
-        "change_8h": "+3.9%"
-      },
-      {
-        "coin": "SNDK",
-        "score": 100,
-        "price": "2212.89",
-        "change_24h": "+7.3%",
-        "change_4h": "+1.1%",
-        "change_8h": "+2.2%"
-      },
-      {
-        "coin": "DODOX",
-        "score": 100,
-        "price": "0.020066",
-        "change_24h": "+6.2%",
-        "change_4h": "+1.5%",
-        "change_8h": "+2.9%"
-      },
-      {
-        "coin": "KLAC",
-        "score": 100,
-        "price": "303.46",
-        "change_24h": "+8.5%",
-        "change_4h": "+1.7%",
-        "change_8h": "+3.4%"
-      },
-      {
-        "coin": "AGT",
-        "score": 100,
-        "price": "0.021527",
-        "change_24h": "+5.8%",
-        "change_4h": "-0.0%",
-        "change_8h": "-0.1%"
-      },
-      {
-        "coin": "ALAB",
-        "score": 100,
-        "price": "482.65",
-        "change_24h": "+6.7%",
-        "change_4h": "+0.8%",
-        "change_8h": "+1.6%"
-      },
-      {
         "coin": "TRIA",
         "score": 100,
-        "price": "0.01987",
-        "change_24h": "+13.7%",
-        "change_4h": "+2.8%",
-        "change_8h": "+5.6%"
+        "price": "0.01976",
+        "change_24h": "+13.9%",
+        "change_4h": "+2.5%",
+        "change_8h": "+5.0%"
       },
       {
         "coin": "H",
         "score": 100,
-        "price": "0.08598",
-        "change_24h": "+15.0%",
-        "change_4h": "+2.7%",
-        "change_8h": "+5.5%"
+        "price": "0.0871",
+        "change_24h": "+11.4%",
+        "change_4h": "+3.4%",
+        "change_8h": "+6.9%"
       },
       {
-        "coin": "AMD",
+        "coin": "SNDK",
         "score": 100,
-        "price": "578.42",
+        "price": "2205.33",
+        "change_24h": "+7.0%",
+        "change_4h": "+0.9%",
+        "change_8h": "+1.9%"
+      },
+      {
+        "coin": "KLAC",
+        "score": 100,
+        "price": "303.09",
         "change_24h": "+7.4%",
         "change_4h": "+1.6%",
-        "change_8h": "+3.1%"
-      },
-      {
-        "coin": "SYN",
-        "score": 100,
-        "price": "0.55477",
-        "change_24h": "+5.7%",
-        "change_4h": "-3.9%",
-        "change_8h": "-7.7%"
-      },
-      {
-        "coin": "TAC",
-        "score": 100,
-        "price": "0.063312",
-        "change_24h": "+10.6%",
-        "change_4h": "+1.6%",
-        "change_8h": "+3.1%"
-      },
-      {
-        "coin": "DYDX",
-        "score": 100,
-        "price": "0.1785",
-        "change_24h": "+13.2%",
-        "change_4h": "+3.0%",
-        "change_8h": "+6.0%"
-      },
-      {
-        "coin": "APR",
-        "score": 100,
-        "price": "0.2264",
-        "change_24h": "+10.6%",
-        "change_4h": "+1.2%",
-        "change_8h": "+2.5%"
-      },
-      {
-        "coin": "CYS",
-        "score": 100,
-        "price": "0.3708",
-        "change_24h": "+10.7%",
-        "change_4h": "+3.3%",
-        "change_8h": "+6.7%"
+        "change_8h": "+3.2%"
       },
       {
         "coin": "BIO",
         "score": 100,
-        "price": "0.02931",
+        "price": "0.02928",
         "change_24h": "+5.3%",
-        "change_4h": "+0.6%",
-        "change_8h": "+1.3%"
-      },
-      {
-        "coin": "QNTX",
-        "score": 100,
-        "price": "80.92",
-        "change_24h": "+10.5%",
-        "change_4h": "+3.0%",
-        "change_8h": "+6.1%"
-      },
-      {
-        "coin": "GLM",
-        "score": 100,
-        "price": "0.1037",
-        "change_24h": "+6.7%",
-        "change_4h": "-1.9%",
-        "change_8h": "-3.9%"
-      },
-      {
-        "coin": "NBIS",
-        "score": 100,
-        "price": "276.67",
-        "change_24h": "+5.1%",
         "change_4h": "+0.6%",
         "change_8h": "+1.2%"
       },
       {
-        "coin": "INTC",
+        "coin": "AIOT",
         "score": 100,
-        "price": "138.78",
-        "change_24h": "+5.6%",
-        "change_4h": "+0.9%",
-        "change_8h": "+1.8%"
+        "price": "0.05295",
+        "change_24h": "+8.7%",
+        "change_4h": "-1.0%",
+        "change_8h": "-2.0%"
+      },
+      {
+        "coin": "PYTH",
+        "score": 100,
+        "price": "0.03788",
+        "change_24h": "+6.3%",
+        "change_4h": "-1.5%",
+        "change_8h": "-3.1%"
+      },
+      {
+        "coin": "FF",
+        "score": 100,
+        "price": "0.06934",
+        "change_24h": "+5.3%",
+        "change_4h": "+0.1%",
+        "change_8h": "+0.2%"
       },
       {
         "coin": "SOXL",
         "score": 100,
-        "price": "264.35",
-        "change_24h": "+11.4%",
-        "change_4h": "+2.2%",
-        "change_8h": "+4.4%"
+        "price": "262.47",
+        "change_24h": "+10.7%",
+        "change_4h": "+1.8%",
+        "change_8h": "+3.7%"
+      },
+      {
+        "coin": "CYS",
+        "score": 100,
+        "price": "0.3739",
+        "change_24h": "+12.7%",
+        "change_4h": "+3.8%",
+        "change_8h": "+7.6%"
+      },
+      {
+        "coin": "CLO",
+        "score": 100,
+        "price": "0.14611",
+        "change_24h": "+12.0%",
+        "change_4h": "-1.2%",
+        "change_8h": "-2.5%"
+      },
+      {
+        "coin": "APR",
+        "score": 100,
+        "price": "0.2266",
+        "change_24h": "+11.0%",
+        "change_4h": "+1.3%",
+        "change_8h": "+2.6%"
+      },
+      {
+        "coin": "MRVL",
+        "score": 100,
+        "price": "293.68",
+        "change_24h": "+6.1%",
+        "change_4h": "+1.1%",
+        "change_8h": "+2.3%"
+      },
+      {
+        "coin": "GLM",
+        "score": 100,
+        "price": "0.10406",
+        "change_24h": "+7.4%",
+        "change_4h": "-1.8%",
+        "change_8h": "-3.5%"
+      },
+      {
+        "coin": "SYN",
+        "score": 100,
+        "price": "0.54504",
+        "change_24h": "+6.3%",
+        "change_4h": "-4.7%",
+        "change_8h": "-9.3%"
+      },
+      {
+        "coin": "QNTX",
+        "score": 100,
+        "price": "81.39",
+        "change_24h": "+11.2%",
+        "change_4h": "+3.3%",
+        "change_8h": "+6.7%"
+      },
+      {
+        "coin": "MVLL",
+        "score": 100,
+        "price": "55.75",
+        "change_24h": "+12.0%",
+        "change_4h": "+2.0%",
+        "change_8h": "+4.1%"
+      },
+      {
+        "coin": "DODOX",
+        "score": 100,
+        "price": "0.020121",
+        "change_24h": "+7.9%",
+        "change_4h": "+1.6%",
+        "change_8h": "+3.2%"
       },
       {
         "coin": "CRDO",
         "score": 100,
-        "price": "271.51",
-        "change_24h": "+10.3%",
-        "change_4h": "+2.2%",
-        "change_8h": "+4.4%"
+        "price": "270.9",
+        "change_24h": "+9.7%",
+        "change_4h": "+2.1%",
+        "change_8h": "+4.1%"
       },
       {
-        "coin": "BEAMX",
-        "score": 95,
-        "price": "0.001427",
-        "change_24h": "+5.3%",
-        "change_4h": "+1.2%",
-        "change_8h": "+2.5%"
+        "coin": "ALAB",
+        "score": 100,
+        "price": "481.2",
+        "change_24h": "+6.3%",
+        "change_4h": "+0.6%",
+        "change_8h": "+1.2%"
       },
       {
-        "coin": "NMR",
-        "score": 95,
-        "price": "8.785",
+        "coin": "XLM",
+        "score": 100,
+        "price": "0.19859",
+        "change_24h": "+12.3%",
+        "change_4h": "+3.2%",
+        "change_8h": "+6.4%"
+      },
+      {
+        "coin": "INTC",
+        "score": 100,
+        "price": "138.45",
         "change_24h": "+5.1%",
-        "change_4h": "+0.4%",
-        "change_8h": "+0.9%"
+        "change_4h": "+0.8%",
+        "change_8h": "+1.6%"
+      },
+      {
+        "coin": "AMD",
+        "score": 100,
+        "price": "576.92",
+        "change_24h": "+7.0%",
+        "change_4h": "+1.4%",
+        "change_8h": "+2.9%"
       },
       {
         "coin": "STG",
         "score": 95,
-        "price": "0.1725",
-        "change_24h": "+6.3%",
-        "change_4h": "+1.5%",
-        "change_8h": "+3.0%"
+        "price": "0.1723",
+        "change_24h": "+6.2%",
+        "change_4h": "+1.3%",
+        "change_8h": "+2.6%"
+      },
+      {
+        "coin": "ZEREBRO",
+        "score": 95,
+        "price": "0.040609",
+        "change_24h": "+5.0%",
+        "change_4h": "+1.3%",
+        "change_8h": "+2.6%"
+      },
+      {
+        "coin": "NMR",
+        "score": 95,
+        "price": "8.803",
+        "change_24h": "+5.3%",
+        "change_4h": "+0.5%",
+        "change_8h": "+1.1%"
       },
       {
         "coin": "XPIN",
         "score": 95,
         "price": "0.001376",
-        "change_24h": "+7.3%",
+        "change_24h": "+7.8%",
         "change_4h": "+0.9%",
         "change_8h": "+1.8%"
       },
       {
-        "coin": "XAN",
+        "coin": "BEAMX",
         "score": 95,
-        "price": "0.010656",
-        "change_24h": "+14.6%",
-        "change_4h": "+4.1%",
-        "change_8h": "+8.1%"
+        "price": "0.001432",
+        "change_24h": "+5.9%",
+        "change_4h": "+1.4%",
+        "change_8h": "+2.8%"
       },
       {
         "coin": "ASML",
         "score": 90,
-        "price": "1981.43",
-        "change_24h": "+5.4%",
-        "change_4h": "+1.0%",
-        "change_8h": "+2.1%"
+        "price": "1983.31",
+        "change_24h": "+5.5%",
+        "change_4h": "+1.1%",
+        "change_8h": "+2.2%"
+      },
+      {
+        "coin": "TRUTH",
+        "score": 90,
+        "price": "0.017059",
+        "change_24h": "+5.0%",
+        "change_4h": "-0.5%",
+        "change_8h": "-1.0%"
+      },
+      {
+        "coin": "SFP",
+        "score": 90,
+        "price": "0.2184",
+        "change_24h": "+5.6%",
+        "change_4h": "+1.4%",
+        "change_8h": "+2.8%"
       },
       {
         "coin": "AIGENSYN",
         "score": 85,
-        "price": "0.03632",
-        "change_24h": "+22.1%",
-        "change_4h": "+3.0%",
-        "change_8h": "+6.0%"
+        "price": "0.03602",
+        "change_24h": "+18.4%",
+        "change_4h": "+2.6%",
+        "change_8h": "+5.1%"
+      },
+      {
+        "coin": "TAC",
+        "score": 85,
+        "price": "0.063649",
+        "change_24h": "+16.9%",
+        "change_4h": "+1.8%",
+        "change_8h": "+3.7%"
       },
       {
         "coin": "RIF",
         "score": 80,
-        "price": "0.09093",
+        "price": "0.09181",
         "change_24h": "+24.8%",
-        "change_4h": "+4.4%",
-        "change_8h": "+8.9%"
+        "change_4h": "+5.0%",
+        "change_8h": "+9.9%"
       },
       {
         "coin": "BASED",
         "score": 80,
-        "price": "0.10425",
-        "change_24h": "+29.5%",
-        "change_4h": "+7.5%",
-        "change_8h": "+15.0%"
-      },
-      {
-        "coin": "BE",
-        "score": 75,
-        "price": "326.98",
-        "change_24h": "+18.6%",
-        "change_4h": "+2.3%",
-        "change_8h": "+4.5%"
+        "price": "0.10399",
+        "change_24h": "+28.9%",
+        "change_4h": "+7.3%",
+        "change_8h": "+14.7%"
       },
       {
         "coin": "BTW",
         "score": 75,
-        "price": "0.06049",
-        "change_24h": "+15.5%",
-        "change_4h": "-1.0%",
-        "change_8h": "-2.0%"
+        "price": "0.06076",
+        "change_24h": "+17.4%",
+        "change_4h": "-0.8%",
+        "change_8h": "-1.7%"
+      },
+      {
+        "coin": "BE",
+        "score": 75,
+        "price": "326.31",
+        "change_24h": "+18.2%",
+        "change_4h": "+2.2%",
+        "change_8h": "+4.3%"
       },
       {
         "coin": "M",
         "score": 75,
-        "price": "0.7356",
-        "change_24h": "+19.0%",
-        "change_4h": "+4.0%",
-        "change_8h": "+8.1%"
+        "price": "0.7601",
+        "change_24h": "+25.7%",
+        "change_4h": "+5.8%",
+        "change_8h": "+11.6%"
       },
       {
         "coin": "TAIKO",
         "score": 75,
-        "price": "0.08",
-        "change_24h": "+19.4%",
-        "change_4h": "-0.4%",
-        "change_8h": "-0.8%"
+        "price": "0.0777",
+        "change_24h": "+15.5%",
+        "change_4h": "-2.0%",
+        "change_8h": "-4.0%"
       },
       {
         "coin": "ZBT",
         "score": 70,
-        "price": "0.12281",
-        "change_24h": "+15.6%",
-        "change_4h": "+4.8%",
-        "change_8h": "+9.6%"
+        "price": "0.12209",
+        "change_24h": "+15.9%",
+        "change_4h": "+4.5%",
+        "change_8h": "+9.0%"
+      },
+      {
+        "coin": "DYDX",
+        "score": 70,
+        "price": "0.1821",
+        "change_24h": "+16.4%",
+        "change_4h": "+3.9%",
+        "change_8h": "+7.8%"
       },
       {
         "coin": "XNY",
         "score": 65,
-        "price": "0.005948",
-        "change_24h": "+19.0%",
-        "change_4h": "-1.5%",
-        "change_8h": "-3.0%"
+        "price": "0.005872",
+        "change_24h": "+18.3%",
+        "change_4h": "-2.1%",
+        "change_8h": "-4.2%"
+      },
+      {
+        "coin": "XAN",
+        "score": 65,
+        "price": "0.010793",
+        "change_24h": "+17.6%",
+        "change_4h": "+4.2%",
+        "change_8h": "+8.4%"
       },
       {
         "coin": "SPCX",
         "score": 55,
-        "price": "170.11",
-        "change_24h": "+4.6%",
-        "change_4h": "+1.0%",
-        "change_8h": "+2.0%"
+        "price": "169.91",
+        "change_24h": "+4.5%",
+        "change_4h": "+0.9%",
+        "change_8h": "+1.9%"
       },
       {
-        "coin": "OPG",
+        "coin": "NBIS",
         "score": 55,
-        "price": "0.1311",
-        "change_24h": "+0.7%",
-        "change_4h": "+2.3%",
-        "change_8h": "+4.5%"
+        "price": "275.77",
+        "change_24h": "+4.6%",
+        "change_4h": "+0.4%",
+        "change_8h": "+0.8%"
       },
       {
         "coin": "LAB",
         "score": 55,
-        "price": "13.119",
-        "change_24h": "-6.0%",
-        "change_4h": "+2.5%",
-        "change_8h": "+5.1%"
-      },
-      {
-        "coin": "CBRS",
-        "score": 55,
-        "price": "216.76",
-        "change_24h": "+1.0%",
-        "change_4h": "+0.9%",
-        "change_8h": "+1.8%"
-      },
-      {
-        "coin": "RKLB",
-        "score": 50,
-        "price": "100.42",
-        "change_24h": "+0.4%",
-        "change_4h": "+0.2%",
-        "change_8h": "+0.4%"
-      },
-      {
-        "coin": "TSLA",
-        "score": 50,
-        "price": "415.8",
-        "change_24h": "+1.7%",
-        "change_4h": "+0.2%",
-        "change_8h": "+0.4%"
-      },
-      {
-        "coin": "PYTH",
-        "score": 50,
-        "price": "0.03741",
-        "change_24h": "+4.5%",
-        "change_4h": "-2.1%",
-        "change_8h": "-4.3%"
+        "price": "12.965",
+        "change_24h": "-6.7%",
+        "change_4h": "+1.9%",
+        "change_8h": "+3.9%"
       },
       {
         "coin": "BEAT",
         "score": 50,
-        "price": "2.943",
-        "change_24h": "+5.0%",
-        "change_4h": "+1.7%",
-        "change_8h": "+3.3%"
+        "price": "2.936",
+        "change_24h": "+3.7%",
+        "change_4h": "+1.5%",
+        "change_8h": "+3.1%"
       },
       {
-        "coin": "LIT",
+        "coin": "TSLA",
         "score": 50,
-        "price": "1.8582",
-        "change_24h": "+0.9%",
-        "change_4h": "-1.0%",
-        "change_8h": "-2.1%"
-      },
-      {
-        "coin": "QQQ",
-        "score": 50,
-        "price": "735.03",
-        "change_24h": "+1.4%",
-        "change_4h": "+0.3%",
-        "change_8h": "+0.7%"
+        "price": "415.12",
+        "change_24h": "+1.5%",
+        "change_4h": "+0.1%",
+        "change_8h": "+0.2%"
       }
     ]
   }
