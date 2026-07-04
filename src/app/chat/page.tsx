@@ -34,6 +34,11 @@ const SESSION_KEY = 'singclaw-mvp-session-id'
 const SESSIONS_KEY = 'singclaw-mvp-sessions'
 const PREF_KEY = 'singclaw-mvp-prefs'
 
+// S9.2: retry policy
+const MAX_RETRIES = 3
+const RETRY_DELAYS_MS = [1000, 2000, 4000]
+const TRANSIENT_STATUS = new Set([502, 503, 504, 429])
+
 type Prefs = {
   markdown: boolean
   theme: 'dark' | 'light'
@@ -195,26 +200,90 @@ export default function ChatPage() {
 
     updateSessionsList(turns.length + 2, text)
 
+    // S9.2: retry with exponential backoff for transient errors
+    let attempt = 0
+    let lastError: { kind: 'http' | 'network'; detail: string } | null = null
+
+    while (attempt <= MAX_RETRIES) {
+      if (attempt > 0) {
+        const delay = RETRY_DELAYS_MS[Math.min(attempt - 1, RETRY_DELAYS_MS.length - 1)]
+        setStage(`重试 ${attempt}/${MAX_RETRIES} (${delay}ms 后)`)
+        await new Promise<void>((resolve) => {
+          const t = setTimeout(resolve, delay)
+          abortRef.current?.signal.addEventListener('abort', () => { clearTimeout(t); resolve() }, { once: true })
+        })
+        if (abortRef.current?.signal.aborted) return
+      }
+
+      const result = await _sendAttempt(text, t0)
+      if (result.kind === 'ok') return
+      if (result.kind === 'abort') return
+      if (result.kind === 'client_error') {
+        setStage('error')
+        setBusy(false)
+        return
+      }
+      if (result.kind === 'transient') {
+        lastError = { kind: 'http', detail: result.detail || '' }
+        attempt++
+        continue
+      }
+      if (result.kind === 'network') {
+        lastError = { kind: 'network', detail: result.detail || '' }
+        attempt++
+        continue
+      }
+    }
+    // exhausted retries
+    setTurns((prev) => [...prev, {
+      role: 'system',
+      text: `${MAX_RETRIES} 次重试后仍失败: ${lastError?.detail || 'unknown error'}. 点 ↻ 重发或检查网络.`,
+      ts: Date.now(),
+    }])
+    setStage('error')
+    setBusy(false)
+  }
+
+  async function _sendAttempt(text: string, t0: number): Promise<
+    | { kind: 'ok' }
+    | { kind: 'abort' }
+    | { kind: 'client_error'; detail: string }
+    | { kind: 'transient'; detail: string }
+    | { kind: 'network'; detail: string }
+  > {
     const ctrl = new AbortController()
     abortRef.current = ctrl
+    let res: Response | null = null
     try {
-      const res = await fetch('/api/mvp-proxy', {
+      res = await fetch('/api/mvp-proxy', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text, session_id: sessionId, stream: true }),
         signal: ctrl.signal,
       })
-      if (!res.ok || !res.body) {
-        const t = await res.text().catch(() => '')
-        setTurns((prev) => [...prev, { role: 'system', text: `HTTP ${res.status} — ${t.slice(0, 200) || 'connection failed'}`, ts: Date.now() }])
-        setStage('error')
-        setBusy(false)
-        return
+    } catch (e) {
+      if (e instanceof Error && e.name === 'AbortError') return { kind: 'abort' }
+      return { kind: 'network', detail: e instanceof Error ? e.message : String(e) }
+    }
+    if (!res.ok) {
+      const t = await res.text().catch(() => '')
+      if (TRANSIENT_STATUS.has(res.status)) {
+        return { kind: 'transient', detail: `HTTP ${res.status} ${t.slice(0, 100)}` }
       }
-      const reader = res.body.getReader()
-      const decoder = new TextDecoder('utf-8')
-      let buf = ''
-      let finalReply = ''
+      // client error — surface immediately, no retry
+      setTurns((prev) => [...prev, { role: 'system', text: `HTTP ${res!.status} — ${t.slice(0, 200) || 'request failed'}`, ts: Date.now() }])
+      return { kind: 'client_error', detail: `HTTP ${res.status}` }
+    }
+    if (!res.body) {
+      return { kind: 'network', detail: 'empty response body' }
+    }
+    const reader = res.body.getReader()
+    const decoder = new TextDecoder('utf-8')
+    let buf = ''
+    let finalReply = ''
+    let doneEmitted = false
+    let streamError: string | null = null
+    try {
       while (true) {
         const { value, done } = await reader.read()
         if (done) break
@@ -255,6 +324,7 @@ export default function ChatPage() {
             } else if (name === 'heartbeat') {
               // no-op
             } else if (name === 'done') {
+              doneEmitted = true
               finalReply = (typeof obj.reply === 'string') ? obj.reply : finalReply
               setTurns((prev) => [...prev, {
                 role: 'agent',
@@ -263,7 +333,7 @@ export default function ChatPage() {
                 meta: {
                   elapsed_sec: obj.elapsed_sec,
                   chunks: obj.chunks,
-                  first_token_at: obj.first_token_at ?? firstTokenAt ?? undefined,
+                  first_token_at: obj.first_token_at ?? firstTokenAtRef.current ?? undefined,
                   session_id: obj.session_id,
                   mode: obj.mode,
                   streamed: true,
@@ -275,8 +345,7 @@ export default function ChatPage() {
               }
               setStage('done')
             } else if (name === 'error') {
-              setTurns((prev) => [...prev, { role: 'system', text: `stream error: ${JSON.stringify(obj)}`, ts: Date.now() }])
-              setStage('error')
+              streamError = JSON.stringify(obj)
             }
           } catch {
             // not JSON
@@ -285,7 +354,7 @@ export default function ChatPage() {
       }
       // Fallback: if stream ended but we have content and no done event was received,
       // emit the agent turn anyway so user sees the reply.
-      if (finalReply.trim() && stage !== 'done') {
+      if (finalReply.trim() && !doneEmitted) {
         setTurns((prev) => [...prev, {
           role: 'agent',
           text: finalReply,
@@ -302,25 +371,23 @@ export default function ChatPage() {
         }])
         setStage('done')
       }
-    } catch (e) {
-      if (e instanceof Error && e.name === 'AbortError') {
-        setTurns((prev) => [...prev, { role: 'system', text: '已取消', ts: Date.now() }])
-      } else {
-        setTurns((prev) => [...prev, {
-          role: 'system',
-          text: '网络错误: ' + (e instanceof Error ? e.message : String(e)),
-          ts: Date.now(),
-        }])
+      if (streamError && !finalReply.trim()) {
+        // upstream reported error and we have nothing to show — retryable
+        return { kind: 'transient', detail: streamError }
       }
-      setStage('error')
-    } finally {
-      setStreamPreview('')
-      setBusy(false)
-      abortRef.current = null
+      return { kind: 'ok' }
+    } catch (e) {
+      if (e instanceof Error && e.name === 'AbortError') return { kind: 'abort' }
+      return { kind: 'network', detail: e instanceof Error ? e.message : String(e) }
     }
   }
 
-  function abort() { abortRef.current?.abort() }
+  function abort() {
+    abortRef.current?.abort()
+    setStreamPreview('')
+    setBusy(false)
+    setStage('done')
+  }
 
   function togglePref<K extends keyof Prefs>(k: K, v: Prefs[K]) {
     const next = { ...prefs, [k]: v }
