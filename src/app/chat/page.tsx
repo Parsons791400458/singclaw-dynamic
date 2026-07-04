@@ -19,7 +19,23 @@ type Turn = {
     session_id?: string
     mode?: string
     streamed?: boolean
+    rounds?: number
+    tools_enabled?: boolean
+    tool_skipped?: boolean
   }
+  // S9.5.2-C — tool 调用历史 (本 turn 中 LLM 调用了什么工具)
+  tool_calls?: ToolCall[]
+}
+
+type ToolCall = {
+  round: number
+  name: string  // 'web_search' | 'python_exec' | ...
+  args: Record<string, any>
+  result?: string
+  error?: string
+  elapsed_sec?: number
+  // UI state (前端本地，不从后端来)
+  expanded?: boolean
 }
 
 type SessionItem = {
@@ -91,6 +107,8 @@ export default function ChatPage() {
   const textareaRef = useRef<HTMLTextAreaElement>(null)
   const abortRef = useRef<AbortController | null>(null)
   const firstTokenAtRef = useRef<number | null>(null)
+  // S9.5.2-C — 当前 turn 中累积的 tool_call (done 时附到 agent turn)
+  const currentToolCallsRef = useRef<ToolCall[]>([])
 
   // Init
   useEffect(() => {
@@ -195,6 +213,7 @@ export default function ChatPage() {
     setStreamPreview('')
     setFirstTokenAt(null)
     firstTokenAtRef.current = null
+    currentToolCallsRef.current = []  // S9.5.2-C: 重置本 turn 的 tool_calls 累积
     const t0 = Date.now()
     setTurnStart(t0)
 
@@ -326,6 +345,29 @@ export default function ChatPage() {
                 setFirstTokenAt(obj.at)
                 setStage('streaming')
               }
+            } else if (name === 'tool_call') {
+              // S9.5.2-C — 累积 LLM 调用工具事件
+              currentToolCallsRef.current = [
+                ...currentToolCallsRef.current,
+                {
+                  round: currentToolCallsRef.current.length + 1,
+                  name: String(obj.name || '?'),
+                  args: (obj.args && typeof obj.args === 'object') ? obj.args : {},
+                  expanded: false,
+                },
+              ]
+            } else if (name === 'tool_result') {
+              // S9.5.2-C — 补充最近一次 tool_call 的 result / error / elapsed
+              const arr = currentToolCallsRef.current
+              if (arr.length > 0) {
+                const last = arr[arr.length - 1]
+                arr[arr.length - 1] = {
+                  ...last,
+                  result: typeof obj.result === 'string' ? obj.result : (last.result || ''),
+                  error: typeof obj.error === 'string' ? obj.error : (last.error || ''),
+                  elapsed_sec: typeof obj.elapsed === 'number' ? obj.elapsed : last.elapsed_sec,
+                }
+              }
             } else if (name === 'status' && typeof obj.phase === 'string') {
               setStage(obj.phase)
             } else if (name === 'heartbeat') {
@@ -344,7 +386,13 @@ export default function ChatPage() {
                   session_id: obj.session_id,
                   mode: obj.mode,
                   streamed: true,
+                  rounds: obj.rounds,
+                  tools_enabled: obj.tools_enabled,
+                  tool_skipped: obj.tool_skipped,
                 },
+                tool_calls: currentToolCallsRef.current.length > 0
+                  ? [...currentToolCallsRef.current]
+                  : undefined,
               }])
               if (obj.session_id && obj.session_id !== sessionId) {
                 setSessionId(obj.session_id)
@@ -375,6 +423,9 @@ export default function ChatPage() {
             streamed: true,
             fallback_emitted: true,
           },
+          tool_calls: currentToolCallsRef.current.length > 0
+            ? [...currentToolCallsRef.current]
+            : undefined,
         }])
         setStage('done')
       }
@@ -570,6 +621,12 @@ export default function ChatPage() {
                         <span>· 总 {Number(t.meta.elapsed_sec).toFixed(1)}s</span>
                       )}
                       {t.meta?.chunks !== undefined && <span>· {String(t.meta.chunks)} chunks</span>}
+                      {typeof t.meta?.rounds === 'number' && t.meta.rounds > 1 && (
+                        <span>· 🔧 {String(t.meta.rounds - 1)} tool call{String(t.meta.rounds - 1) === '1' ? '' : 's'}</span>
+                      )}
+                      {t.meta?.tool_skipped && (
+                        <span className="text-yellow-500">· ⚠️ tool 跳过</span>
+                      )}
                     </div>
                   )}
                   {t.role === 'system' && (
@@ -593,6 +650,9 @@ export default function ChatPage() {
                       </div>
                     ) : (
                       <div className="whitespace-pre-wrap break-words">{t.text}</div>
+                    )}
+                    {t.role === 'agent' && t.tool_calls && t.tool_calls.length > 0 && (
+                      <ToolCallCard calls={t.tool_calls} />
                     )}
                   </div>
                 </div>
@@ -669,6 +729,60 @@ export default function ChatPage() {
           </div>
         </div>
       </main>
+    </div>
+  )
+}
+
+// S9.5.2-C — 🔧 tool call 折叠/展开卡片
+function ToolCallCard({ calls }: { calls: ToolCall[] }) {
+  const [open, setOpen] = useState(false)
+  const hasError = calls.some((c) => c.error)
+  return (
+    <div className="mt-3 border-t border-gray-700/60 pt-2">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className={
+          'flex items-center gap-2 text-xs font-mono transition ' +
+          (hasError ? 'text-yellow-400 hover:text-yellow-300' : 'text-gray-400 hover:text-gray-200')
+        }
+      >
+        <span>{open ? '▼' : '▶'}</span>
+        <span>🔧 {calls.length} tool call{calls.length === 1 ? '' : 's'}</span>
+        {hasError && <span className="text-yellow-500">⚠ 有拦截</span>}
+        <span className="text-gray-600">
+          {calls
+            .map((c) => `${c.name} ${c.elapsed_sec !== undefined ? c.elapsed_sec.toFixed(1) + 's' : ''}`.trim())
+            .join(' · ')}
+        </span>
+      </button>
+      {open && (
+        <div className="mt-2 space-y-2">
+          {calls.map((c, i) => (
+            <div key={i} className="rounded-lg bg-gray-900/70 border border-gray-700/40 p-2 text-xs font-mono">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-blue-400">#{c.round} {c.name}</span>
+                {typeof c.elapsed_sec === 'number' && (
+                  <span className="text-gray-500">· {c.elapsed_sec.toFixed(2)}s</span>
+                )}
+                {c.error ? (
+                  <span className="text-yellow-400">· ⚠ error</span>
+                ) : c.result ? (
+                  <span className="text-green-500">· ✓ ok</span>
+                ) : null}
+              </div>
+              <div className="text-gray-400 mb-1">
+                <span className="text-gray-500">args:</span> {JSON.stringify(c.args, null, 0)}
+              </div>
+              {c.error ? (
+                <pre className="text-yellow-300 whitespace-pre-wrap break-words max-h-40 overflow-auto">{c.error}</pre>
+              ) : c.result ? (
+                <pre className="text-gray-300 whitespace-pre-wrap break-words max-h-40 overflow-auto">{c.result}</pre>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

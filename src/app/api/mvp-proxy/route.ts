@@ -83,5 +83,24 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  return NextResponse.json({ ok: true, stage: 'S8-BFF-mvp-proxy', supports_stream: true, supports_history: true })
+  if (action === 'tools' && sessionId) {
+    // S9.5.2-C: load tool_call history for 🔧 卡片渲染
+    const limit = Math.min(parseInt(req.nextUrl.searchParams.get('limit') || '50', 10) || 50, 200)
+    const upstream = await fetch(`https://app.singclaw.xyz/v1/mvp/sessions/${encodeURIComponent(sessionId)}/tools?limit=${limit}`, {
+      headers: { 'Authorization': `Bearer ${code}`, 'X-MVP-Code': code },
+      cache: 'no-store',
+    }).catch(() => null as unknown as Response)
+    if (!upstream) {
+      return NextResponse.json({ tool_calls: [], count: 0 })
+    }
+    const text = await upstream.text()
+    try {
+      const data = JSON.parse(text)
+      return NextResponse.json(data)
+    } catch {
+      return NextResponse.json({ tool_calls: [], count: 0, raw: text.slice(0, 200) })
+    }
+  }
+
+  return NextResponse.json({ ok: true, stage: 'S9.5.2-C-BFF-mvp-proxy', supports_stream: true, supports_history: true, supports_tools: true })
 }
