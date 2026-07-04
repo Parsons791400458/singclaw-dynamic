@@ -6,12 +6,14 @@ const optionalEnv = (name) => {
 module.exports = {
   apps: [{
     name: 'singclaw-dynamic',
-    script: 'node_modules/next/dist/bin/next',
-    args: 'start',
+    script: 'node_modules/.bin/next',
+    args: 'start -p 3001',
     instances: 1,
-    exec_mode: 'cluster',
+    exec_mode: 'fork',
+    cwd: '/root/.openclaw/workspace/singclaw-dynamic',
+    interpreter: '/root/.nvm/versions/node/v22.22.0/bin/node',
     env: {
-      PORT: process.env.PORT || 3001,
+      PORT: 3001,
       NODE_ENV: 'production',
       CLERK_SIGN_IN_URL: '/login',
       CLERK_SIGN_UP_URL: '/register',

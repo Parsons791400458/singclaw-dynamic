@@ -163,7 +163,7 @@
     append('user', text)
     setBusy(true)
 
-    fetch('/api/mvp-chat', {
+    fetch('/api/mvp-proxy', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: text, session_id: sessionId }),

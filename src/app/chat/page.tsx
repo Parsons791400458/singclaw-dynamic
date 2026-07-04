@@ -52,7 +52,7 @@ export default function ChatPage() {
     setBusy(true)
     setStage('sending')
     try {
-      const res = await fetch('/api/mvp-chat', {
+      const res = await fetch('/api/mvp-proxy', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: text, session_id: sessionId }),
