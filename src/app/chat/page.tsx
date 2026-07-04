@@ -96,6 +96,13 @@ export default function ChatPage() {
             if (name === 'chunk' && typeof obj.text === 'string') {
               finalReply = obj.text
               setStreamPreview(finalReply)
+            } else if (name === 'status') {
+              // phase updates — update stage label
+              if (typeof obj.phase === 'string') {
+                setStage(obj.phase)
+              }
+            } else if (name === 'heartbeat') {
+              // keep-alive; nothing to render
             } else if (name === 'done') {
               finalReply = (typeof obj.reply === 'string') ? obj.reply : finalReply
               setTurns((prev) => [...prev, {
@@ -192,7 +199,9 @@ export default function ChatPage() {
         {busy && (
           <div className="flex justify-start">
             <div className="max-w-[80%] rounded-2xl px-4 py-2 bg-gray-800 text-gray-100 text-sm">
-              <div className="text-xs text-gray-400 mb-1">agent · streaming…</div>
+              <div className="text-xs text-gray-400 mb-1">
+                agent · {stage === 'loading_plugins' ? '加载插件…' : stage === 'plugins_loaded' ? '插件就绪' : stage === 'llm_thinking' ? '思考中…' : stage === 'streaming' ? 'streaming…' : '⏳...'}
+              </div>
               <span>{streamPreview || '⏳ 等待 agent...'}</span>
               <span className="ml-1 inline-block animate-pulse">▍</span>
             </div>

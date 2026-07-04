@@ -163,29 +163,81 @@
     append('user', text)
     setBusy(true)
 
+    // SSE via fetch + ReadableStream
+    var liveRow = null
+    var liveBody = null
+    var finalText = ''
+
     fetch('/api/mvp-proxy', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: text, session_id: sessionId }),
+      body: JSON.stringify({ message: text, session_id: sessionId, stream: true }),
     })
-      .then(function (r) { return r.json().catch(function () { return {} }).then(function (d) { return { ok: r.ok, status: r.status, data: d } }) })
-      .then(function (resp) {
-        if (!resp.ok) {
-          append('system', 'error: HTTP ' + resp.status + ' ' + JSON.stringify(resp.data))
-          return
+      .then(function (res) {
+        if (!res.ok || !res.body) {
+          return res.text().then(function (t) {
+            append('system', 'error: HTTP ' + res.status + ' ' + t.slice(0, 200))
+          })
         }
-        var d = resp.data || {}
-        var reply = (typeof d.reply === 'string') ? d.reply : '(empty)'
-        append('agent', reply, { elapsed_sec: Number(d.elapsed_sec) || 0 })
-        if (d.session_id && d.session_id !== sessionId) {
-          sessionId = d.session_id
-          try { window.localStorage.setItem(sessionKey, sessionId) } catch (_) {}
+        var reader = res.body.getReader()
+        var decoder = new TextDecoder('utf-8')
+        var buf = ''
+        function pump() {
+          return reader.read().then(function (r) {
+            if (r.done) { setBusy(false); return }
+            buf += decoder.decode(r.value, { stream: true })
+            var idx
+            while ((idx = buf.indexOf('\n\n')) !== -1) {
+              var event = buf.slice(0, idx)
+              buf = buf.slice(idx + 2)
+              var name = 'message', data = ''
+              event.split('\n').forEach(function (line) {
+                if (line.indexOf('event:') === 0) name = line.slice(6).trim()
+                else if (line.indexOf('data:') === 0) data += line.slice(5).trim()
+              })
+              if (!data) continue
+              try {
+                var obj = JSON.parse(data)
+                if (name === 'chunk' && typeof obj.text === 'string') {
+                  finalText = obj.text
+                  if (!liveRow) {
+                    liveRow = el('div', { class: 'row agent' })
+                    liveBody = el('div', { class: 'bubble' })
+                    liveRow.appendChild(liveBody)
+                    list.appendChild(liveRow)
+                    list.scrollTop = list.scrollHeight
+                  }
+                  liveBody.textContent = finalText
+                  list.scrollTop = list.scrollHeight
+                } else if (name === 'done') {
+                  finalText = (typeof obj.reply === 'string') ? obj.reply : finalText
+                  if (liveRow) {
+                    // bubble already shows live text, just leave it
+                  } else {
+                    append('agent', finalText, { elapsed_sec: Number(obj.elapsed_sec) || 0 })
+                  }
+                  if (obj.session_id && obj.session_id !== sessionId) {
+                    sessionId = obj.session_id
+                    try { window.localStorage.setItem(sessionKey, sessionId) } catch (_) {}
+                  }
+                  setBusy(false)
+                  return
+                } else if (name === 'error') {
+                  append('system', 'stream error: ' + JSON.stringify(obj))
+                  setBusy(false)
+                  return
+                }
+              } catch (_) {}
+            }
+            return pump()
+          })
         }
+        return pump()
       })
       .catch(function (e) {
         append('system', 'network error: ' + (e && e.message ? e.message : String(e)))
+        setBusy(false)
       })
-      .then(function () { setBusy(false) })
   }
 
   send.addEventListener('click', sendMessage)
