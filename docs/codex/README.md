@@ -1,60 +1,59 @@
 # Codex Workflow Loop
 
-This folder defines the lightweight Codex workflow package for SingClaw local work. It is meant to make each future Codex task small, inspectable, and handoff-ready across local Codex, local OpenClaw/Maxink, Hermes, and Tencent Cloud OpenClaw without mixing workspace ownership.
+This folder defines the lightweight Codex workflow package for local SingClaw work. It is meant to make each future Codex task small, inspectable, and handoff-ready across **Maxink, Hermes, and Codex**.
 
-## Loop
+## Operating loop
 
 1. Ledger
    - Start from `docs/codex/project-ledger.json`.
-   - Confirm the `projectKey`, canonical repo/path, authoritative workspace, Tencent Cloud boundary, current ownership note, verification status, and next handoff.
-   - If the ledger says the task belongs to Tencent Cloud OpenClaw, stop local implementation and write a handoff note instead.
+   - Confirm the `projectKey`, canonical repo/path, owner, verification status, and next handoff.
+   - If the ledger says context is missing, stop implementation and write a handoff note instead of guessing.
 
 2. Task package
-   - Create a copy of `docs/codex/task-template.md` for the specific task or paste the completed template into the sprint instruction.
-   - Keep the package explicit: goal, non-goals, allowed files, forbidden actions, deliverables, checks, report path, and handoff owner.
-   - A task package must be small enough to review in one pull request.
+   - Create a filled task package from `docs/codex/task-template.md`.
+   - Keep the task to one repo, one goal, and a small set of deliverables.
+   - Include must-read docs, allowed files, forbidden actions, verification commands, and the report path.
 
 3. Branch
-   - Work on the named branch from the task package.
-   - Use one branch per coherent task package.
-   - Do not mix unrelated cleanup, feature work, or generated runtime state into the branch.
+   - Work on a named branch such as `codex/<projectKey>-<task>`.
+   - Do not work directly on `master` for Codex implementation tasks.
 
 4. Codex work
-   - Read the must-read docs first.
-   - Edit only allowed files.
-   - Keep changes minimal and version-controlled.
-   - Record any blocked, aborted, or usage-limit state in the handoff log before ending the task.
+   - Codex executes only the task package.
+   - Codex should not expand scope, push, deploy, print secrets, or mutate production state.
 
-5. OpenClaw verification
-   - Run only the verification commands listed in the task package unless the supervisor approves more.
-   - For this local repo, verification should be local and non-destructive by default.
-   - Do not use Tencent Cloud OpenClaw from local Codex unless a future instruction explicitly grants that access.
+5. Maxink verification
+   - Maxink checks the diff, confirms files exist, runs the listed verification commands, and inspects the sprint report.
+   - `complete` from Codex is not accepted as proof by itself.
 
-6. Handoff log
-   - Append to `docs/codex/handoff-log.md`.
-   - Include what changed, why, how to verify, risks, and the next owner/action.
-   - Handoffs are required for completed work, blocked work, aborted work, and usage-limit events.
+6. Hermes memory / handoff
+   - Append durable decisions and handoff notes to `docs/codex/handoff-log.md`.
+   - When useful, Maxink can pass the summarized handoff to Hermes for longer-term memory and orchestration context.
 
-7. PR/merge
-   - After local verification, prepare a concise PR summary and risk note.
-   - Maxink/H Sing decide whether to push, open a PR, merge, deploy, or sync to another workspace.
-   - Codex does not push, merge, deploy, or mutate production unless explicitly instructed.
+7. PR / merge
+   - Maxink/H Sing decide whether to push, open a PR, merge, or continue another sprint.
+   - Codex does not push, merge, or deploy unless explicitly instructed.
 
-## Git and GitHub Rules
+## Git and GitHub rules
 
-- Use local git status/diff commands to understand scope before final reporting.
-- Do not run `git push`, create remote branches, open pull requests, merge branches, rewrite history, or delete branches unless explicitly instructed.
-- Do not use GitHub or external services when the task can be completed with local repository state.
-- Keep commits, if requested, focused on the task package deliverables.
-- Do not stage or commit unrelated user changes.
-- Do not include local runtime output, build caches, `.env*` files, tokens, logs with secrets, or machine-specific state.
-- Every PR-ready handoff should list files changed, verification commands, known risks, and the recommended next step.
+- Commit code, docs, task templates, sanitized ledgers, and verification reports.
+- Do not commit secrets, tokens, cookies, database URLs, `.env.local`, local caches, build outputs, or runtime state.
+- Use one branch per task package.
+- Use PRs when the change should become project standard.
+- Keep commits reviewable and tied to a sprint report or handoff note.
 
-## Security Rules
+## Security rules
 
-- Never commit secrets, API keys, tokens, database URLs, cookies, private SSH material, or runtime state.
 - Never print secrets into Codex chat, handoff notes, reports, screenshots, or logs.
-- Keep environment values in local `.env.local` or approved deployment secret stores only.
-- Sanitize personal paths or cloud workspace references when exact values are not required for review.
-- Treat Tencent Cloud OpenClaw as a separate authoritative workspace boundary unless the task package explicitly says otherwise.
+- Sanitize personal paths when exact local usernames are not required for review.
 - If a task needs secret-backed verification, stop and hand off the exact requirement to Maxink/H Sing instead of attempting access.
+
+## Done means
+
+A Codex task is done only when all are true:
+
+- The task package scope was followed.
+- Files changed are listed.
+- Verification commands and results are recorded.
+- Risks/blockers are explicit.
+- `docs/codex/handoff-log.md` or a sprint report contains the next step.

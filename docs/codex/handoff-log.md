@@ -7,36 +7,37 @@ Supervisor: Maxink
 Implementation agent: Codex  
 Branch: `codex/workflow-loop-engineering`
 
-### What Changed
+### What changed
 
 - Created the Codex workflow loop guide in `docs/codex/README.md`.
 - Added a reusable task package template in `docs/codex/task-template.md`.
 - Added a sanitized starter project ledger in `docs/codex/project-ledger.json`.
-- Added this handoff log entry for sprint 7.
+- Added this handoff log.
 - Added the sprint report at `docs/sprints/sprint-7-codex-loop-engineering-report.md`.
-- Added a local dependency-free ledger validator and npm script.
+- Added `scripts/validate-codex-ledger.mjs` and `npm run validate:codex-ledger`.
 
 ### Why
 
-Future Codex tasks need a small, repeatable loop that distinguishes local repo work from Tencent Cloud OpenClaw ownership, records blocked or aborted states, and makes verification evidence easy for Maxink/H Sing to review.
+Future Codex tasks need a small, repeatable loop between Maxink, Hermes, and Codex: package the task, execute in a branch, verify evidence, record handoff, then decide whether to PR/merge.
 
-### How To Verify
+### How to verify
 
 ```bash
-node -e "JSON.parse(require('fs').readFileSync('docs/codex/project-ledger.json','utf8')); console.log('project-ledger.json OK')"
 npm run validate:codex-ledger
 ```
 
-Both commands passed locally on 2026-07-04.
+Expected result:
 
-### Boundaries Observed
+```text
+PASS docs/codex/project-ledger.json
+```
 
-- No production deploy.
-- No push.
-- No Tencent Cloud access.
-- No secrets added.
-- No app runtime code changed.
+### Risks
 
-### Next Step
+- The ledger is a workflow seed, not a full project management database.
+- Codex `complete` still requires Maxink verification.
+- Hermes should receive summaries only after Maxink verifies the output.
 
-Maxink/H Sing should review the ledger and task template, then use the template for the next local Codex task. If the next task is chat-related, keep it owned by Tencent Cloud OpenClaw until a separate cloud handoff authorizes local sync work.
+### Next
+
+Maxink/H Sing should review the ledger and task template, then use the template for the next local Codex task. After verification, Maxink can hand a concise durable summary to Hermes.

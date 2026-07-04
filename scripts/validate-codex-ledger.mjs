@@ -11,9 +11,7 @@ const requiredProjectFields = [
   'projectKey',
   'localRepoPath',
   'githubRemote',
-  'authoritativeWorkspaceNotes',
-  'tencentCloudBoundaryNote',
-  'currentChatTaskOwnershipNote',
+  'workflowOwners',
   'verificationStatus',
   'nextHandoff',
 ]
@@ -37,8 +35,8 @@ for (const field of requiredProjectFields) {
   assert(Object.hasOwn(singclaw, field), `singclaw-app is missing ${field}.`)
 }
 
-assert(Array.isArray(singclaw.authoritativeWorkspaceNotes), 'authoritativeWorkspaceNotes must be an array.')
-assert(singclaw.authoritativeWorkspaceNotes.length > 0, 'authoritativeWorkspaceNotes must not be empty.')
+assert(Array.isArray(singclaw.workflowOwners), 'workflowOwners must be an array.')
+assert(singclaw.workflowOwners.length > 0, 'workflowOwners must not be empty.')
 assert(typeof singclaw.verificationStatus === 'object', 'verificationStatus must be an object.')
 assert(typeof singclaw.nextHandoff === 'object', 'nextHandoff must be an object.')
 
