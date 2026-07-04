@@ -254,6 +254,24 @@ export default function ChatPage() {
 
     updateSessionsList(turns.length + 2, text)
 
+    // S9.5.2-D fix — try/finally 兜底, 任何未覆盖路径 (throw / 异常 return) 都释放 busy 状态
+    let abortedByUser = false
+    try {
+      const outcome = await _sendWithRetry(text, t0)
+      abortedByUser = outcome === 'aborted'
+      if (abortedByUser) return  // abort 函数已 setBusy
+    } catch (e) {
+      // 未捕获异常 → 转 system turn + 释放按钮
+      const msg = e instanceof Error ? e.message : String(e)
+      setTurns((prev) => [...prev, { role: 'system', text: `未捕获错误: ${msg.slice(0, 200)}`, ts: Date.now() }])
+      setStage('error')
+    } finally {
+      // 最后一道保险: 确保任何路径退出时按钮都恢复可点 (abort 路径除外)
+      if (!abortedByUser) setBusy(false)
+    }
+  }
+
+  async function _sendWithRetry(text: string, t0: number): Promise<'ok' | 'aborted' | 'retry_exhausted'> {
     // S9.2: retry with exponential backoff for transient errors
     let attempt = 0
     let lastError: { kind: 'http' | 'network'; detail: string } | null = null
@@ -266,16 +284,19 @@ export default function ChatPage() {
           const t = setTimeout(resolve, delay)
           abortRef.current?.signal.addEventListener('abort', () => { clearTimeout(t); resolve() }, { once: true })
         })
-        if (abortRef.current?.signal.aborted) return
+        if (abortRef.current?.signal.aborted) return 'aborted'
       }
 
       const result = await _sendAttempt(text, t0)
-      if (result.kind === 'ok') return
-      if (result.kind === 'abort') return
+      if (result.kind === 'ok') {
+        // 成功: setBusy 由 finally 兜底, 这里只改 stage
+        setStage('done')
+        return 'ok'
+      }
+      if (result.kind === 'abort') return 'aborted'
       if (result.kind === 'client_error') {
         setStage('error')
-        setBusy(false)
-        return
+        return 'ok'  // client_error 不走 retry, 交给 finally 释放
       }
       if (result.kind === 'transient') {
         lastError = { kind: 'http', detail: result.detail || '' }
@@ -302,7 +323,7 @@ export default function ChatPage() {
       ts: Date.now(),
     }])
     setStage('error')
-    setBusy(false)
+    return 'retry_exhausted'
   }
 
   async function _sendAttempt(text: string, t0: number): Promise<
@@ -434,6 +455,8 @@ export default function ChatPage() {
                 setSessionId(obj.session_id)
                 try { localStorage.setItem(SESSION_KEY, obj.session_id) } catch { /* ignore */ }
               }
+              // S9.5.2-D fix — done event 时也 setBusy(false), 避免按钮卡"取消"
+              setBusy(false)
               setStage('done')
             } else if (name === 'error') {
               streamError = JSON.stringify(obj)
@@ -463,6 +486,8 @@ export default function ChatPage() {
             ? [...currentToolCallsRef.current]
             : undefined,
         }])
+        // S9.5.2-D fix — fallback path 也 setBusy(false)
+        setBusy(false)
         setStage('done')
       }
       if (streamError && !finalReply.trim()) {
