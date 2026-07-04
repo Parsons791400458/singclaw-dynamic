@@ -22,6 +22,7 @@ type Turn = {
     rounds?: number
     tools_enabled?: boolean
     tool_skipped?: boolean
+    turn_id?: number  // S9.5.2-D: DB rowid for tool_calls attachment
   }
   // S9.5.2-C — tool 调用历史 (本 turn 中 LLM 调用了什么工具)
   tool_calls?: ToolCall[]
@@ -154,15 +155,49 @@ export default function ChatPage() {
     setStreamPreview('')
     try { localStorage.setItem(SESSION_KEY, id) } catch { /* ignore */ }
     setShowSidebar(false)
-    // Try to load history from server
-    fetch(`/api/mvp-proxy?action=history&session_id=${encodeURIComponent(id)}`)
-      .then((r) => r.ok ? r.json() : null)
-      .then((data) => {
-        if (data && Array.isArray(data.turns)) {
-          setTurns(data.turns.map((t: any) => ({ role: t.role, text: t.content, ts: t.created_at * 1000, meta: t.meta })))
+    // S9.5.2-D — 并行 fetch history + tools, merge tool_calls 到对应 agent turn
+    Promise.all([
+      fetch(`/api/mvp-proxy?action=history&session_id=${encodeURIComponent(id)}`).then((r) => r.ok ? r.json() : null).catch(() => null),
+      fetch(`/api/mvp-proxy?action=tools&session_id=${encodeURIComponent(id)}&limit=200`).then((r) => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([historyData, toolsData]) => {
+      const turns: Turn[] = []
+      if (historyData && Array.isArray(historyData.turns)) {
+        for (const t of historyData.turns) {
+          turns.push({
+            role: t.role,
+            text: t.content,
+            ts: (t.created_at || t.ts) * 1000,
+            meta: { ...(t.meta || {}), turn_id: t.id },
+          })
         }
-      })
-      .catch(() => { /* silent */ })
+      }
+      // Merge tool_calls: 按 turn_id 分组挂到对应 agent turn
+      if (toolsData && Array.isArray(toolsData.tool_calls)) {
+        const toolsByTurn: Record<string, ToolCall[]> = {}
+        for (const tc of toolsData.tool_calls) {
+          const k = String(tc.turn_id || '')
+          if (!k) continue
+          if (!toolsByTurn[k]) toolsByTurn[k] = []
+          toolsByTurn[k].push({
+            round: tc.round,
+            name: tc.name,
+            args: tc.args || {},
+            result: tc.result,
+            error: tc.error,
+            elapsed_sec: tc.elapsed_sec,
+            expanded: false,
+          })
+        }
+        for (const turn of turns) {
+          const tid = turn.meta?.turn_id
+          if (tid && toolsByTurn[String(tid)]) {
+            turn.tool_calls = toolsByTurn[String(tid)]
+            turn.meta = { ...(turn.meta || {}), rounds: toolsByTurn[String(tid)].length + 1 }
+          }
+        }
+      }
+      setTurns(turns)
+    })
   }
 
   function startNewSession() {
@@ -389,6 +424,7 @@ export default function ChatPage() {
                   rounds: obj.rounds,
                   tools_enabled: obj.tools_enabled,
                   tool_skipped: obj.tool_skipped,
+                  turn_id: typeof obj.turn_id === 'number' ? obj.turn_id : undefined,  // S9.5.2-D
                 },
                 tool_calls: currentToolCallsRef.current.length > 0
                   ? [...currentToolCallsRef.current]
