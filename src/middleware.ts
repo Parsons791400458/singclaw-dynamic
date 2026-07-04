@@ -1,22 +1,27 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 import { isClerkFullyConfigured } from "@/lib/clerk-config";
 
 const clerkConfigured = isClerkFullyConfigured();
-
 const isProtectedRoute = createRouteMatcher([
   "/dashboard(.*)",
   "/reports(.*)",
 ]);
 
-export default clerkMiddleware(async (auth, req) => {
-  if (!clerkConfigured) {
-    return;
-  }
-
+// Clerk v6: clerkMiddleware 在没 key 时也会初始化并 throw. 绕开方法: 未配时直接 NextResponse.next().
+const realClerkMiddleware = clerkMiddleware(async (auth, req) => {
   if (isProtectedRoute(req)) {
     await auth.protect();
   }
 });
+
+export default function middleware(req: NextRequest) {
+  if (!clerkConfigured) {
+    return NextResponse.next();
+  }
+  return realClerkMiddleware(req, {} as any);
+}
 
 export const config = {
   matcher: [
