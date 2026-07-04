@@ -60,6 +60,28 @@ export async function POST(req: NextRequest) {
   })
 }
 
-export async function GET() {
-  return NextResponse.json({ ok: true, stage: 'S6-BFF-mvp-proxy', supports_stream: true })
+export async function GET(req: NextRequest) {
+  const action = req.nextUrl.searchParams.get('action') || ''
+  const sessionId = req.nextUrl.searchParams.get('session_id') || ''
+  const code = req.headers.get('x-mvp-code') || DEFAULT_CODE
+
+  if (action === 'history' && sessionId) {
+    // S8: load session history from adapter
+    const upstream = await fetch(`https://app.singclaw.xyz/v1/mvp/sessions/${encodeURIComponent(sessionId)}/history?limit=50`, {
+      headers: { 'Authorization': `Bearer ${code}`, 'X-MVP-Code': code },
+      cache: 'no-store',
+    }).catch(() => null as unknown as Response)
+    if (!upstream) {
+      return NextResponse.json({ turns: [] })
+    }
+    const text = await upstream.text()
+    try {
+      const data = JSON.parse(text)
+      return NextResponse.json(data)
+    } catch {
+      return NextResponse.json({ turns: [], raw: text.slice(0, 200) })
+    }
+  }
+
+  return NextResponse.json({ ok: true, stage: 'S8-BFF-mvp-proxy', supports_stream: true, supports_history: true })
 }
