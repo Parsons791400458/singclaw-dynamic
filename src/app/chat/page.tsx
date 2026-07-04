@@ -226,6 +226,13 @@ export default function ChatPage() {
       if (result.kind === 'transient') {
         lastError = { kind: 'http', detail: result.detail || '' }
         attempt++
+        // Compute next delay for status message
+        const nextDelay = RETRY_DELAYS_MS[Math.min(attempt - 1, RETRY_DELAYS_MS.length - 1)]
+        if (result.detail?.includes('429')) {
+          setStage(`请求过快 · ${nextDelay}ms 后重试 (${attempt}/${MAX_RETRIES})`)
+        } else {
+          setStage(`重试 ${attempt}/${MAX_RETRIES} (${nextDelay}ms 后)`)
+        }
         continue
       }
       if (result.kind === 'network') {
@@ -513,6 +520,10 @@ export default function ChatPage() {
                 className="w-4 h-4"
               />
             </label>
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-gray-300">主题</span>
+              <span className="text-xs text-gray-500" title="亮色主题需要重启应用完整生效, MVP 阶段">暗色 (固定)</span>
+            </div>
             <p className="text-xs text-gray-500 mt-3 pt-3 border-t border-gray-800">
               MVP 阶段 · 数据存浏览器本地<br />
               跨 session 偏好保留
