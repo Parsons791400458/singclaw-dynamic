@@ -22,14 +22,12 @@ export async function POST(req: NextRequest) {
   const code = clientCode || DEFAULT_CODE
 
   if (stream === true) {
-    // SSE relay
-    const upstream = await fetch(ADAPTER_STREAM_URL, {
+    // S7: fast-path direct to LLM provider (skip OpenClaw CLI plugin load)
+    const upstream = await fetch(ADAPTER_STREAM_URL.replace('/v1/mvp/chat/stream', '/v1/mvp/chat/fast'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${code}`, 'X-MVP-Code': code },
       body: JSON.stringify({ message, session_id }),
       cache: 'no-store',
-      // @ts-expect-error Node 18 fetch supports duplex
-      duplex: 'half',
     }).catch(() => null as unknown as Response)
     if (!upstream || !upstream.body) {
       return NextResponse.json({ error: 'adapter_unreachable' }, { status: 502 })

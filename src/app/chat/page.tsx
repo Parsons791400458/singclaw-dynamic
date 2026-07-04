@@ -93,11 +93,18 @@ export default function ChatPage() {
           if (!data) continue
           try {
             const obj = JSON.parse(data)
-            if (name === 'chunk' && typeof obj.text === 'string') {
+            if (name === 'delta' && typeof obj.text === 'string') {
+              // S7 fast-path: append each delta to live preview
+              finalReply += obj.text
+              setStreamPreview(finalReply)
+            } else if (name === 'chunk' && typeof obj.text === 'string') {
               finalReply = obj.text
               setStreamPreview(finalReply)
+            } else if (name === 'first_token') {
+              if (typeof obj.at === 'number') {
+                setStage('streaming')
+              }
             } else if (name === 'status') {
-              // phase updates — update stage label
               if (typeof obj.phase === 'string') {
                 setStage(obj.phase)
               }
@@ -109,7 +116,7 @@ export default function ChatPage() {
                 role: 'agent',
                 text: finalReply,
                 ts: Date.now(),
-                meta: { session_id: obj.session_id, elapsed_sec: obj.elapsed_sec, chunks: obj.chunks, streamed: true },
+                meta: { session_id: obj.session_id, elapsed_sec: obj.elapsed_sec, chunks: obj.chunks, streamed: true, mode: obj.mode, first_token_at: obj.first_token_at },
               }])
               if (obj.session_id && obj.session_id !== sessionId) {
                 setSessionId(obj.session_id)
