@@ -32,7 +32,28 @@ export async function POST(req: NextRequest) {
     if (!upstream || !upstream.body) {
       return NextResponse.json({ error: 'adapter_unreachable' }, { status: 502 })
     }
-    return new NextResponse(upstream.body, {
+    // S9.5.2-D-bugfix2 — 包装 upstream.body 为 TransformStream, 逐块拉 (yield upstream.body.getReader().read())
+    // Next.js 14+ NextResponse 不能直接 pipe Web ReadableStream (needs duplex: 'half' which type doesn't allow),
+    // 否则 SSE 流 server-side 被消费但 client 永远收不到 EOF/done, busy state 卡死.
+    const upstreamReader = upstream.body.getReader()
+    const wrappedStream = new ReadableStream({
+      async pull(controller) {
+        try {
+          const { value, done } = await upstreamReader.read()
+          if (done) {
+            controller.close()
+            return
+          }
+          controller.enqueue(value)
+        } catch (e) {
+          controller.error(e)
+        }
+      },
+      cancel(reason) {
+        upstreamReader.cancel(reason).catch(() => { /* ignore */ })
+      },
+    })
+    return new NextResponse(wrappedStream, {
       status: upstream.status,
       headers: {
         'Content-Type': 'text/event-stream; charset=utf-8',
