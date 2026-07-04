@@ -85,6 +85,7 @@ export default function ChatPage() {
   const listRef = useRef<HTMLDivElement>(null)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
   const abortRef = useRef<AbortController | null>(null)
+  const firstTokenAtRef = useRef<number | null>(null)
 
   // Init
   useEffect(() => {
@@ -188,6 +189,7 @@ export default function ChatPage() {
     setStage('connecting')
     setStreamPreview('')
     setFirstTokenAt(null)
+    firstTokenAtRef.current = null
     const t0 = Date.now()
     setTurnStart(t0)
 
@@ -233,8 +235,9 @@ export default function ChatPage() {
             if (name === 'delta' && typeof obj.text === 'string') {
               finalReply += obj.text
               setStreamPreview(finalReply)
-              if (!firstTokenAt) {
+              if (firstTokenAtRef.current === null) {
                 const ft = (Date.now() - t0) / 1000
+                firstTokenAtRef.current = ft
                 setFirstTokenAt(ft)
                 setStage('streaming')
               }
@@ -243,6 +246,7 @@ export default function ChatPage() {
               setStreamPreview(finalReply)
             } else if (name === 'first_token') {
               if (typeof obj.at === 'number') {
+                firstTokenAtRef.current = obj.at
                 setFirstTokenAt(obj.at)
                 setStage('streaming')
               }
@@ -278,6 +282,25 @@ export default function ChatPage() {
             // not JSON
           }
         }
+      }
+      // Fallback: if stream ended but we have content and no done event was received,
+      // emit the agent turn anyway so user sees the reply.
+      if (finalReply.trim() && stage !== 'done') {
+        setTurns((prev) => [...prev, {
+          role: 'agent',
+          text: finalReply,
+          ts: Date.now(),
+          meta: {
+            elapsed_sec: (Date.now() - t0) / 1000,
+            chunks: undefined,
+            first_token_at: firstTokenAtRef.current ?? undefined,
+            session_id: sessionId,
+            mode: 'fast',
+            streamed: true,
+            fallback_emitted: true,
+          },
+        }])
+        setStage('done')
       }
     } catch (e) {
       if (e instanceof Error && e.name === 'AbortError') {
