@@ -11,7 +11,7 @@ module.exports = {
     instances: 1,
     exec_mode: 'fork',
     cwd: '/root/.openclaw/workspace/singclaw-dynamic',
-    interpreter: '/root/.nvm/versions/node/v22.22.0/bin/node',
+    interpreter: '/bin/sh',
     env: {
       PORT: 3001,
       NODE_ENV: 'production',
