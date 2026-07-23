@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-04",
+  "updatedBy": "Codex sprint 7 local documentation task",
+  "securityNote": "Sanitized starter ledger only. Do not store secrets, tokens, database URLs, cookies, runtime state, or exact credentials here.",
+  "projects": [
+    {
+      "projectKey": "singclaw-app",
+      "localRepoPath": "C:\\Users\\<local-user>\\Documents\\Singclaw\\singclaw-dynamic",
+      "githubRemote": "https://github.com/Parsons791400458/singclaw-dynamic.git",
+      "defaultBranchForCurrentTask": "codex/workflow-loop-engineering",
+      "workflowOwners": [
+        "Maxink packages tasks, verifies Codex output, and manages PR/handoff.",
+        "Codex executes small scoped task packages in the repo.",
+        "Hermes receives durable handoff summaries and longer-term orchestration context when needed."
+      ],
+      "verificationStatus": {
+        "status": "starter-ledger-created",
+        "lastChecked": "2026-07-04",
+        "checks": [
+          "JSON parse check for docs/codex/project-ledger.json",
+          "npm run validate:codex-ledger"
+        ]
+      },
+      "nextHandoff": {
+        "owner": "Maxink / Hermes / H Sing",
+        "path": "docs/codex/handoff-log.md",
+        "recommendedAction": "Review the Codex loop package, then use docs/codex/task-template.md for the next local Codex task. Maxink verifies output before Hermes receives any durable summary."
+      }
+    }
+  ]
+}
