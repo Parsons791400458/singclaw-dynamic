@@ -5,52 +5,55 @@ import { useState } from 'react';
 // ─── Data ───────────────────────────────────────────────────────────────────
 
 const stats = [
-  { num: '449', label: '合约总数', color: 'text-amber-400' },
-  { num: '203', label: 'Alpha币 (无现货)', color: 'text-emerald-400' },
-  { num: '246', label: 'Normal (有现货)', color: 'text-blue-400' },
-  { num: '1.33x', label: '超额命中倍数', color: 'text-purple-400' },
+  { num: '568', label: '合约总数', color: 'text-amber-400' },
+  { num: '249', label: 'Alpha币 (无现货)', color: 'text-emerald-400' },
+  { num: '319', label: 'Normal (有现货)', color: 'text-blue-400' },
+  { num: '2.05x', label: '超额命中倍数', color: 'text-purple-400' },
 ];
 
 const freqList = [
-  { rank: 1, name: 'SAFE', chg: 28.3, pct: 100 },
-  { rank: 2, name: 'CROSS', chg: 25.3, pct: 89 },
-  { rank: 3, name: 'UB', chg: 19.6, pct: 69 },
-  { rank: 4, name: 'SOON', chg: 19.1, pct: 67 },
-  { rank: 5, name: '4', chg: 17.2, pct: 60 },
-  { rank: 6, name: 'B', chg: 15.1, pct: 53 },
-  { rank: 7, name: 'MERL', chg: 10.7, pct: 37 },
-  { rank: 8, name: 'PIEVERSE', chg: 10.7, pct: 37 },
-  { rank: 9, name: '1000PEPE', chg: 7.5, pct: 26 },
-  { rank: 10, name: 'AGT', chg: 6.3, pct: 22 },
-  { rank: 11, name: '1000SHIB', chg: 6.2, pct: 21 },
-  { rank: 12, name: 'IRYS', chg: 5.9, pct: 20 },
-  { rank: 13, name: 'BEAT', chg: 5.5, pct: 19 },
+  { rank: 1, name: 'ON', chg: 45.3, pct: 100 },
+  { rank: 2, name: 'AKE', chg: 43.2, pct: 95 },
+  { rank: 3, name: 'BULLA', chg: 25.4, pct: 56 },
+  { rank: 4, name: 'TAG', chg: 21.0, pct: 46 },
+  { rank: 5, name: 'SOON', chg: 17.4, pct: 38 },
+  { rank: 6, name: 'SOXS', chg: 17.2, pct: 38 },
+  { rank: 7, name: 'KGEN', chg: 16.7, pct: 36 },
+  { rank: 8, name: 'IDOL', chg: 14.5, pct: 32 },
+  { rank: 9, name: 'DODOX', chg: 11.7, pct: 25 },
+  { rank: 10, name: 'MINIMAX', chg: 10.5, pct: 23 },
+  { rank: 11, name: 'Q', chg: 8.5, pct: 18 },
+  { rank: 12, name: 'HK1810', chg: 8.2, pct: 17 },
+  { rank: 13, name: 'COLLECT', chg: 7.6, pct: 16 },
+  { rank: 14, name: 'CAP', chg: 7.3, pct: 16 },
+  { rank: 15, name: 'COAI', chg: 6.7, pct: 14 },
+  { rank: 16, name: 'NOW', chg: 6.6, pct: 14 },
 ];
 
 const alphaTop10 = [
-  { rank: 1, coin: 'SAFE', chg: '+28.32%', pos: true },
-  { rank: 2, coin: 'CROSS', chg: '+25.32%', pos: true },
-  { rank: 3, coin: 'UB', chg: '+19.55%', pos: true },
-  { rank: 4, coin: 'SOON', chg: '+19.07%', pos: true },
-  { rank: 5, coin: '4', chg: '+17.20%', pos: true },
-  { rank: 6, coin: 'B', chg: '+15.14%', pos: true },
-  { rank: 7, coin: 'MERL', chg: '+10.70%', pos: true },
-  { rank: 8, coin: 'PIEVERSE', chg: '+10.70%', pos: true },
-  { rank: 9, coin: '1000PEPE', chg: '+7.52%', pos: true },
-  { rank: 10, coin: 'AGT', chg: '+6.30%', pos: true },
+  { rank: 1, coin: 'ON', chg: '+45.31%', pos: true },
+  { rank: 2, coin: 'AKE', chg: '+43.21%', pos: true },
+  { rank: 3, coin: 'BULLA', chg: '+25.42%', pos: true },
+  { rank: 4, coin: 'TAG', chg: '+20.97%', pos: true },
+  { rank: 5, coin: 'SOON', chg: '+17.37%', pos: true },
+  { rank: 6, coin: 'SOXS', chg: '+17.23%', pos: true },
+  { rank: 7, coin: 'KGEN', chg: '+16.68%', pos: true },
+  { rank: 8, coin: 'IDOL', chg: '+14.54%', pos: true },
+  { rank: 9, coin: 'DODOX', chg: '+11.65%', pos: true },
+  { rank: 10, coin: 'MINIMAX', chg: '+10.48%', pos: true },
 ];
 
 const normalTop10 = [
-  { rank: 1, coin: 'ESP', chg: '+55.70%', pos: true },
-  { rank: 2, coin: 'DIA', chg: '+20.63%', pos: true },
-  { rank: 3, coin: 'PEOPLE', chg: '+17.86%', pos: true },
-  { rank: 4, coin: 'BOME', chg: '+15.70%', pos: true },
-  { rank: 5, coin: 'KAITO', chg: '+14.36%', pos: true },
-  { rank: 6, coin: 'NIL', chg: '+13.15%', pos: true },
-  { rank: 7, coin: 'PUMP', chg: '+12.58%', pos: true },
-  { rank: 8, coin: 'LA', chg: '+11.18%', pos: true },
-  { rank: 9, coin: 'LQTY', chg: '+10.02%', pos: true },
-  { rank: 10, coin: 'HOLO', chg: '+9.64%', pos: true },
+  { rank: 1, coin: 'COTI', chg: '+57.34%', pos: true },
+  { rank: 2, coin: 'KAITO', chg: '+11.32%', pos: true },
+  { rank: 3, coin: 'ENSO', chg: '+8.03%', pos: true },
+  { rank: 4, coin: 'ZAMA', chg: '+8.02%', pos: true },
+  { rank: 5, coin: 'LUMIA', chg: '+5.65%', pos: true },
+  { rank: 6, coin: 'ALLO', chg: '+4.99%', pos: true },
+  { rank: 7, coin: 'APE', chg: '+4.69%', pos: true },
+  { rank: 8, coin: 'PROM', chg: '+4.68%', pos: true },
+  { rank: 9, coin: 'NXPC', chg: '+4.31%', pos: true },
+  { rank: 10, coin: 'VELODROME', chg: '+4.29%', pos: true },
 ];
 
 interface DailyEntry {
@@ -61,19 +64,19 @@ interface DailyEntry {
 }
 
 const dailyData: Record<string, { alphaRatio: string; entries: DailyEntry[] }> = {
-  '07-27': {
-    alphaRatio: '6/10',
+  '07-28': {
+    alphaRatio: '9/10',
     entries: [
-      { rank: 1, type: 'alpha', coin: 'SAFE', chg: '+28.32%' },
-      { rank: 2, type: 'alpha', coin: 'CROSS', chg: '+25.32%' },
-      { rank: 3, type: 'alpha', coin: 'UB', chg: '+19.55%' },
-      { rank: 4, type: 'alpha', coin: 'SOON', chg: '+19.07%' },
-      { rank: 5, type: 'alpha', coin: '4', chg: '+17.20%' },
-      { rank: 6, type: 'alpha', coin: 'B', chg: '+15.14%' },
-      { rank: 7, type: 'alpha', coin: 'MERL', chg: '+10.70%' },
-      { rank: 8, type: 'alpha', coin: 'PIEVERSE', chg: '+10.70%' },
-      { rank: 9, type: 'alpha', coin: '1000PEPE', chg: '+7.52%' },
-      { rank: 10, type: 'alpha', coin: 'AGT', chg: '+6.30%' },
+      { rank: 1, type: 'alpha', coin: 'ON', chg: '+45.31%' },
+      { rank: 2, type: 'alpha', coin: 'AKE', chg: '+43.21%' },
+      { rank: 3, type: 'alpha', coin: 'BULLA', chg: '+25.42%' },
+      { rank: 4, type: 'alpha', coin: 'TAG', chg: '+20.97%' },
+      { rank: 5, type: 'alpha', coin: 'SOON', chg: '+17.37%' },
+      { rank: 6, type: 'alpha', coin: 'SOXS', chg: '+17.23%' },
+      { rank: 7, type: 'alpha', coin: 'KGEN', chg: '+16.68%' },
+      { rank: 8, type: 'alpha', coin: 'IDOL', chg: '+14.54%' },
+      { rank: 9, type: 'alpha', coin: 'DODOX', chg: '+11.65%' },
+      { rank: 10, type: 'alpha', coin: 'MINIMAX', chg: '+10.48%' },
     ],
   },
 };
@@ -97,81 +100,103 @@ const alphaCoins = [
   '4',
   'AAOI',
   'AAPL',
+  'ADBE',
   'AGT',
   'AIA',
   'AIN',
   'AIO',
   'AIOT',
   'AKE',
+  'AKT',
+  'ALAB',
   'AMAT',
   'AMD',
   'AMZN',
   'ANTHROPIC',
+  'APP',
   'APR',
   'ARC',
+  'ARIA',
   'ARM',
   'ARX',
   'ASML',
+  'ASTS',
   'ATH',
   'AVAAI',
   'AVGO',
+  'AXTI',
   'AZTEC',
   'B',
   'B2',
   'BABA',
-  'BAN',
+  'BAS',
   'BASED',
+  'BBX',
   'BE',
   'BEAT',
   'BILL',
   'BIRB',
   'BLESS',
+  'BLUAI',
   'BMNR',
+  'BOT',
+  'BR',
   'BRETT',
   'BROCCOLIF3B',
   'BSB',
-  'BSV',
   'BTCDOM',
   'BTW',
   'BULLA',
   'BX',
   'BZ',
   'CAP',
-  'CARV',
   'CBRS',
   'CC',
   'CHILLGUY',
+  'CIEN',
   'CL',
+  'CLANKER',
   'CLO',
   'COAI',
+  'COHR',
   'COIN',
+  'COLLECT',
   'COPPER',
   'CRCL',
   'CRDO',
   'CROSS',
-  'CYS',
+  'CRWV',
+  'CTR',
+  'DATAIP',
   'DELL',
   'DODOX',
   'DOOD',
   'DRAM',
-  'EBAY',
+  'DRIFT',
   'EDGE',
   'ELSA',
   'ESPORTS',
   'EVAA',
+  'EWJ',
+  'EWT',
   'EWY',
   'FARTCOIN',
   'FHE',
-  'FLEX',
+  'FLNC',
   'FLOCK',
   'FOLKS',
+  'GEV',
   'GLW',
   'GOOGL',
   'GRASS',
+  'GUA',
   'GWEI',
   'H',
   'HANA',
+  'HIMS',
+  'HK1810',
   'HOOD',
+  'HPE',
   'HYPE',
   'HYUNDAI',
   'IBM',
@@ -179,24 +204,32 @@ const alphaCoins = [
   'IN',
   'INTC',
   'INTW',
+  'INX',
   'IREN',
   'IRYS',
   'JCT',
   'JELLYJELLY',
   'KAS',
-  'KOMA',
+  'KGEN',
+  'KLAC',
   'KORU',
+  'KSTR',
   'LAB',
   'LIGHT',
   'LIT',
   'LITE',
+  'LLY',
+  'LRCX',
   'LUNA2',
   'LYN',
   'M',
   'MAGMA',
+  'MELANIA',
   'MERL',
   'META',
   'MEW',
+  'MINIMAX',
+  'MOCA',
   'MON',
   'MOODENG',
   'MRVL',
@@ -206,13 +239,17 @@ const alphaCoins = [
   'MUU',
   'MVLL',
   'MYX',
+  'NAORIS',
   'NATGAS',
   'NBIS',
+  'NFLX',
   'NOK',
   'NOW',
   'NVDA',
   'O',
   'ON',
+  'ONDS',
+  'OPENAI',
   'ORCL',
   'ORDER',
   'PANW',
@@ -226,23 +263,28 @@ const alphaCoins = [
   'POWER',
   'PRL',
   'PTB',
+  'PUMPBTC',
   'Q',
   'QCOM',
   'QNTX',
   'QQQ',
   'RAVE',
+  'RAYSOL',
   'RECALL',
   'RIVER',
   'RKLB',
   'SAFE',
   'SAMSUNG',
+  'SHAZ',
   'SIREN',
   'SKHY',
   'SKHYNIX',
   'SKYAI',
   'SLX',
+  'SMCI',
   'SNDK',
   'SNXX',
+  'SONY',
   'SOON',
   'SOXL',
   'SOXS',
@@ -250,27 +292,33 @@ const alphaCoins = [
   'SPCX',
   'SPX',
   'SPY',
+  'SQD',
   'SQQQ',
   'STABLE',
   'STAR',
   'STBL',
   'STRC',
+  'STXX',
   'SWARMS',
   'TAC',
   'TAG',
   'TAIKO',
   'TAKE',
+  'TMF',
   'TOSHI',
   'TQQQ',
   'TRADOOR',
   'TRIA',
   'TRUST',
+  'TRUTH',
   'TSLA',
   'TSM',
   'UAI',
   'UB',
   'US',
+  'USAR',
   'USELESS',
+  'UVXY',
   'VELVET',
   'VVV',
   'WDC',
@@ -285,6 +333,7 @@ const alphaCoins = [
   'XPT',
   'ZEREBRO',
   'ZEST',
+  'ZETA',
   'ZHIPU',
   'ZORA',
 ];
@@ -315,11 +364,11 @@ export default function BNAlphaPage() {
             </span>
           </h1>
           <p className="mx-auto mb-6 max-w-2xl text-base leading-relaxed text-gray-400 sm:text-lg">
-            Binance 449个USDT永续合约中，203个只有合约没有现货的"Alpha币"，占池子45%却拿走了每日Top10涨幅榜60%的席位。超额命中率{' '}
-            <strong className="text-white">1.33倍</strong>。
+            Binance 568个USDT永续合约中，249个只有合约没有现货的"Alpha币"，占池子44%却拿走了每日Top10涨幅榜90%的席位。超额命中率{' '}
+            <strong className="text-white">2.05倍</strong>。
           </p>
           <p className="text-xs text-gray-500">
-            📅 更新时间: 2026-07-27 01:30 (UTC) · 数据来源: Binance Futures API · 自动更新
+            📅 更新时间: 2026-07-28 01:30 (UTC) · 数据来源: Binance Futures API · 自动更新
           </p>
         </div>
       </section>
@@ -341,13 +390,13 @@ export default function BNAlphaPage() {
             <h3 className="mb-4 text-xl font-extrabold text-emerald-400">🤖 AI 解读</h3>
             <div className="space-y-3 text-sm leading-relaxed text-gray-400 sm:text-base">
               <p>
-                <strong className="text-gray-200">Alpha超额（1.33x）</strong>：Alpha币在Top10中的占比6/10，高于其池子比例45%，Alpha溢出效应显著。
+                <strong className="text-gray-200">Alpha超额（2.05x）</strong>：Alpha币在Top10中的占比9/10，高于其池子比例44%，Alpha溢出效应显著。
               </p>
               <p>
-                📈 Alpha组均涨+0.29% (118涨/84跌)，Normal组均涨+1.29% (171涨/73跌)。
+                📈 Alpha组均涨-3.73% (53涨/196跌)，Normal组均涨-4.94% (30涨/289跌)。
               </p>
               <p>
-                🏆 FNG=30 (Fear)，BTC处于回调阶段，Alpha币波动性加剧。
+                🏆 FNG=29 (Fear)，BTC处于回调阶段，Alpha币波动性加剧。
               </p>
             </div>
           </div>
@@ -383,13 +432,13 @@ export default function BNAlphaPage() {
         <section className="border-t border-gray-800 py-12">
           <div className="mb-8">
             <h2 className="mb-2 text-2xl font-extrabold sm:text-3xl">📈 今日 24h 分组涨幅</h2>
-            <p className="text-sm text-gray-500">2026-07-27 · Alpha组 vs Normal组 Top 10 对比</p>
+            <p className="text-sm text-gray-500">2026-07-28 · Alpha组 vs Normal组 Top 10 对比</p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-gray-800 bg-gray-900/50 p-5">
               <div className="mb-1 text-lg font-extrabold">🔶 Alpha Top 10</div>
               <div className="mb-3 text-xs text-gray-500">
-                均涨 <span className="font-bold text-amber-400">+0.29%</span> · 118涨 / 84跌
+                均涨 <span className="font-bold text-amber-400">-3.73%</span> · 53涨 / 196跌
               </div>
               <ol className="space-y-1">
                 {alphaTop10.map((r) => (
@@ -404,7 +453,7 @@ export default function BNAlphaPage() {
             <div className="rounded-2xl border border-gray-800 bg-gray-900/50 p-5">
               <div className="mb-1 text-lg font-extrabold">🔵 Normal Top 10</div>
               <div className="mb-3 text-xs text-gray-500">
-                均涨 <span className="font-bold text-blue-400">+1.29%</span> · 171涨 / 73跌
+                均涨 <span className="font-bold text-blue-400">-4.94%</span> · 30涨 / 289跌
               </div>
               <ol className="space-y-1">
                 {normalTop10.map((r) => (
@@ -485,7 +534,7 @@ export default function BNAlphaPage() {
       <div className="mx-auto max-w-6xl px-4">
         <section className="border-t border-gray-800 py-12">
           <div className="mb-4">
-            <h2 className="mb-2 text-2xl font-extrabold sm:text-3xl">📋 完整 Alpha 币列表 (203个)</h2>
+            <h2 className="mb-2 text-2xl font-extrabold sm:text-3xl">📋 完整 Alpha 币列表 (249个)</h2>
           </div>
           <div className="flex flex-wrap gap-2">
             {alphaCoins.map((c) => (
